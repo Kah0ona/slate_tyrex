@@ -5,3 +5,5 @@
     'theme_location' => 'sitemap',
     'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); ?>
+
+

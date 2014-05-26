@@ -10,7 +10,7 @@ module.exports = {
     files: [{
       expand: true,
       cwd: 'dev/img',
-      src: '*.{png,jpg,gif}',
+      src: '*.{jpg,gif}',
       dest: 'deploy/child/img'
     }]
   }
