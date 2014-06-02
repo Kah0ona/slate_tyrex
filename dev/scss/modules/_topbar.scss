@@ -1,0 +1,12 @@
+.Topbar {
+	background-color: $c-red;
+	padding: 5px; 
+
+}
+.Topbar-contact {
+	float: right;
+}
+.Topbar-contact a {
+	color: $c-white;
+	text-decoration: none;
+}

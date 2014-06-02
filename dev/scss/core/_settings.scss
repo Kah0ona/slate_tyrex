@@ -10,7 +10,7 @@
 // -------------------------------------
 
 // Open Sans (normal, italic, bold, bold/italic)
-@include web-fonts(("Open Sans": ("400", "400 italic", "800", "800 italic")));
+@include web-fonts(("Ubuntu": ("400", "400 italic", "800", "800 italic")));
 
 // -------------------------------------
 // Variables
@@ -18,9 +18,10 @@
 
 // ----- Colors ----- //
 
-$c-black : #1B1C17;
-$c-blue  : #0070AF;
-$c-white : #EFEFEF;
+$c-black : #040404;
+$c-grey: #2f342e;
+$c-red : #c50812;
+$c-white : #ffffff;
 
 // ----- Layout ----- //
 $l-whiteSpace: 0.5rem;
@@ -33,7 +34,7 @@ $l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
 
 // ----- Text ----- //
 
-$t-fontFamily       : 'Open Sans', $helvetica;
-$t-headerFontFamily : 'Open Sans', $helvetica;
+$t-fontFamily       : 'Ubuntu', $helvetica;
+$t-headerFontFamily : 'Ubuntu', $helvetica;
 $t-fontSize         : 16px;
 $t-lineHeight       : 1.5;
