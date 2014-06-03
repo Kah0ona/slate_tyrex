@@ -6,6 +6,7 @@ Slate is a framework for Wordpress child theme development.
 1. Dependencies
 ---------------
 
+<<<<<<< HEAD
 The following dependencies need to be installed on your system before deploying the framework.
 
 * Node.js: [http://nodejs.org/](http://nodejs.org/)
@@ -96,3 +97,8 @@ The following dependencies need to be installed on your system before deploying 
 - [ ] Go through all the pages, check the links, effects and content
 - [ ] Call the customer and ask them if they're satisfied
 - [ ] Add the live domain (through `settings` -> `domains` )
+=======
+1. [Getting Started](https://github.com/Kah0ona/slate/wiki/1.-getting-started)
+2. [Workflow](https://github.com/Kah0ona/slate/wiki/2.-workflow)
+3. [Deploy](https://github.com/Kah0ona/slate/wiki/3.-deploy)
+>>>>>>> 079b072410c81c489dfab7eef5963a589bae088c

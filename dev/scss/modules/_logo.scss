@@ -29,32 +29,14 @@
 // Submodules
 // -------------------------------------
 
-.Logo-textLink {
-  vertical-align: top;
-  padding-top: rem(16px);
-}
 
-.Logo-textLink,
-.Logo-heading,
-.Logo-imageLink {
-  display: inline-block;
-}
 
 // ----- Heading ----- //
-
-.Logo-headingTop,
-.Logo-headingBottom {
-  color: $c-white;
-  display: block;
-  line-height: 1;
-}
-
-.Logo-headingTop {
-  font-family: 'Hobo', sans-serif;
-  font-size: rem(70px);
-  text-align: center;
-}
-
-.Logo-headingBottom {
-  font-size: rem(30px);
+.logo {
+  img {
+    margin: 18px 0px 15px;
+    z-index: 10;
+    position: relative;
+    width: 75%;
+  }
 }

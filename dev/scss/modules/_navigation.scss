@@ -40,23 +40,80 @@
 // ----- List item ----- //
 
 .Navigation-listItem {
-  display: inline;
+  display: inline-block;
   margin: 0 rem(15px);
+  background-color: $c-white;
+ 
+  border-radius: 0 0 5px 5px;
+  
+
   &:first-of-type {
     margin-left: 0;
   }
   &:last-of-type {
     margin-right: 0;
   }
+
+  svg {
+    fill: $c-red;
+    width: 55px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+  }
+
 }
+
+
 
 // ----- Navigation link ----- //
 
 .Navigation-link {
   text-transform: uppercase;
+  display: inline-block;
+  color: $c-black;
+  font-size: 0.9rem;
+  padding: 20px 0px 10px;
+  width: 90px;
 }
 
 .Navigation-link--invertedBold {
   color: $c-white; 
   font-weight: bold;
+}
+
+
+// ----- Sub Menu ----- //
+#sub-menu {
+  text-align: center;
+
+  #menu-topmenu-1 {
+    background-color: $c-red;
+
+    .menu-item {
+      display: inline-block;
+      margin: 0 rem(15px);
+
+
+      a {
+        color: $c-white;
+      }
+      
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      svg {
+        fill: $c-white;
+        display: block;
+        margin: 0 auto;
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
 }

@@ -5,70 +5,129 @@
 //
 // *************************************
 
-.Header {
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  fill: #000000;
+}
+.icon-banden {
+  fill: #000000;
+  width: 33px;
+}
+
+
+#header {
   background-image: url("../img/img-header-bg.png");
   background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-// -------------------------------------
-// Module specific variables
-// -------------------------------------
+#phonenumber-container {
+  position: relative;
+  z-index: 1;
+  background-color: $c-red;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 
-// -variable
+  #phonenumber {
+    @include outer-container;
+    padding-left: $l-insideGutter;
+    padding-right: $l-insideGutter;
 
-// -------------------------------------
-// Modifiers
-// -------------------------------------
+    .phonenumber {      
+      p {
+        font-size: 2rem;
+        font-weight: 800;
+        color: $c-white;
+        line-height: 0px;
+        float: right;
+        margin: 12px 0;
 
-// .Module--modifierName
-
-// -------------------------------------
-// States
-// -------------------------------------
-
-// .is-module-state
-
-// -------------------------------------
-// Context
-// -------------------------------------
-
-// .has-module
-
-// -------------------------------------
-// Submodules
-// -------------------------------------
-
-// ----- Contact bar ----- //
-
-.Header-contact {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: rgba($c-black,0.5);
+        svg {
+          width: 25px;
+          fill: $c-white;
+        }
+      }
+    }
+  }
 }
 
-// ----- Contact bar ----- //
+#logo-menu-container {
+  background-color: $c-black;
+  background: url("../img/header.svg");
+  background-size: cover;
+  background-position: 0px -125px;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
 
-.Header-logo {
-  @extend .u-gridRow;
-  padding-bottom : $l-whiteSpace;
-  padding-top    : $l-whiteSpace;
-  background: rgba($c-black,0.25);
+  #logo-menu {
+  @include outer-container;
+  padding-left: $l-insideGutter;
+  padding-right: $l-insideGutter;   
+
+    .logo {
+      @include span-columns(6);
+    }
+
+    nav {
+      @include span-columns(6);
+
+      .Navigation-list {
+        float: right;
+        margin: 0px;
+      }
+    }
+  }
 }
 
-// ----- Nav bar ----- //
+#slider-container {
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  top: 215px;
 
+  #slider {
+
+    background-color: $c-black;
+
+    .easingsliderlite {
+      margin: 0 auto !important;
+
+      .easingsliderlite-arrows {
+        top: 70% !important;
+      }
+    }
+  }
+}
+
+
+
+
+<<<<<<< HEAD
 .Header-nav {
   @extend .u-gridRow;
   padding-bottom : $l-whiteSpace;
   padding-top    : $l-whiteSpace;
   background: $c-red;
 }
+=======
+>>>>>>> 079b072410c81c489dfab7eef5963a589bae088c
 
-// ----- Carousel ----- //
+footer {
+  background-image: url("../img/footer.svg");
+  background-size: cover;
+  background-position: top center;
+  height: 400px;
 
-.Header-carousel {
-  @extend .u-gridRow;
-  padding-bottom : ($l-whiteSpace * 4);
-  padding-top    : ($l-whiteSpace * 4);
+  .footer-container {
+    max-width: 61.25rem;
+    margin: 0 auto;
+  }
+
+  .widget {
+    @include span-columns(3);
+  }
 }

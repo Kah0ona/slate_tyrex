@@ -35,6 +35,7 @@
 
   </head>
   <body <?php body_class(); ?> >
+<<<<<<< HEAD
 	<div class="Topbar">
 		<div class="u-gridContainer u-cf">
 			<div class="Topbar-contact">
@@ -54,3 +55,40 @@
 	</div>
     <!-- Main navigation -->
     <?php include 'includes/navigation.php'; ?>
+=======
+    
+    <header id="header">
+        <section id="phonenumber-container">
+            <div id="phonenumber"> 
+                <div class="phonenumber">
+                    <p><span><svg class="icon icon-banden" viewBox="0 0 31 32"><use xlink:href="#icon-banden"></use></svg></span> 0165 - 32 00 02</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="logo-menu-container">
+            <div id="logo-menu">
+                <div class="logo">
+                    <a href="/"> <img src="/files/2014/05/logo.png" alt="logo tyrex banden"> </a>
+                </div>
+                <?php include 'includes/navigation.php'; ?>
+            </div>
+        </section>
+        
+        <section id="slider-container">
+            <div id="slider-stripe">
+
+            </div>
+
+            <div id="slider">
+                <?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
+            </div>
+
+        </section>
+
+        <nav id="sub-menu"> 
+            <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
+        </nav>
+
+    </header>
+>>>>>>> 079b072410c81c489dfab7eef5963a589bae088c

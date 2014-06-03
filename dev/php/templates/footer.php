@@ -1,5 +1,19 @@
-	<!-- Copyright info -->
-	<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?></p>
+
+	<footer>
+		<section class="footer-container">
+			<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
+			<div class="widgets">
+				<?php dynamic_sidebar( 'footer-widgets' ); ?>
+			</div>
+			<?php endif; ?>
+		</section>
+		<section class="sub-footer">		
+			<!-- Copyright info -->
+			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?></p>
+		</section>
+	</footer>
+
+
 	
   <!-- Load jquery from google CDN if possible, with fallback to local version -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>

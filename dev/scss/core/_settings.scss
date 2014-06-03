@@ -9,8 +9,13 @@
 // @font-face
 // -------------------------------------
 
+<<<<<<< HEAD
 // Open Sans (normal, italic, bold, bold/italic)
 @include web-fonts(("Ubuntu": ("400", "400 italic", "800", "800 italic")));
+=======
+// Lato (normal, italic, bold, bold/italic)
+@include web-fonts(("Lato": ("400", "400 italic","600", "600 italic" "800", "800 italic")));
+>>>>>>> 079b072410c81c489dfab7eef5963a589bae088c
 
 // -------------------------------------
 // Variables
@@ -18,9 +23,16 @@
 
 // ----- Colors ----- //
 
+<<<<<<< HEAD
 $c-black : #040404;
 $c-grey: #2f342e;
 $c-red : #c50812;
+=======
+$c-black : #020202;
+$c-blue  : #0070AF;
+$c-white : #FFFFFF;
+$c-red	 : #cc0601;
+>>>>>>> 079b072410c81c489dfab7eef5963a589bae088c
 $c-white : #ffffff;
 
 // ----- Layout ----- //
@@ -34,7 +46,12 @@ $l-boxShadow      : 0 1px 2px rgba($c-black, 0.25);
 
 // ----- Text ----- //
 
+<<<<<<< HEAD
 $t-fontFamily       : 'Ubuntu', $helvetica;
 $t-headerFontFamily : 'Ubuntu', $helvetica;
+=======
+$t-fontFamily       : 'Lato', $helvetica;
+$t-headerFontFamily : 'Lato', $helvetica;
+>>>>>>> 079b072410c81c489dfab7eef5963a589bae088c
 $t-fontSize         : 16px;
 $t-lineHeight       : 1.5;
