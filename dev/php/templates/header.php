@@ -35,27 +35,6 @@
 
   </head>
   <body <?php body_class(); ?> >
-<<<<<<< HEAD
-	<div class="Topbar">
-		<div class="u-gridContainer u-cf">
-			<div class="Topbar-contact">
-				<a href="tel:0165320002">
-					<svg class="Icon Icon--inline Icon--inverted" 
-						 viewBox="0 0 128 128">
-						<use xlink:href="#icon-phone"></use>
-					</svg>
-					0165 - 32 00 02
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="Logobar">
-		
-
-	</div>
-    <!-- Main navigation -->
-    <?php include 'includes/navigation.php'; ?>
-=======
     
     <header id="header">
         <section id="phonenumber-container">
@@ -91,4 +70,3 @@
         </nav>
 
     </header>
->>>>>>> 079b072410c81c489dfab7eef5963a589bae088c
