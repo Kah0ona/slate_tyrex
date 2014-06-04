@@ -7,4 +7,12 @@
   'sitemap' => 'Sitemap'
       ));
   }
+
+  add_action( 'init', 'register_menu_submenu' );
+
+  function register_menu_submenu(){
+  register_nav_menus( array(
+  'submenu' => 'Submenu'
+      ));
+  }
 ?>

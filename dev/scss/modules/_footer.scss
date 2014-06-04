@@ -1,1 +1,52 @@
+footer {
+  background-image: url("../img/footer.svg");
+  background-size: 100% 475px;
+  background-position: top center;
+  height: 365px;
+  padding: 160px 0 0 0;
+  color: $c-white;
 
+  a {
+    color: $c-white;
+  }
+
+
+  .footer-container {
+    max-width: 61.25rem;
+    margin: 0 auto;
+    position: relative;
+
+
+    .logo {
+ 	  background-color: $c-white;
+	  border-radius: 5px;
+	  position: absolute;
+	  top: -150px;
+	  right: 0px;
+	  max-width: 14.38rem;
+	  padding: 70px 10px 10px;
+    }
+
+    .widget {
+      @include span-columns(3);
+
+      h4 {
+        margin: 0px;
+      }
+
+      .textwidget, .menu-topmenu-container {
+        margin: -15px 0 0 5px;
+      }
+    }
+  }
+
+  .sub-footer {
+    max-width: 61.25rem;
+    margin: 0 auto;
+    display: block;
+
+    a {
+      color: $c-red;
+    }
+  }
+}

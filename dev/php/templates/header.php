@@ -40,7 +40,7 @@
         <section id="phonenumber-container">
             <div id="phonenumber"> 
                 <div class="phonenumber">
-                    <p><span><svg class="icon icon-banden" viewBox="0 0 31 32"><use xlink:href="#icon-banden"></use></svg></span> 0165 - 32 00 02</p>
+                    <p><span><svg class="icon icon-telefoon" viewBox="0 0 31 32"><use xlink:href="#icon-telefoon"></use></svg></span> 0165 - 32 00 02</p>
                 </div>
             </div>
         </section>
@@ -63,10 +63,21 @@
                 <?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
             </div>
 
+            <nav id="sub-menu"> 
+                <?php wp_nav_menu(array(
+                    'container'=> 'nav',
+                    'menu' => 'submenu',
+                    'container_class' =>'submenu',
+                    'menu_class' => '',
+                    'theme_location' => 'submenu',
+                    'items_wrap' => '<ul class="Navigation-submenu">%3$s</ul>',
+                    'walker' => new Slate_Walker_Nav_Menu()
+                )); ?>
+
+            </nav>
+
         </section>
 
-        <nav id="sub-menu"> 
-            <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-        </nav>
+
 
     </header>

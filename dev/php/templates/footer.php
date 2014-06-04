@@ -6,10 +6,14 @@
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
 			</div>
 			<?php endif; ?>
+
+	        <div class="logo">
+	            <a href="/"> <img src="/files/2014/05/logo-black.png" alt="logo tyrex banden"> </a>
+	        </div>
 		</section>
 		<section class="sub-footer">		
 			<!-- Copyright info -->
-			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?></p>
+			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website door <a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a> </p>
 		</section>
 	</footer>
 

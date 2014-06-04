@@ -38,14 +38,15 @@
 // -------------------------------------
 
 // ----- List item ----- //
+.Navigation .Navigation-listItem {
+  background-color: $c-white;
+  border-radius: 0 0 5px 5px;
+}
+
 
 .Navigation-listItem {
   display: inline-block;
   margin: 0 rem(15px);
-  background-color: $c-white;
- 
-  border-radius: 0 0 5px 5px;
-  
 
   &:first-of-type {
     margin-left: 0;
@@ -68,7 +69,7 @@
 
 // ----- Navigation link ----- //
 
-.Navigation-link {
+.Navigation .Navigation-link {
   text-transform: uppercase;
   display: inline-block;
   color: $c-black;
@@ -86,9 +87,11 @@
 // ----- Sub Menu ----- //
 #sub-menu {
   text-align: center;
+  background-color: $c-red;
 
-  #menu-topmenu-1 {
-    background-color: $c-red;
+  .Navigation-submenu {
+    padding: 10px 0;
+  }
 
     .menu-item {
       display: inline-block;
@@ -115,5 +118,4 @@
         height: 55px;
       }
     }
-  }
 }
