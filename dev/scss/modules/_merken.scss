@@ -1,0 +1,91 @@
+.merk-lijst {
+	@include clearfix;
+	margin-bottom: 35px;
+	padding-right: 15px;
+
+	.merk-lijst-titel {
+		@include span-columns(3);
+		margin-right: 0%;
+		width: 25%;
+		border: 1px solid grey;
+		margin-bottom: -1px;
+		padding-left: 8px;
+
+	}
+
+	a {
+		color: $c-black;
+	}
+}
+
+
+.merk {
+	@include span-columns(3);
+	background-color: $c-red;
+	border-radius: 5px;
+	padding: 9px;
+	text-align: center;
+	margin-right: 1.758%;
+	margin-bottom: 1.7%;
+
+	.info {
+		padding: 20px 0 12px;
+
+		a {
+			background-color: $c-white;
+			padding: 7px 15px;
+			border-radius: 6px;
+			color: $c-black;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+
+	.merk-afbeelding {
+		background-color: $c-white;
+		background-color: #FFF;
+		upadding: 10px 10px 2px;
+	}
+
+	.merk-titel {
+		text-align: left;
+
+
+		h2 {
+			font-size: 20px;
+		}
+	}
+
+	.merk-beschrijving {
+		background-color: white;
+		text-align: left;
+		padding: 7px;	
+		border-top: 5px solid $c-red;
+	}
+
+	.merk-afbeelding {
+		padding: 6px 10px 0px;
+	}
+}
+
+.merk-title {
+	background-color: $c-red;
+	position: relative;
+	margin-bottom: -21px;
+	border-radius: 5px 5px 0 0;
+	padding: 0 0 0 8px;
+
+	h3 {
+		font-size: 20px;
+		color: $c-white;
+	}
+
+
+
+	img {
+		float: left;
+		width: 170px;
+
+		background-color: $c-white;
+	}
+}

@@ -97,8 +97,27 @@
 			color: $c-black;
 			text-transform: uppercase;
 			font-weight: bold;
+			transition: color 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s, background 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s;
+			-moz-transition: color 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s, background 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s;
+			-webkit-transition: color 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s, background 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s;
+			-o-transition: color 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s, background 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s;
+			-ms-transition: color 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s, background 0s ease 0s, all 0.25s ease 0s, all 0s ease-in-out 0s;
+		}
+
+		a:hover {
+			background-color: #f3f3f3 !important;
+			text-decoration: none;
 		}
 	}	
+}
+
+.beschrijving {
+	@include span-columns(9);
+
+	h3 {
+		margin: 10px 0 -5px 0;
+	}
+	
 }
 
 
@@ -112,10 +131,39 @@
 	background-repeat: no-repeat;
 }
 
+
+.klasse-geluid {
+	position: relative;
+	p {
+		position: absolute;
+		top: 38px;
+		right: 16px;
+		font-weight: bold;
+		color: $c-white;
+	}
+}
+
+
+.klasse-geluid.soft { background: url("../img/labelsprite.png"); background-position: 192px 160px; }
+.klasse-geluid.medium { background: url("../img/labelsprite.png"); background-position: 129px 241px; }
+.klasse-geluid.loud { background: url("../img/labelsprite.png"); background-position: 192px 239px; }
+	
+.klasse-benzine.A { background: url("../img/labelsprite.png"); background-position: 76px 78px;  }
 .klasse-benzine.B { background: url("../img/labelsprite.png"); background-position: 139px 78px;  }
+.klasse-benzine.C { background: url("../img/labelsprite.png"); background-position: 202px 78px;  }
+.klasse-benzine.D { background: url("../img/labelsprite.png"); background-position: 265px 78px;  }
+.klasse-benzine.E { background: url("../img/labelsprite.png"); background-position: 319px 78px;  }
+.klasse-benzine.F { background: url("../img/labelsprite.png"); background-position: 382px 78px;  }
+.klasse-benzine.G { background: url("../img/labelsprite.png"); background-position: 445px 78px;  }
 
 
 .klasse-weer.A { background: url("../img/labelsprite.png"); background-position: 517px 78px;  }
+.klasse-weer.B { background: url("../img/labelsprite.png"); background-position: 66px 157px;  }
+.klasse-weer.C { background: url("../img/labelsprite.png"); background-position: 66px 237px;  }
+.klasse-weer.D { background: url("../img/labelsprite.png"); background-position: 62px -158px;  }
+.klasse-weer.E { background: url("../img/labelsprite.png"); background-position: 62px -79px;  }
+.klasse-weer.F { background: url("../img/labelsprite.png"); background-position: 62px 0px;  }
+.klasse-weer.G { background: url("../img/labelsprite.png"); background-position: 129px 160px;  }
 
 
 
@@ -152,3 +200,7 @@
 	left: 100%;
 	margin-left: 15px;
 }
+
+
+
+

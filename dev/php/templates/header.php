@@ -38,9 +38,14 @@
     
     <header id="header">
         <section id="phonenumber-container">
-            <div id="phonenumber"> 
+              <div id="phonenumber-social"> 
                 <div class="phonenumber">
-                    <p><span><svg class="icon icon-telefoon" viewBox="0 0 31 32"><use xlink:href="#icon-telefoon"></use></svg></span> 0165 - 32 00 02</p>
+                    <p><span><svg class="icon icon-telefoon" viewBox="0 0 32 32"><use xlink:href="#icon-telefoon"></use></svg></span> 0165 - 32 00 02</p>
+                </div>
+                <div class="social-media">
+                    <div class="fb"><a href="https://www.facebook.com/pages/Tyrex-Banden/124648897727405?fref=ts" target="_blank"><svg class="icon icon-facebook" viewBox="0 0 32 32"><use xlink:href="#icon-facebook"></use></svg></a></div>
+                    <div class="twitter"><a href="https://twitter.com/Tyrexbanden" target="_blank"><svg class="icon icon-twitter" viewBox="0 0 32 32"><use xlink:href="#icon-twitter"></use></svg></a></div>
+
                 </div>
             </div>
         </section>

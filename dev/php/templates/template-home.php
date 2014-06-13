@@ -68,13 +68,21 @@ Template Name: Home
 									<div class="klasse-weer <?php the_field('klasse_weer'); ?>">
 										
 									</div>
-									<div class="klasse-geluid">
-										<?php
-											if(get_field('klasse_geluid') > 10 )
-											{
-												echo '<p>' . get_field('klasse_geluid') . '</p>';
+									<div class="klasse-geluid
+										<?php $geluid = get_field('klasse_geluid');
+											if($geluid > 0 && $geluid < 33) {
+												echo 'soft';
+											} elseif($geluid >= 33 && $geluid < 66) {
+												echo 'medium';
+											} elseif($geluid >= 66) {
+												echo 'loud';
+											} else {// toon geen plaatje
+												echo '';
 											}
 										?>
+									">
+									
+										<p class="geluid"><?php the_field('klasse_geluid'); ?></p>
 
 									</div>
 								</div>
@@ -82,7 +90,7 @@ Template Name: Home
 						</div>
 
 						<div class="info">
-							<a href="#">Meer info</a>
+							<a href="<?php echo get_permalink(); ?>">Meer info</a>
 						</div>
 					</div>
 

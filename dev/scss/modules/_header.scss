@@ -23,10 +23,10 @@
 
   .logo {
     img {
-      margin: 18px 0px 15px;
+      margin: 23px 0px 15px;
       z-index: 10;
       position: relative;
-      width: 75%;
+      width: 50%;
     }
   }
 }
@@ -37,22 +37,40 @@
   background-color: $c-red;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.2);
 
-  #phonenumber {
+  #phonenumber-social {
     @include outer-container;
     padding-left: $l-insideGutter;
     padding-right: $l-insideGutter;
 
-    .phonenumber {      
+    .phonenumber {     
+      @include span-columns(6); 
+      float: right;
+
       p {
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: 800;
         color: $c-white;
         line-height: 0px;
         float: right;
-        margin: 12px 0;
+        margin: -5px 0 10px;
 
         svg {
           width: 25px;
+          fill: $c-white;
+          margin-top: 7px;
+          margin-bottom: -8px;
+        }
+      }
+    }
+
+    .social-media {
+      @include span-columns(4);
+
+      .twitter, .fb {
+        float: left;
+        margin: 1px 0 -2px 0;
+
+        svg {
           fill: $c-white;
         }
       }
@@ -62,8 +80,8 @@
 
 #logo-menu-container {
   background-color: $c-black;
-  background: url("../img/header.svg");
-  background-size: 100% 235px;
+  background: url("../img/header2.svg");
+  background-size: 100% 190px;
   height: 400px;
   position: relative;
   z-index: 1;
@@ -83,18 +101,30 @@
 
       .Navigation-list {
         float: right;
-        margin: 0px;
+        margin: -10px 0 0 0;
+        height: 110%;
       }
     }
   }
 }
 
-#slider-container {
+
+.home #logo-menu-container {
+  background-color: $c-black;
+  background: url("../img/header.svg");
+  background-size: 100% 190px;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat; 
+}
+
+.home #slider-container {
   margin: 0 auto;
   width: 100%;
 
   #slider {
-    margin: -234px 0 -7px 0;
+    margin: -270px 0 -7px 0;
     background-color: $c-black;
 
     a {
@@ -109,4 +139,20 @@
       }
     }
   }
+}
+
+#slider-container {
+  margin-top: -15px;
+}
+
+#logo-menu-container {
+  height: 135px;
+}
+
+#slider {
+  display: none;
+}
+
+.home #slider {
+  display: block;
 }

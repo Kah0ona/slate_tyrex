@@ -72,9 +72,13 @@
 #content {
   @include outer-container;
   max-width: 61.25rem;
-  margin: 0 auto;
+  margin: 35px auto 0;
   min-height: 200px;
   overflow: hidden;
+
+  h2 {
+
+  }
 }
 
 
