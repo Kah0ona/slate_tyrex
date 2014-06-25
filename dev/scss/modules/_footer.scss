@@ -1,10 +1,11 @@
 footer {
   background-image: url("../img/footer.svg");
-  background-size: 100% 475px;
-  background-position: top center;
-  height: 365px;
-  padding: 160px 0 0 0;
+  background-size: 100% 275px;
+  background-position: 0px -35px;
+  padding: 90px 0 0 0;
   color: $c-white;
+  background-repeat: no-repeat;
+  margin-top: 30px;
 
   a {
     color: $c-white;
@@ -16,15 +17,20 @@ footer {
     margin: 0 auto;
     position: relative;
 
+    p, .widget a {
+      font-size: 13px;
+      line-height: 22px;
+    }
+
 
     .logo {
- 	  background-color: $c-white;
-	  border-radius: 5px;
-	  position: absolute;
-	  top: -150px;
-	  right: 0px;
-	  max-width: 14.38rem;
-	  padding: 70px 10px 10px;
+   	  background-color: $c-white;
+  	  border-radius: 5px;
+  	  position: absolute;
+  	  top: -105px;
+  	  right: 0px;
+  	  max-width: 14.38rem;
+  	  padding: 30px 10px 10px;
     }
 
     .widget {
@@ -41,12 +47,20 @@ footer {
   }
 
   .sub-footer {
-    max-width: 61.25rem;
+    width: 100%;
     margin: 0 auto;
-    display: block;
+    display: inline-block;
+    background-color: $c-red;
+    padding: 0 25px;
+    margin-top: 2px;
 
     a {
-      color: $c-red;
+      color: $c-black;
+    }
+
+    p {
+      margin: 4px 0px;
+      font-size: 14px;
     }
   }
 }

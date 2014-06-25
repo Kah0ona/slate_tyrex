@@ -16,7 +16,7 @@
 			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website door <a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a> </p>
 		</section>
 	</footer>
-
+</div>
 
 	
   <!-- Load jquery from google CDN if possible, with fallback to local version -->
