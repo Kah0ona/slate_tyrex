@@ -4,26 +4,29 @@
 	padding-right: 15px;
 
 	.merk-lijst-titel {
-		@include span-columns(3);
-		margin-right: 0%;
 		width: 25%;
-		border: 1px solid grey;
-		margin-bottom: -1px;
-		padding-left: 8px;
-
+		padding: 4px 10px;
+		border: 1px solid #aaa;
 	}
+
+	table {
+		width: 100%;
+	}
+
 
 	a {
 		color: $c-black;
+		font-size: 90%;
 	}
 }
 
 
 .merk {
-	@include span-columns(3);
-	background-color: $c-red;
+	width: 31.3%;
+	float: left;
+	border: 1px solid #aaaaaa;
 	border-radius: 5px;
-	padding: 6px;
+	padding: 1px;
 	text-align: center;
 	margin-right: 1.758%;
 	margin-bottom: 1.7%;
@@ -42,9 +45,8 @@
 	}
 
 	.merk-afbeelding {
-		background-color: $c-white;
 		background-color: #FFF;
-		upadding: 10px 10px 2px;
+		padding: 10px 10px 2px;
 	}
 
 	.merk-titel {
@@ -56,28 +58,32 @@
 		}
 	}
 
-	.merk-beschrijving {
+
+	.merk-beschrijving-short {
+		min-height: 155px;
+	}
+
+
+	.merk-beschrijving-long, .merk-beschrijving-short {
 		background-color: white;
 		text-align: left;
 		padding: 7px;	
-		border-top: 5px solid $c-red;
+		border-top: 1px solid #aaaaaa;
 	}
 
 	.merk-afbeelding {
-		padding: 6px 10px 0px;
+		padding: 6px 10px 6px;
+		border-radius: 3px 3px 0 0 ;
 	}
 }
 
 .merk-title {
-	background-color: $c-red;
 	position: relative;
-	margin-bottom: -21px;
-	border-radius: 5px 5px 0 0;
-	padding: 0 0 0 8px;
 
 	h3 {
 		font-size: 20px;
-		color: $c-white;
+		color: $c-black;
+		margin: 0 0 4px;;
 	}
 
 

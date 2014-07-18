@@ -69,9 +69,7 @@ Template Name: autoband merken
 												<?php echo substr(get_field('merk_beschrijving'), 0, 90).'...';  ?></p>
 											</div>
 
-											<div class="info">
-												<a href="<?php echo get_permalink(); ?>">Meer info</a>
-											</div>							
+						
 										</div>
 									<?php
 								}
@@ -83,6 +81,5 @@ Template Name: autoband merken
 					</div>
 				</div>	
 		</section>
-	<?php get_sidebar(); ?>
 
 	<?php get_footer(); ?>

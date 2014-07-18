@@ -1,0 +1,60 @@
+#sidebar {
+	margin-top: 4px;
+
+	li {
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		margin: 0 0 20px 0;
+
+		h3 {
+			text-align: center;
+			margin: 0 0 3px 0;
+			font-size: 0.9rem;
+			font-size: 1.4rem;
+			font-weight: 800;
+		}
+
+		.textwidget, .menu-item {
+			background-color: $c-white;
+			padding: 0 10px;
+			border-radius: 0px;
+
+
+			a {
+				color: $c-black;
+			}
+
+			a:hover {
+				opacity: 0.8;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	#menu-autobanden-menu {
+		li {
+			border-bottom: 1px solid #ccc;
+			border-left: none;
+			border-top: none;
+			border-right: none;
+			margin: 0 10px;
+		}
+
+		li:nth-last-child(-n+1) {
+			border: none;
+		}
+	}
+
+}
+
+nav_menu-3 {
+	padding: 10px;
+
+	h3 {
+		margin-bottom: 5px;
+	}
+}
+
+.page-id-12 #text-5 {
+	display: none;
+}

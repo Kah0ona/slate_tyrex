@@ -11,31 +11,52 @@ $("header #menu-item-79 a").prepend('<svg class="icon icon-acties" viewBox="0 0 
 $("header #menu-item-80 a").prepend('<svg class="icon icon-bandenhotel" viewBox="0 0 31 32"><use xlink:href="#icon-bandenhotel"></use></svg>');
 $("header #menu-item-115 a").prepend('<svg class="icon icon-mail" viewBox="0 0 31 32"><use xlink:href="#icon-mail"></use></svg>');
 
+$(".merk-beschrijving-long").hide();
+
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
 
+        $(".merk").css('border-color','#aaa');
+        $(".merk-beschrijving-long").hide();
+        $(".merk-beschrijving-short").show();
+           
+        var href = $(this).attr('href');
+
+        console.log(href);
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-         console.log(target);
+        // console.log(target);
 
            if (target.length) {
+            $(href).css('border-color','black');
+            $(href).find(".merk-beschrijving-long").show();
+            $(href).find(".merk-beschrijving-short").hide();
+
+        
              $('html,body').animate({
                  scrollTop: target.offset().top
             }, 750);
             return false;
-
-
         }
     }
+});
+
+
+$('.home .band').mouseenter(function(){
+    $(this).animate({ marginTop: "-10px" }, 200);
+});
+
+$('.home .band').mouseleave(function(){
+    $(this).animate({ marginTop: "0px" }, 200);
 });
 
 
 $('#logo-menu-container .menu-item').mouseenter(function(){
     $(this).animate({ opacity: "0.7" }, 200);
     $(this).animate({ top: "10px" }, 200);
-    $("#logo-menu-container .menu-item icon").animate({ fill: "black"}, 200);
 });
+
  
 $('#logo-menu-container .menu-item').mouseleave(function(){
     $(this).animate({ opacity: "1.0" }, 200);

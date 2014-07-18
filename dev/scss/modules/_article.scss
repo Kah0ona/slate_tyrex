@@ -56,6 +56,8 @@
 
 // ----- Title ----- //
 
+
+
 .Article-heading {
   text-transform: uppercase;
   margin: 0;
@@ -72,14 +74,23 @@
 #content {
   @include outer-container;
   max-width: 61.25rem;
-  margin: 35px auto 0;
+  margin: -10px auto 0;
   min-height: 200px;
   overflow: hidden;
   padding: 0 25px;
 
-  h2 {
-
+  p {
+    font-size: 80%;
   }
+
+  a {
+    font-size: 80%;
+  }
+
+}
+
+.home #content {
+  margin: 35px auto 0;
 }
 
 
@@ -88,9 +99,6 @@
   @include span-columns(8);
 }
 
-#sidebar {
-  
-}
 
 .rightsidebar {
   @include span-columns(4);
@@ -100,7 +108,12 @@
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  box-shadow: 0px 0px 2px 2px #DCDCDC;
+  box-shadow: 0px 0px 6px 3px #000;
   margin-bottom: 10px;
+  background-color: $c-white;
 }
 
+
+select {
+  color: $c-black;
+}

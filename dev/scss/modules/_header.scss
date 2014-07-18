@@ -1,3 +1,9 @@
+body {
+  background: url('http://subtlepatterns.com/patterns/zwartevilt.png') repeat scroll 0% 0% transparent;
+}
+
+
+
 // *************************************
 //
 // Header
@@ -82,7 +88,7 @@
   background-color: $c-black;
   background: url("../img/header2.svg");
   background-size: 100% 190px;
-  height: 400px;
+  height: 305px;
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
@@ -94,6 +100,7 @@
 
     .logo {
       @include span-columns(6);
+      height: 110px;
     }
 
     nav {
@@ -110,12 +117,10 @@
 
 .home #logo-menu-container {
   background-color: $c-black;
-  background: url("../img/header.svg");
-  background-size: 100% 190px;
-  height: 330px;
+  background: url('../img/header.svg') no-repeat scroll 1% 0% / 105% 190px transparent;
+  height: 305px;
   position: relative;
   z-index: 1;
-  background-repeat: no-repeat; 
   margin-bottom: 66px;
 }
 

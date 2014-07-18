@@ -1,8 +1,7 @@
 .band {
 	@include span-columns(3);
-	background-color: $c-red;
+	border: 2px solid $c-red;
 	border-radius: 5px;
-	padding: 6px;
 	text-align: center;
 
 	p {
@@ -15,9 +14,11 @@
 		margin: 0px;
 		text-transform: uppercase;
 		font-size: 1rem;
+		background-color: $c-red;
 
 		color: $c-white;
-		margin: 4px 0;
+		margin: 0;
+		padding: 3px 0;
 	}
 
 	h4 {
@@ -54,7 +55,7 @@
 			background-position: center center;
 			background-repeat: no-repeat;
 			background-size: 50%;
-			padding: 25px 0px 21px;
+			padding: 42px 0px 36px;
 
 			p {
 				color: $c-white;
@@ -81,7 +82,8 @@
 			padding-right: $l-insideGutter;
 
 			div {
-				@include span-columns(4);
+				width: 31.232%;
+				float: left;
 				min-height: 68px;
 			}
 		}
@@ -89,6 +91,7 @@
 
 	.info {
 		padding: 20px 0 12px;
+		background-color: $c-red;
 
 		a {
 			background-color: $c-white;
@@ -136,7 +139,7 @@
 	position: relative;
 	p {
 		position: absolute;
-		top: 38px;
+		top: 40px;
 		right: 16px;
 		font-weight: bold;
 		color: $c-white;
@@ -174,6 +177,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.8rem;
+	margin-bottom: 40px;
 }
 
 .line span {
@@ -200,7 +204,3 @@
 	left: 100%;
 	margin-left: 15px;
 }
-
-
-
-
