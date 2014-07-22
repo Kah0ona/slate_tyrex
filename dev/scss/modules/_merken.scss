@@ -19,9 +19,22 @@
 		font-size: 90%;
 	}
 }
+.merk-lijst-beschrijvingen {
+	display: none; /*jquery zet dit weer aan zie bandenscript.js */
+}
+
+.banden_featured_placeholder {
+
+}
 
 
 .merk {
+	transition-duration: .3s;
+	&:hover {
+		opacity: 0.8;
+		border-color: #000;
+	}
+	cursor: pointer;
 	width: 31.3%;
 	float: left;
 	border: 1px solid #aaaaaa;
@@ -30,7 +43,18 @@
 	text-align: center;
 	margin-right: 1.758%;
 	margin-bottom: 1.7%;
+	background-image: url('../img/footer.svg');
+	background-position: 0px 73px;
+	background-size: 100%;
+	background-repeat: no-repeat;
 
+	box-shadow: 3px 3px 5px #ccc;
+
+	&.featured {
+		width: 100%;
+		float: none;
+		background-image: none;
+	}
 	.info {
 		padding: 20px 0 12px;
 
@@ -43,6 +67,7 @@
 			font-weight: bold;
 		}
 	}
+
 
 	.merk-afbeelding {
 		background-color: #FFF;
@@ -65,6 +90,7 @@
 
 
 	.merk-beschrijving-long, .merk-beschrijving-short {
+		display: none;
 		background-color: white;
 		text-align: left;
 		padding: 7px;	
@@ -76,12 +102,15 @@
 		border-radius: 3px 3px 0 0 ;
 	}
 }
-
 .merk-title {
 	position: relative;
-
+	display: inline-block;
+	border-radius: 6px;
+	background-color: white;
+	padding: 0px 10px;
+	margin-bottom: 5px;
 	h3 {
-		font-size: 20px;
+		font-size: 16px;
 		color: $c-black;
 		margin: 0 0 4px;;
 	}

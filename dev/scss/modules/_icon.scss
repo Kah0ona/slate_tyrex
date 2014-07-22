@@ -22,9 +22,12 @@
   width: 1em;
   vertical-align: middle;
   padding-bottom: 0.2em;
+  fill: $c-red;
 }
 
-.Icon--alone {}
+.Icon--inverted{
+	fill: $c-white;
+}
 
 // -------------------------------------
 // States

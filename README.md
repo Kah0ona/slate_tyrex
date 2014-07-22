@@ -1,9 +1,10 @@
-Slate
+Slate (Tyrexbanden.nl child)
 =====
 
-A basic wordpress framework with some useful opinionated defaults.
+Slate is a framework for Wordpress child theme development.
 
-**Wiki table of contents**
+1. Dependencies
+---------------
 
 1. [Getting Started](https://github.com/Kah0ona/slate/wiki/1.-getting-started)
 2. [Workflow](https://github.com/Kah0ona/slate/wiki/2.-workflow)

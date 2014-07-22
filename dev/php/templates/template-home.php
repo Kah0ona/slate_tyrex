@@ -11,7 +11,8 @@ Template Name: Home
 
 			<?php
 				$args = array(
-					'post_type' => 'band',
+					'post_type' => 'band', 
+					'posts_per_page'=>4
 				);
 				$aanbiedingen = new WP_Query( $args );
 				if( $aanbiedingen->have_posts() ) {

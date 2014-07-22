@@ -33,7 +33,7 @@
   }
 
   .Article-content {
-    color: shade($c-blue, 50%);
+    color: shade($c-red, 50%);
     font-weight: bold;  
   }
 }
@@ -72,26 +72,15 @@
 
 // ----- Content ----- //
 #content {
-  @include outer-container;
-  max-width: 61.25rem;
-  margin: -10px auto 0;
+  //@include outer-container;
+  margin: -10px 20px 0;
   min-height: 200px;
   overflow: hidden;
   padding: 0 25px;
 
-  p {
-    font-size: 80%;
-  }
-
-  a {
-    font-size: 80%;
-  }
-
+ 
 }
 
-.home #content {
-  margin: 35px auto 0;
-}
 
 
 // ----- sidebar + Content ----- //

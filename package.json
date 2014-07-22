@@ -26,6 +26,7 @@
     "grunt-prompt": "^1.1.0",
     "load-grunt-config": "^0.8.0-beta.1",
     "load-grunt-tasks": "^0.4.0",
-    "optipng": "0.0.5"
+    "optipng": "0.0.5",
+    "grunt-rsync-2": "^0.1.3"
   }
 }

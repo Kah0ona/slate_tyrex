@@ -119,6 +119,6 @@ Template Name: autoband merken w/ sidebar on right
 
 		<section id="sidebar" class="rightsidebar">
 			<?php get_sidebar(); ?>
-		</section>
+		</section> 
 	</section>
 	<?php get_footer(); ?>

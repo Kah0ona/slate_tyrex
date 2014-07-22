@@ -6,53 +6,121 @@ Template Name: autoband merken
 <div class="container">
 	<?php get_header(); ?>
 		<section id="content"> 	
-			  <h2> Autobanden </h2>
+		  <h2> Autobanden </h2>
 
-				<div class="merk-lijst">
+		  <div class="u-gridRow">
+			  <div class="merk-lijst u-gridCol6">
 					<div class="merk-lijst-container">
 						<div class="merk-title"> 
 							<h3>Autobanden merken</h3>
 						</div>
+
+						<table class="merken-tabel">
 						<?php
 							$args = array(
 								'post_type' => 'merk',
+								'nopaging' => true
 							);
 							$aanbiedingen = new WP_Query( $args );
 							if( $aanbiedingen->have_posts() ) {
+								$counter = 1;
+
 								while( $aanbiedingen->have_posts() ) {
+									$numColumns = 2;
+									if($counter % $numColumns == 1) {
+										echo '<tr>';
+									}	
+
 									$aanbiedingen->the_post();
 									?>
 
-
-											<div class="merk-lijst-titel">
-												<a href="#<?php the_ID(); ?>"><?php the_title(); ?></a>
-											</div>
+											<td class="merk-lijst-titel">
+												<a href="#" data-target="merk_<?php the_ID(); ?>"><?php the_title(); ?></a>
+											</td>
 
 									<?php
+
+									if($counter % $numColumns == 0) {
+										echo '</tr>';
+									}
+
+									$counter++;
 								}
 							}
 							else {
-								echo '<p>Er zijn momenteel geen aanbiedingen</p>';
+								echo '<p>Er zijn momenteel geen merken</p>';
 							}
 						?>
+						</table>
 					</div>
-				</div>
+			  </div>
+			  <div class="merk-lijst u-gridCol6">
+					<div class="merk-lijst-container">
+						<div class="merk-title"> 
+							<h3>Autobanden soorten</h3>
+						</div>
 
-
-				<div class="merk-lijst-beschrijvingen">
-					<div class="merk-container">
+						<table class="soorten-tabel">
 						<?php
 							$args = array(
-								'post_type' => 'merk',
+								'post_type' => 'bandensoort',
+								'nopaging' => true
 							);
 							$aanbiedingen = new WP_Query( $args );
 							if( $aanbiedingen->have_posts() ) {
+								$counter = 1;
+
 								while( $aanbiedingen->have_posts() ) {
+									$numColumns = 2;
+									if($counter % $numColumns == 1) {
+										echo '<tr>';
+									}	
+
 									$aanbiedingen->the_post();
 									?>
-									
 
-										<div class="merk" id="<?php the_ID(); ?>">
+										<td class="merk-lijst-titel">
+											<a href="#" data-target="soort_<?php the_ID(); ?>"><?php the_title(); ?></a>
+										</td>
+
+									<?php
+
+									if($counter % $numColumns == 0) {
+										echo '</tr>';
+									}
+
+									$counter++;
+								}
+							}
+							else {
+								echo '<p>Er zijn momenteel geen bandensoorten</p>';
+							}
+						?>
+						</table>
+					</div>
+				</div>
+			</div> <!-- /row-->
+			
+			<div class="banden_featured_placeholder"></div>
+
+			<div class="merk-lijst-beschrijvingen bandenmerken">
+				<div class="merk-container">
+					<?php
+						$args = array(
+							'post_type' => 'merk',
+							'nopaging' => true
+						);
+						$aanbiedingen = new WP_Query( $args );
+						if( $aanbiedingen->have_posts() ) {
+							$counter = 1;
+							while( $aanbiedingen->have_posts() ) {
+
+								$aanbiedingen->the_post();
+								$numColumns = 3;
+								if($counter % $numColumns == 1) {
+									echo '<div class="u-gridRow">';
+								}	?>
+										<div class="merk merk_<?php the_ID(); ?>" >
 											<div class="merk-afbeelding">
 												<?php 
 												 
@@ -64,22 +132,91 @@ Template Name: autoband merken
 												 
 												<?php endif; ?>	
 											</div>
-
-											<div class="merk-beschrijving">
-												<?php echo substr(get_field('merk_beschrijving'), 0, 90).'...';  ?></p>
+											<div class="merk-title">
+												<h3><?php the_title(); ?></h3>
+											</div>
+											<div class="merk-beschrijving-short">
+												<p><?php echo substr(get_field('merk_beschrijving'), 0, 95).'...';  ?></p>
 											</div>
 
-						
+											<div class="merk-beschrijving-long">
+												<p><?php echo get_field('merk_beschrijving');  ?></p>
+											</div>
 										</div>
-									<?php
-								}
+
+								<?php
+									if($counter % $numColumns == 0) {
+										echo '</div>';
+									}
+
+									$counter++;
 							}
-							else {
-								echo '<p>Er zijn momenteel geen bandmerken</p>';
+						}
+						else {
+							echo '<p>Er zijn momenteel geen bandmerken</p>';
+						}
+					?>
+				</div>
+			</div>	
+			</div>
+			<div class="merk-lijst-beschrijvingen bandensoorten">
+				<div class="merk-container">
+					<?php
+						$args = array(
+							'post_type' => 'bandensoort',
+							'nopaging' => true
+						);
+						$aanbiedingen = new WP_Query( $args );
+						if( $aanbiedingen->have_posts() ) {
+							$counter = 1;
+							while( $aanbiedingen->have_posts() ) {
+
+								$aanbiedingen->the_post();
+								$numColumns = 3;
+								if($counter % $numColumns == 1) {
+									echo '<div class="u-gridRow">';
+								}	?>
+										<div class="merk soort_<?php the_ID(); ?>" >
+											<div class="merk-afbeelding">
+												<?php 
+												 
+												$image = get_field('merk_afbeelding');
+												 
+												if( !empty($image) ): ?>
+												 
+													<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+												 
+												<?php endif; ?>	
+											</div>
+											<div class="merk-title">
+												<h3><?php the_title(); ?></h3>
+											</div>
+											<div class="merk-beschrijving-short">
+												<p><?php echo substr(get_field('merk_beschrijving'), 0, 95).'...';  ?></p>
+											</div>
+
+											<div class="merk-beschrijving-long">
+												<p><?php echo get_field('merk_beschrijving');  ?></p>
+											</div>
+										</div>
+
+								<?php
+									if($counter % $numColumns == 0) {
+										echo '</div>';
+									}
+
+									$counter++;
 							}
-						?>
-					</div>
-				</div>	
+						}
+						else {
+							echo '<p>Er zijn momenteel geen bandmerken</p>';
+						}
+					?>
+				</div>
+			</div>	
+
+
+
 		</section>
 
 	<?php get_footer(); ?>
