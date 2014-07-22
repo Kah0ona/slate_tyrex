@@ -80,9 +80,13 @@
                 )); ?>
 
             </nav>
-
         </section>
-
-
-
     </header>
+
+    <div id="social-media">
+        <ul>
+            <a href="https://www.facebook.com/pages/Tyrex-Banden/124648897727405?fref=ts" target="_blank"> <li> <svg class="icon icon-facebook" viewBox="0 0 32 32"><use xlink:href="#icon-facebook"></use></svg></li></a>
+            <a href="https://twitter.com/Tyrexbanden" target="_blank"><li><svg class="icon icon-twitter" viewBox="0 0 32 32"><use xlink:href="#icon-twitter"></use></svg></li></a>
+            <a href="https://twitter.com/Tyrexbanden" target="_blank"><li><svg class="icon icon-mail" viewBox="0 0 32 32"><use xlink:href="#icon-mail"></use></svg></li></a>
+        </ul>
+    </div>
