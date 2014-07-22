@@ -11,14 +11,14 @@ module.exports = {
     tasks: [
       'sass:expanded',
       'autoprefixer:expanded',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   js: {
     files: ['lib/js/**/*.js', 'dev/js/*.js'],
     tasks: [
       'concat:all',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   php: {
@@ -27,7 +27,7 @@ module.exports = {
       'newer:copy:php_child',
       'delete_sync:php_templates',
       'delete_sync:php_includes',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   css: {
@@ -42,7 +42,7 @@ module.exports = {
     tasks: [
       'newer:imagemin:all',
       'delete_sync:img',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
 

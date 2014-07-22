@@ -1,1 +1,66 @@
+footer {
+  background-image: url("../img/footer.svg");
+  background-size: 101% 275px;
+  background-position: -1px -35px;
+  padding: 90px 0 0 0;
+  color: $c-white;
+  background-repeat: no-repeat;
+  margin-top: 30px;
 
+  a {
+    color: $c-white;
+  }
+
+
+  .footer-container {
+    max-width: 61.25rem;
+    margin: 0 auto;
+    position: relative;
+
+    p, .widget a {
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+
+    .logo {
+   	  background-color: $c-white;
+  	  border-radius: 5px;
+  	  position: absolute;
+  	  top: -105px;
+  	  right: 0px;
+  	  max-width: 14.38rem;
+  	  padding: 30px 10px 10px;
+    }
+
+    .widget {
+      @include span-columns(3);
+
+      h4 {
+        margin: 0px;
+      }
+
+      .textwidget, .menu-topmenu-container {
+        margin: -15px 0 0 5px;
+      }
+    }
+  }
+
+  .sub-footer {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: $c-red;
+    padding: 0 25px;
+    margin-top: 2px;
+
+    a {
+      color: $c-black;
+    }
+
+    p {
+      margin: 4px 0px;
+      font-size: 14px;
+    }
+  }
+}
