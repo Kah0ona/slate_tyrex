@@ -8,94 +8,112 @@ Template Name: autoband merken
 		<section id="content"> 	
 		  <h2> Autobanden </h2>
 
+		<div class="editor-content">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<div>
+						<?php the_content(); ?>
+					</div>
+				</article>
+
+			<?php endwhile; else: ?>
+
+			<?php endif; ?>
+		</div>
+
 		  <div class="u-gridRow">
 			  <div class="merk-lijst u-gridCol6">
 					<div class="merk-lijst-container">
-						<div class="merk-title"> 
-							<h3>Autobanden merken</h3>
-						</div>
-
 						<table class="merken-tabel">
-						<?php
-							$args = array(
-								'post_type' => 'merk',
-								'nopaging' => true
-							);
-							$aanbiedingen = new WP_Query( $args );
-							if( $aanbiedingen->have_posts() ) {
-								$counter = 1;
+							<thead>
+								<tr>
+									<th colspan="2"><h3>Autobanden merken</h3></th>
+								</tr>
+							</thead>
+							<?php
+								$args = array(
+									'post_type' => 'merk',
+									'nopaging' => true
+								);
+								$aanbiedingen = new WP_Query( $args );
+								if( $aanbiedingen->have_posts() ) {
+									$counter = 1;
 
-								while( $aanbiedingen->have_posts() ) {
-									$numColumns = 2;
-									if($counter % $numColumns == 1) {
-										echo '<tr>';
-									}	
+									while( $aanbiedingen->have_posts() ) {
+										$numColumns = 2;
+										if($counter % $numColumns == 1) {
+											echo '<tr>';
+										}	
 
-									$aanbiedingen->the_post();
-									?>
+										$aanbiedingen->the_post();
+										?>
 
-											<td class="merk-lijst-titel">
-												<a href="#" data-target="merk_<?php the_ID(); ?>"><?php the_title(); ?></a>
-											</td>
+												<td class="merk-lijst-titel">
+													<a href="#" data-target="merk_<?php the_ID(); ?>"><?php the_title(); ?></a>
+												</td>
 
-									<?php
+										<?php
 
-									if($counter % $numColumns == 0) {
-										echo '</tr>';
+										if($counter % $numColumns == 0) {
+											echo '</tr>';
+										}
+
+										$counter++;
 									}
-
-									$counter++;
 								}
-							}
-							else {
-								echo '<p>Er zijn momenteel geen merken</p>';
-							}
-						?>
+								else {
+									echo '<p>Er zijn momenteel geen merken</p>';
+								}
+							?>
 						</table>
 					</div>
 			  </div>
 			  <div class="merk-lijst u-gridCol6">
 					<div class="merk-lijst-container">
-						<div class="merk-title"> 
-							<h3>Autobanden soorten</h3>
-						</div>
+	
 
 						<table class="soorten-tabel">
-						<?php
-							$args = array(
-								'post_type' => 'bandensoort',
-								'nopaging' => true
-							);
-							$aanbiedingen = new WP_Query( $args );
-							if( $aanbiedingen->have_posts() ) {
-								$counter = 1;
+							<thead>
+								<tr>
+									<th colspan="2"><h3>Autobanden soorten</h3></th>
+								</tr>
+							</thead>
+							<?php
+								$args = array(
+									'post_type' => 'bandensoort',
+									'nopaging' => true
+								);
+								$aanbiedingen = new WP_Query( $args );
+								if( $aanbiedingen->have_posts() ) {
+									$counter = 1;
 
-								while( $aanbiedingen->have_posts() ) {
-									$numColumns = 2;
-									if($counter % $numColumns == 1) {
-										echo '<tr>';
-									}	
+									while( $aanbiedingen->have_posts() ) {
+										$numColumns = 2;
+										if($counter % $numColumns == 1) {
+											echo '<tr>';
+										}	
 
-									$aanbiedingen->the_post();
-									?>
+										$aanbiedingen->the_post();
+										?>
 
-										<td class="merk-lijst-titel">
-											<a href="#" data-target="soort_<?php the_ID(); ?>"><?php the_title(); ?></a>
-										</td>
+											<td class="merk-lijst-titel">
+												<a href="#" data-target="soort_<?php the_ID(); ?>"><?php the_title(); ?></a>
+											</td>
 
-									<?php
+										<?php
 
-									if($counter % $numColumns == 0) {
-										echo '</tr>';
+										if($counter % $numColumns == 0) {
+											echo '</tr>';
+										}
+
+										$counter++;
 									}
-
-									$counter++;
 								}
-							}
-							else {
-								echo '<p>Er zijn momenteel geen bandensoorten</p>';
-							}
-						?>
+								else {
+									echo '<p>Er zijn momenteel geen bandensoorten</p>';
+								}
+							?>
 						</table>
 					</div>
 				</div>
@@ -122,6 +140,7 @@ Template Name: autoband merken
 								}	?>
 										<div class="merk merk_<?php the_ID(); ?>" >
 											<div class="merk-afbeelding">
+												
 												<?php 
 												 
 												$image = get_field('merk_afbeelding');

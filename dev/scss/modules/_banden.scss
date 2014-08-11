@@ -126,6 +126,12 @@
 
 
 
+.single-band {
+	#content {
+		padding-top: 35px;
+	}
+}
+
 
 // -------------------------------------
 // Background images klasses
@@ -173,11 +179,12 @@
 
 
 .line {
-	line-height: 0.5;
+	line-height: 0.8;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	margin-bottom: 40px;
+	margin-top: 55px;
 }
 
 .line span {
@@ -190,7 +197,7 @@
 	content: "";
 	position: absolute;
 	height: 8px;
-	border-bottom: 2px solid $c-black;
+	border-bottom: 1px solid #ccc;
 	top: 0;
 	width: 600px;
 }

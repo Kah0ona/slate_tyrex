@@ -65,10 +65,10 @@ $('#logo-menu-container .menu-item').mouseleave(function(){
  
 $('#logo-menu-container .menu-item.is-active').css('top','10px');
 
-$('.icon-twitter, .icon-facebook').mouseenter(function(){
+$('.icon-twitter, .icon-facebook, .icon-mail').mouseenter(function(){
     $(this).animate({ opacity: "0.7" }, 200);
 });
 
-$('.icon-twitter, .icon-facebook').mouseleave(function(){
+$('.icon-twitter, .icon-facebook, .icon-mail').mouseleave(function(){
     $(this).animate({ opacity: "1.0" }, 200); 
 });

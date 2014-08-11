@@ -6,7 +6,12 @@
 	.merk-lijst-titel {
 		width: 25%;
 		padding: 4px 10px;
-		border: 1px solid #aaa;
+		border-top: 1px solid #AAA;
+		border-right: 1px solid #AAA;
+	}
+
+	.merk-lijst-titel:nth-child(2n) {
+		border-right: none;
 	}
 
 	table {
@@ -23,10 +28,35 @@
 	display: none; /*jquery zet dit weer aan zie bandenscript.js */
 }
 
-.banden_featured_placeholder {
+.bandensoorten {
+	.merk {
+		background-image: url('../img/footer.svg');
+		background-position: 0px 269px;
+		background-size: 100% auto;
+		position: relative;
+		min-height: 333px;
 
+		img {
+			max-height: 255px;
+		}
+	}
+
+	.merk-title {
+		margin: 13px 0px 10px;	
+	}
+
+	.merk-afbeelding {
+		min-height: 270px;
+	}
+
+	
 }
 
+.banden_featured_placeholder {
+	.featured img {
+		max-height: 200px;
+	}
+}
 
 .merk {
 	transition-duration: .3s;
@@ -34,6 +64,7 @@
 		opacity: 0.8;
 		border-color: #000;
 	}
+
 	cursor: pointer;
 	width: 31.3%;
 	float: left;
@@ -103,17 +134,19 @@
 	}
 }
 .merk-title {
-	position: relative;
-	display: inline-block;
-	border-radius: 6px;
-	background-color: white;
-	padding: 0px 10px;
 	margin-bottom: 5px;
 	h3 {
 		font-size: 16px;
 		color: $c-black;
-		margin: 0 0 4px;;
+		margin: 10px 0 4px;
+		position: relative;
+		display: inline-block;
+		border-radius: 6px;
+		background-color: white;
+		padding: 0px 10px;
 	}
+
+
 
 
 
@@ -123,4 +156,54 @@
 
 		background-color: $c-white;
 	}
+}
+
+table {
+	border: 1px solid #AAA;
+    border-collapse: separate;
+    border-spacing: 0;
+	border-radius: 5px;
+
+	.ta-center {
+		text-align: center;
+	}
+
+	h4 {
+		font-size: 1.3rem;
+		margin-top: 5px;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+.page-id-16 {
+	.merk-lijst-titel {
+		border-right: none;
+	}
+}
+
+thead tr, tfoot td {
+	background-image: url('../img/header.svg');
+	background-repeat: no-repeat;
+	background-size: 141% 91px;
+	background-position: 0px -36px;
+
+	h3 {
+		border-radius: 6px;
+		background-color: #FFF;
+		padding: 6px 10px;
+		display: inline-block;
+		font-size: 16px;
+		color: #020202;
+		margin: 10px 0px 9px;
+	}
+}
+
+
+
+tfoot td {
+	background-image: url('../img/header.svg');
+	height: 25px;
 }

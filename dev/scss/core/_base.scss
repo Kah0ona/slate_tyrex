@@ -85,6 +85,26 @@ small {
   font-size: 75%;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
+
+
+#content {
+  ul {
+    padding-left: 20px;
+    padding-top: 0px;
+    line-height: 22px;
+ 
+  }
+
+  li {
+    list-style-type: disc;
+    font-size: 1rem;  
+  }
+}
+
 // -------------------------------------
 // Inline Block Content
 // -------------------------------------

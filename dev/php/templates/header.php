@@ -30,6 +30,16 @@
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/standalone/modernizr.js"></script>
 
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='//v2.zopim.com/?2I8ay3vxgR5f7cm5pBFdxD8qCI5woNMd';z.t=+new Date;$.
+        type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+    </script>
+    <!--End of Zopim Live Chat Script-->
+    
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
 
@@ -53,9 +63,10 @@
         <section id="logo-menu-container">
             <div id="logo-menu">
                 <div class="logo">
-                    <a href="/"> <img src="/files/2014/05/logo.png" alt="logo tyrex banden"> </a>
+                    <a class="logo-all" href="/"> <img src="/files/2014/05/logo.png" alt="logo tyrex banden" /> </a>
+                    <a class="logo-carwash" href="/"> <img src="/files/2014/07/tyrex-carwash.png" alt="logo tyrex banden" /> </a>
                 </div>
-                <?php include 'includes/navigation.php'; ?>
+               <?php include 'includes/navigation.php'; ?>
             </div>
         </section>
         

@@ -32,8 +32,17 @@ body {
       margin: 23px 0px 15px;
       z-index: 10;
       position: relative;
-      width: 60%;
+      max-width: 30%;
     }
+  }
+}
+
+.home #header .logo {
+  img {
+    margin: 23px 0px 15px;
+    z-index: 10;
+    position: relative;
+    max-width: 60% !important;
   }
 }
 
@@ -45,6 +54,7 @@ body {
 
   #phonenumber-social {
     @include outer-container;
+    max-width: 100%;
     padding-left: $l-insideGutter;
     padding-right: $l-insideGutter;
 
@@ -87,16 +97,18 @@ body {
 #logo-menu-container {
   background-color: $c-black;
   background: url("../img/header2.svg");
-  background-size: 100% 190px;
-  height: 305px;
+  background-size: 100% 175px;
+  height: 126px;
   position: relative;
   z-index: 1;
   background-repeat: no-repeat;
 
   #logo-menu {
-  @include outer-container;
-  padding-left: $l-insideGutter;
-  padding-right: $l-insideGutter;   
+    @include outer-container;
+    padding-left: $l-insideGutter;
+    padding-right: $l-insideGutter;  
+    max-width: 80rem; 
+
 
     .logo {
       @include span-columns(6);
@@ -114,6 +126,12 @@ body {
   }
 }
 
+#logo-menu {
+  background-image: url("../img/keuze.png");
+  background-size: 181px;
+  background-repeat: no-repeat;
+  background-position: 400px;
+}
 
 .home #logo-menu-container {
   background-color: $c-black;
@@ -151,7 +169,7 @@ body {
 }
 
 #logo-menu-container {
-  height: 135px;
+  height: 165x;
 }
 
 #slider {
@@ -171,6 +189,7 @@ body {
   border-radius: 8px;
   background-color: $c-black;
   padding: 5px 5px 0px 0;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0, 0.2);
 
   ul {
     margin: 0px;
@@ -188,10 +207,25 @@ body {
   .icon-mail {
     padding: 5px;
   }
-
-  li {
-
-
-  }
 }
 
+
+/* Zopim plugin */
+/*
+.zopim {
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0, 0.2);
+    border-radius: 5px;
+    border: 3px solid $c-white !important;
+    height: 36px !important;
+    bottom: -4px !important;
+}
+
+.button_text {
+  padding-left: 7px !important;
+}
+
+.jx_ui_Widget {
+  border: 3px solid $c-white !important;
+  border-radius: 5px !important;
+}
+*/

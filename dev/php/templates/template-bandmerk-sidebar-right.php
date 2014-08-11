@@ -9,9 +9,22 @@ Template Name: autoband merken w/ sidebar on right
 
 	<section id="content">
 	  	<h2 class="line"> Autobanden </h2>
+
+		<div class="editor-content">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+				<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<div>
+						<?php the_content(); ?>
+					</div>
+				</article>
+
+			<?php endwhile; else: ?>
+
+			<?php endif; ?>
+		</div>
+
 		<div class="content-sidebar">
-
-
 			<div class="merk-lijst">
 				<div class="merk-lijst-container">
 					<div class="merk-title"> 
