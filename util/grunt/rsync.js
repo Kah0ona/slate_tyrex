@@ -9,7 +9,8 @@ module.exports = {
 			host: "vps8063.xlshosting.net",
 			port: "1023",
 			user: "ftpsecure",
-			remoteBase: "/home/rsynctest/slate-<%= package.version %>_<%= package.name %>"
+			preservePermissions: false,
+			remoteBase: "/var/www/wp-content/themes/slate-<%= package.version %>_<%= package.name %>"
 		}
 	},
 	deploy_parent: {
@@ -18,7 +19,7 @@ module.exports = {
 			host: "vps8063.xlshosting.net",
 			port: "1023",
 			user: "ftpsecure",
-			remoteBase: "/home/rsynctest/slate-<%= package.version %>"
+			remoteBase: "/var/www/wp-content/themes/slate-<%= package.version %>"
 		}
 	}
 };

@@ -4,8 +4,9 @@ Template Name: Service
 */
 ?>
 
+
 <div class="container">
-	<?php get_header(); ?>
+	<?php get_header(); ?> 
 		<section id="content"> 	
 			<h2> <?php the_title(); ?> </h2>
 			<div class="editor-content">
@@ -21,25 +22,26 @@ Template Name: Service
 
 				<?php endif; ?>
 			</div>			
-		  	<h2 class="line"><span>Meest verkochte velgen</span></h2>
+		  	<h2 class="line"><span>Tyrex Services</span></h2>
 			<div class="u-gridRow">
 				<?php
 					$args = array(
 						'post_type' => 'service'
 					);
-					$aanbiedingen = new WP_Query( $args );
-					if( $aanbiedingen->have_posts() ) {
-						while( $aanbiedingen->have_posts() ) {
-							$aanbiedingen->the_post();
+					$service = new WP_Query( $args );
+					if( $service->have_posts() ) {
+						while( $service->have_posts() ) {
+							$service->the_post();
 							?>
 
 
 							<div class="band">
 								<div class="band-container">
+
 									<div class="afbeelding-band">
 										<?php 
 										 
-										$image = get_field('afbeelding_velg');
+										$image = get_field('service_afbeelding');
 										 
 										if( !empty($image) ): ?>
 										 
@@ -47,20 +49,10 @@ Template Name: Service
 										 
 										<?php endif; ?>	
 									</div>	
-									<div class="naam-band">
-										<h3><?php the_field('naam_velg'); ?></h3>
-									</div>
-
-									<div class="bg-container">
-										<div class="oude-prijs">
-											<p>Prijs</p<>
-											<p>€<?php the_field('oude_prijs_velg'); ?></p>
-										</div>			
-									</div>
 								</div>
 
 								<div class="info">
-									<a href="<?php echo get_permalink(); ?>">Meer info</a>
+									<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
 								</div>
 							</div>
 
@@ -68,7 +60,7 @@ Template Name: Service
 						}
 					}
 					else {
-						echo '<p>Er zijn momenteel geen aanbiedingen</p>';
+						echo '<p>Er zijn momenteel geen services</p>';
 					}
 				?>
 			</div>

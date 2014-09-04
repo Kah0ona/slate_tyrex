@@ -34,7 +34,7 @@ module.exports = {
     files: ['dev/css/style.child'],
     tasks: [
       'copy:css_child',
-      'rsync:deploy_child'
+      'ftpush:deploy_child'
     ]
   },
   img: {
