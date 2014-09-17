@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section id="logo-menu-container">
+        <!--<section id="logo-menu-container">
             <div id="logo-menu">
                 <div class="logo">
                     <a class="logo-all" href="/"> <img src="/files/2014/05/logo.png" alt="logo tyrex banden" /> </a>
@@ -68,16 +68,43 @@
                 </div>
                <?php include 'includes/navigation.php'; ?>
             </div>
-        </section>
+        </section>-->
+		<section id="coverflow">
+			<div id="myDiv"></div>
+
+		<!-- coverflow data -->
+		<ul id="coverflowData" style="display: none;">
+			
+			<!-- category  -->
+			<ul data-cat=" ">
+
+				<?php for($i = 0; $i < 6; $i++){ ?>
+				<ul>
+					<li data-type="link" data-url="#"></li>
+					<li data-thumbnail-path="http://lorempixel.com/1024/538/transport/<?php echo $i; ?>"></li>
+					<li data-thumbnail-text="">
+						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
+						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+					<li data-info="">
+						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+					</li>
+				</ul>
+				<?php } ?>
+			
+			</ul>
+			<!-- end  -->
+			
+		</ul>
+	
+		</section>
         
         <section id="slider-container">
             <div id="slider-stripe">
 
             </div>
 
-            <div id="slider">
-                <?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
-            </div>
 
             <nav id="sub-menu"> 
                 <?php wp_nav_menu(array(
