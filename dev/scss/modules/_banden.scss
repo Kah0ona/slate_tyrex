@@ -43,6 +43,9 @@
 		font-size: 1.1rem;
 	}
 
+	.velg-container {
+		height: 600px;
+	}
 
 	.band-container {
 		margin: 0 auto;
@@ -106,6 +109,11 @@
 			background-color: $c-white;
 			position: relative;
 			top:-17px;
+
+			.velg {
+				height: 400px;
+				top:0;
+			}
 		}
 
 		.klasse-container {

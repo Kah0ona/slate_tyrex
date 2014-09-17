@@ -78,10 +78,10 @@
 			<!-- category  -->
 			<ul data-cat=" ">
 
-				<?php for($i = 0; $i < 6; $i++){ ?>
+				<?php //for($i = 0; $i < 6; $i++){ ?>
 				<ul>
 					<li data-type="link" data-url="#"></li>
-					<li data-thumbnail-path="http://lorempixel.com/1024/538/transport/<?php echo $i; ?>"></li>
+					<li data-thumbnail-path="/files/2014/09/coverflow_3.png"></li>
 					<li data-thumbnail-text="">
 						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
 						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
@@ -91,7 +91,31 @@
 						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
 					</li>
 				</ul>
-				<?php } ?>
+                <ul>
+                    <li data-type="link" data-url="#"></li>
+                    <li data-thumbnail-path="/files/2014/09/coverflow_2.png"></li>
+                    <li data-thumbnail-text="">
+                        <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
+                        <p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+                    </li>
+                    <li data-info="">
+                        <p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+                        <p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+                    </li>
+                </ul>   
+                <ul>
+                    <li data-type="link" data-url="#"></li>
+                    <li data-thumbnail-path="/files/2014/09/coverflow_1.png"></li>
+                    <li data-thumbnail-text="">
+                        <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
+                        <p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+                    </li>
+                    <li data-info="">
+                        <p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+                        <p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+                    </li>
+                </ul>                  
+				<?php //} ?>
 			
 			</ul>
 			<!-- end  -->

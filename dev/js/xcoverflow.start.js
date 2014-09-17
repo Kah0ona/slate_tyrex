@@ -25,10 +25,10 @@ FWDS3DCovUtils.onReady(function(){
 									
 		//thumbnail settings
 		thumbnailWidth:1024,
-		thumbnailHeight:538,
-		thumbnailXOffset3D:80,
+		thumbnailHeight:553,
+		thumbnailXOffset3D:20,
 		thumbnailXSpace3D:165,
-		thumbnailZOffset3D:400,
+		thumbnailZOffset3D:300,
 		thumbnailZSpace3D:130,
 		thumbnailYAngle3D:-40,
 		thumbnailXOffset2D:20,

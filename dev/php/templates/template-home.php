@@ -18,7 +18,7 @@ Template Name: Home
 				<div class="grid-30">
 					<h2 class="line"><span>MgM</span></h2>
 					<div class="sidebar">
-						<img src="/files/2014/09/sidebar_example2.png" />
+						<img src="/files/2014/09/sidebar_example3.png" />
 						<div class="bottom">
 							
 						</div>
@@ -43,7 +43,7 @@ Template Name: Home
 
 
 							<div class="band">
-								<div class="band-container">
+								<div class="band-container velg-container">
 									<div class="afbeelding-band">
 										<?php 
 										 
@@ -59,7 +59,7 @@ Template Name: Home
 										<h3><?php the_field('naam_velg'); ?></h3>
 									</div>
 
-									<div class="bg-container">
+									<div class="bg-container velg">
 										<div>
 											<img src="/files/2014/09/merken_example.png" />
 										</div>
