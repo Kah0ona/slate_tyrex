@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
    /* Get the window's width, and check whether it is narrower than 480 pixels */
    var windowWidth = $(window).width();
    if (windowWidth <= 480 || true) {
-
+ 
       /* Clone our navigation(s) */
       var counter = 0;
       $('#menu-footermenu').each(function(){

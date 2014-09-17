@@ -83,7 +83,9 @@
 #sub-menu {
   .menu-item div {
     top: 0px;
+
   }
+  width: 100%;
 }
 
 
@@ -107,7 +109,7 @@
 // ----- Sub Menu ----- //
 #sub-menu {
   text-align: center;
-  background-color: $c-red;
+  @include linear-gradient(#d61d23, #ab171c);
   margin-top: 15px;
 
   .Navigation-submenu {
