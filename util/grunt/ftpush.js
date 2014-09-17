@@ -25,9 +25,9 @@ module.exports = {
       authKey: 'lokaalgevonden'
     },
     src: 'deploy/child',
-    dest: '/wp-content/themes/slate-<%= package.version %>_<%= package.name %>',
+    dest: '/wp-content/themes/slate-0.1.0_tyrex',
     simple: true,
-    useList: false
+    useList: true
   },
 
   // ----- Mirror parent theme to server ----- //

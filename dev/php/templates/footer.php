@@ -11,11 +11,11 @@
 	            <a href="/"> <img src="/files/2014/05/logo-black.png" alt="logo tyrex banden"> </a>
 	        </div>
 		</section>
-		<section class="sub-footer">		
+	</footer>
+	<section class="sub-footer">		
 			<!-- Copyright info -->
 			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website door <a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a> </p>
-		</section>
-	</footer>
+	</section>
 </div>
 
 	
@@ -25,6 +25,7 @@
 
 	<!-- Footer javascript below here -->
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/production.min.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
 
   <!-- Check if javascript for threaded comments should be loaded -->
   <?php include 'includes/comment-check.php'; ?>

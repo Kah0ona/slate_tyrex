@@ -1,6 +1,23 @@
+.sidebar {
+	@include span-columns(12);
+	border: 5px solid $c-red;
+	border-radius: 5px;
+	margin-left: 4%;
+	background: $c-red;
+}
+
+.sidebar .bottom {
+	background: $c-red;
+	position: relative;
+	bottom: 5px;
+	height: 43px;
+
+	width: 100%;
+}
+
 .band {
-	@include span-columns(3);
-	border: 2px solid $c-red;
+	@include span-columns(4);
+	border: 5px solid $c-red;
 	border-radius: 5px;
 	text-align: center;
 
@@ -29,19 +46,33 @@
 
 	.band-container {
 		margin: 0 auto;
+		height: 410px;
 
 		.afbeelding-merk {
 			img {
 				border-radius: 5px 5px 0 0;
+				height: 50px;
+				margin: 0;
+				padding: 0;
 			}
+
+		}
+
+		.afbeelding-band {
+			position: relative;
+			top: -5px;
+		}
+
+		.naam-band {
+			position: relative;
+			top: -15px;
 		}
 
 		.type-band {
-			
+			color: red;
 		}
 
 		.oude-prijs {
-			margin-bottom: 10px;
 			p {
 				font-size: 0.95rem;
 				text-transform: uppercase;
@@ -54,18 +85,18 @@
 			background: url("../img/circle.png");
 			background-position: center center;
 			background-repeat: no-repeat;
-			background-size: 50%;
-			padding: 42px 0px 36px;
+			background-size: 45%;
+			padding: 22px 0px 26px;
 
 			p {
 				color: $c-white;
 				font-size: 0.95rem;
-				font-weight: bold;
 				text-transform: uppercase;
 			}
 
 			p.prijs {
 				font-size: 1.6rem;
+				font-weight: bold;
 			}
 		}
 
@@ -73,13 +104,16 @@
 		.bg-container {
 			@include outer-container;
 			background-color: $c-white;
+			position: relative;
+			top:-17px;
 		}
 
 		.klasse-container {
 			@include outer-container;
-			margin: 14px 0 14px 0;
+			margin: 14px auto 14px auto;
 			padding-left: $l-insideGutter;
 			padding-right: $l-insideGutter;
+			width: 185px;
 
 			div {
 				width: 31.232%;
@@ -112,17 +146,80 @@
 			text-decoration: none;
 		}
 	}	
-}
-
+} 
+ 
 .beschrijving {
 	@include span-columns(9);
+	max-width: 71%;
 
 	h3 {
-		margin: 10px 0 -5px 0;
+		margin: 10px 0 -5px 0; 
 	}
 	
-}
+} 
+ 
+/* Services */
 
+.page-template-template-service-php, .single-service	{
+
+	h4 {
+		font-size: 19px;
+		margin: 0px;
+	}
+
+	.band {
+		margin-bottom: 60px;
+		background-image: url('../img/header.svg');
+		background-size: 100% 45px;
+		background-repeat: no-repeat;
+		background-position: center top;
+		border: 1px solid #AAA;
+		box-shadow: 3px 3px 5px #CCC;
+	}
+
+	.band:hover {
+		opacity: 0.95;
+	}
+
+	.info {
+		background-color: transparent;
+		background-image: url('../img/footer.svg');
+		background-size: 100% 45px;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		margin-top: -25px;
+		position: relative;
+	}
+
+	h3 {
+		background-color: white;
+		padding: 7px 15px;
+		border-radius: 6px;
+		color: #020202;
+		display: inline-block;
+		margin-top: 13px;
+	}
+
+	img {
+		border-radius: 5px;
+		max-width: 100%;
+		max-height: 215px;
+	}
+
+	.u-gridRow {
+		max-width: 850px;
+	}
+
+}
+ 
+
+.single-service {
+	.band {
+		max-width: auto;
+		width: auto;
+		margin : 20px 40px 0px 0px;
+	}
+}
 
 
 

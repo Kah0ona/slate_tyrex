@@ -7,6 +7,21 @@
 
 .Article {
   margin-top: rem(40px);
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.bigsize {
+  font-size: 16px !important;
+  font-family: Arial;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.bigsize p {
+  font-size: 16px;
 }
 
 // -------------------------------------
@@ -84,7 +99,15 @@
  
 }
 
+.grid-70 {
+  width: 70%;
+  float: left;
+}
 
+.grid-30 {
+  width: 30%;
+  float: left;
+}
 
 // ----- sidebar + Content ----- //
 .content-sidebar {
@@ -100,9 +123,7 @@
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  box-shadow: 0px 0px 4px 1px rgba(0,0,0, 0.2);
   margin-bottom: 10px;
-  background-color: $c-white;
 }
 
 
