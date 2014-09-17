@@ -11,12 +11,19 @@ Template Name: Home
 		  	
 			<div class="u-gridRow">
 				<div class="grid-70">
-					<h2 class="line"><span>Meest verkochte banden</span></h2>
+					<div class="title-wrap">
+						<h2 class="line-title">Meest verkochte banden</h2>
+					</div>
+					
 			
 					<?php include_once('band.php'); ?>
 				</div>
 				<div class="grid-30">
-					<h2 class="line"><span>MgM</span></h2>
+					<div class="title-wrap u-cf">
+						<div class="line-left"></div>
+						<h2 class="line-title">MGM</h2>
+						<div class="line-right"></div>
+					</div>
 					<div class="sidebar">
 						<img src="/files/2014/09/sidebar_example3.png" />
 						<div class="bottom">
@@ -26,8 +33,9 @@ Template Name: Home
 				</div>
 			</div>
 
-
-			<h2 class="line"><span>Populaire Velgen</span></h2>
+		<div class="title-wrap">
+			<h2 class="line-title">Populaire Velgen</h2>
+		</div>
 			<div class="u-gridRow">
 				<div class="grid-70">
 				<?php
@@ -98,8 +106,9 @@ Template Name: Home
 
 			<div class="u-gridRow">
 				<div class="grid-70">
-					<h2 class="line"><span>Exlusive Car Detailing</span></h2>
-
+					<div class="title-wrap">
+						<h2 class="line-title">Exlusive Car Detailing</h2>
+					</div>
 
 					<div class="editor-content bigsize">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -116,7 +125,9 @@ Template Name: Home
 					</div>
 				</div>
 				<div class="grid-30">
-					<h2 class="line"><span>sidebar</span></h2>
+					<div class="title-wrap">
+						<h2 class="line-title">sidebar</h2>
+					</div>
 					<div class="sidebar">
 						<img src="/files/2014/09/sidebar_example1.png" />
 						<div class="bottom">

@@ -49,27 +49,27 @@ h4, h5, h6 {
 }
 
 h1, %u-textH1 {
-  font-size: rem(40px);
-}
-
-h2, %u-textH2 {
   font-size: rem(35px);
 }
 
-h3, %u-textH3 {
+h2, %u-textH2 {
   font-size: rem(30px);
 }
 
-h4, %u-textH4 {
+h3, %u-textH3 {
   font-size: rem(25px);
 }
 
-h5, %u-textH5 {
+h4, %u-textH4 {
   font-size: rem(20px);
 }
 
+h5, %u-textH5 {
+  font-size: rem(15px);
+}
+
 h6, %u-textH6 {
-  font-size: rem(16px);
+  font-size: rem(12px);
 }
 
 ul {

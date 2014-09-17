@@ -1,7 +1,9 @@
 footer {
   background-image: url("../img/footer.svg");
-  background-size: 101% 200px;
+  //background-size: 101% 200px;
+  background-size: 100%;
   background-width: 1024px;
+  height: 297px;
 
   padding: 100px 0;
   color: $c-white;
@@ -16,6 +18,7 @@ footer {
   .footer-container {
     max-width: 78rem;
     margin: 0 auto;
+    padding-top: 50px;
     position: relative;
 
     p, .widget a {
@@ -28,7 +31,7 @@ footer {
    	  background-color: $c-white;
   	  border-radius: 5px;
   	  position: absolute;
-  	  top: -105px;
+  	  top: -85px;
   	  right: 45px;
   	  max-width: 14.38rem;
   	  padding: 30px 10px 10px;
@@ -62,22 +65,54 @@ footer {
     p {
       margin: 10px 0px;
       font-size: 14px;
+      background-color: $c-red;
     }
   }
 }
+
+section .sub-footer {
+  width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: $c-red;
+    padding: 15px;
+    margin-top: 2px;
+}
+
+
 
 .widgettitle {
   text-transform: uppercase;
   font-size: 15px;
   position: relative;
   left: 5px;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-
-.textwidget p {
-  margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.widgets {}
+.textwidget p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.widgets {
+}
+
+.sub-footer {
+  width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: $c-red;
+    padding: 15px;
+    margin-top: 2px;
+    color: white;
+
+    a {
+      color: $c-black;
+    }
+
+    p {
+      margin: 10px 30px;
+      font-size: 14px;
+      background-color: $c-red;
+    }
+}
