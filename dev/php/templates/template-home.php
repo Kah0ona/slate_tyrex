@@ -60,10 +60,16 @@ Template Name: Home
 									</div>
 
 									<div class="bg-container">
-										<div class="oude-prijs">
-											<p>Prijs</p<>
-											<p>€<?php the_field('oude_prijs_velg'); ?></p>
-										</div>			
+										<div>
+											<img src="/files/2014/09/merken_example.png" />
+										</div>
+										<div class="nieuwe-prijs">
+											<p> Uw prijs </p>
+											<p class="prijs">€
+												<!---<?php the_field('nieuwe_prijs'); ?>-->
+												80
+											</p>
+										</div>		
 									</div>
 								</div>
 
@@ -82,7 +88,7 @@ Template Name: Home
 			</div>
 		<div class="grid-30">
 		<div class="sidebar">
-			<img src="/files/2014/09/sidebar_example1.png" />
+			<img src="/files/2014/09/sidebar_example2.png" />
 			<div class="bottom">
 						
 					</div>
