@@ -101,8 +101,8 @@ section .sub-footer {
   width: 100%;
     margin: 0 auto;
     display: inline-block;
-    background-color: $c-red;
-    padding: 15px;
+    @include linear-gradient(#d61d23, #ab171c);
+    padding: 5px 15px;
     margin-top: 2px;
     color: white;
 
@@ -113,6 +113,5 @@ section .sub-footer {
     p {
       margin: 10px 30px;
       font-size: 14px;
-      background-color: $c-red;
     }
 }

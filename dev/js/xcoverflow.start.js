@@ -6,7 +6,7 @@ FWDS3DCovUtils.onReady(function(){
 		displayType:"fluidwidth",
 		autoScale:"yes",
 		coverflowWidth:940,
-		coverflowHeight:553,
+		coverflowHeight:353,
 		skinPath:"/wp-content/themes/slate-0.1.0_tyrex/load/skin_black",
 		
 		//main settings

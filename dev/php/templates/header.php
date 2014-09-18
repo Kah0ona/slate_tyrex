@@ -45,9 +45,23 @@
 
   </head>
   <body <?php body_class(); ?> >
-    
+    <header id="logo-header">
+        <div class="logo">
+                <img width="200" src="/files/2014/09/logoheader.png" />
+        </div>
+        <div class="sub-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Werken bij Tyrex banden</a></li>
+                <li><a href="#">Klantenservice</a></li>
+                <li><a href="#">Mijn Tyrex banden</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>  
     <header id="header">
-        <section id="phonenumber-container">
+        <!--<section id="phonenumber-container">
               <div id="phonenumber-social"> 
                 <div class="phonenumber">
                     <p><span><svg class="icon icon-telefoon" viewBox="0 0 32 32"><use xlink:href="#icon-telefoon"></use></svg></span> 0165 - 32 00 02</p>
@@ -58,7 +72,8 @@
 
                 </div>
             </div>
-        </section>
+        </section>-->
+
 
         <!--<section id="logo-menu-container">
             <div id="logo-menu">
