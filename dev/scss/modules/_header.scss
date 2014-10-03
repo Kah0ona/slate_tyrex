@@ -51,8 +51,8 @@ body {
   z-index: 2;
   @include linear-gradient(#000, #202020);
   padding: 20px;
-  margin-bottom: 10px;
   height: 100px;
+  margin-bottom: 10px;
 
   .logo {
     position: relative;
@@ -60,11 +60,25 @@ body {
     width: 200px;
   } 
 
+  .menu-phone {
+    float: right;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    top: -15px;
+    margin-right: 10px;
+
+    .icon-telefoon {
+      fill: white;
+      position: relative;
+      top:10px;
+    }
+
+  }
   .sub-menu {
     position: relative;
     float:right;
     color: white;
-    margin-top: 10px;
 
     ul {
       list-style-type: none;
@@ -77,12 +91,18 @@ body {
         font-weight: bold;
         font-size: 11px;
 
+        &:last-of-type {
+          border:0;
+        }
         a {
           color: white;
         }
       }
     }
   }
+}
+.submenu {
+  margin-top:15px;
 }
 
 #phonenumber-container {

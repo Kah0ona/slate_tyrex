@@ -1,129 +1,231 @@
 <?php
 /*
-Template Name: carwash
+Template Name: Service
 */
 ?>
+
+<?php get_header(); ?> 
 <div class="container">
-	<?php get_header(); ?>
+	
 		<section id="content"> 	
-		  	<h2> <?php the_title(); ?> </h2>
 
-			<div class="editor-content">
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-						<div>
-							<?php the_content(); ?>
-						</div>
-					</article>
-
-				<?php endwhile; else: ?>
-
-				<?php endif; ?>
-			</div>
-
-		  	<div class="u-gridRow">
-			  	<div class="merk-lijst u-gridCol9">
-					<div class="merk-lijst-container">
-						<table class="merken-tabel">
-							<thead>
-								<tr>
-									<th colspan="2"><h3>Programma's</h3></th>
-								</tr>
-							</thead>
-							<?php
-								$args = array(
-									'post_type' => 'carwash',
-									'nopaging' => true
-								);
-								$aanbiedingen = new WP_Query( $args );
-								if( $aanbiedingen->have_posts() ) {
-									$counter = 1;
-
-									while( $aanbiedingen->have_posts() ) {
-										$numColumns = 1;
-										if($counter % $numColumns == 1) {
-											echo '<tr>';
-										}	
-
-										$aanbiedingen->the_post();
-										?>
-
-												<td class="merk-lijst-titel">
-													<a href="#" data-target="merk_<?php the_ID(); ?>"><?php the_title(); ?></a>
-												</td>
-
-										<?php
-
-										if($counter % $numColumns == 0) {
-											echo '</tr>';
-										}
-
-										$counter++;
-									}
-								}
-								else {
-									echo '<p>Er zijn momenteel geen programmas</p>';
-								}
-							?>
-						</table>
-					</div>
-			  </div>
-			</div> <!-- /row-->
-				
 			<div class="u-gridRow">
-			  	<div class="merk-lijst u-gridCol12">
-					<div class="merk-lijst-container">
-						<table class="programma-beschrijving">
-							<thead>
-								<tr>
-									<th><h3>Programma's</h3></th>
-									<th><h3>Arbeidsduur</h3></th>
-									<th><h3>Prijs</h3></th>
-								</tr>
-							</thead>
-							<?php
-								$args = array(
-									'post_type' => 'carwash',
-									'nopaging' => true
-								);
-								$aanbiedingen = new WP_Query( $args );
-								if( $aanbiedingen->have_posts() ) {
-									$counter = 1;
+		  		<div class="u-gridCol3">
+		  			<h4 class="red-title-bar">Topkwaliteit</h4>
+		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
+		  				Onze tevredenheidsgarantie laat u nooit steken.</p>
+		  			<div class="col-foot">
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups4.png" />
+		  			</div>
+		  		</div>
+		  		<div class="u-gridCol3">
+		  			<h4 class="red-title-bar">Grote voorraad</h4>
+		  			<p class="red-content">Meeste maten direct leverbaar uit voorraad.</br>
+		  				Uw maat niet voorradig? Binnen een werkdag weer wel!</p>
+		  			<div class="col-foot">
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups2.png" />
+		  			</div>
+		  		</div>
+		  		<div class="u-gridCol3">
+		  			<h4 class="red-title-bar">Beste koop</h4>
+		  			<p class="red-content">Betaal nooit teveel.</br>
+		  				De prijzen van onze concurrenten worden dagelijks gemonitord.</p>
+		  			<div class="col-foot">
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups3.png" />
+		  			</div>
+		  		</div>
+		  		<div class="u-gridCol3">
+		  			<h4 class="red-title-bar">Verdien geld</h4>
+		  			<p class="red-content">Verdien tot 20,- euro per klant!</br>
+		  				Ontdek ons Member Gets Member systeem en start met verdienen.</p>
+		  			<div class="col-foot">
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups5.png" />
+		  			</div>
+		  		</div>
+		  	</div>
+				<div class="grid-70">
+					<div class="u-gridRow service">
+							<h4 class="auto_content">Tyrex Carwash</h4>
+							Vuile auto, nare geur, krasjes op de lak of gewoon zin in een opknapbeurt voor uw bolide? Dat kan
+							vanaf nu gewoon bij Tyrex Carwash! Bij Tyrex Carwash maken we gebruik van een unieke methode, namelijk 
+							auto's reinigen met stoom. Onze stoomreiniging is goed voor alles en iedereen:
+							<ul>
+								<li><strong>Hygenisch</strong></li>
+								Door de hoge temperatuur van het stoom weekt al het vuil los van de oppervlakte die behandeld wordt.
+								Naast schoon is er ook sprake van een hygenisch resultaat; de bacterien en schimmels die de oorzaak vormen van nare lucht worden hierbij gedood.
+								Uw auto wordt veel grondiger gereinigd dan voorheen, omdat de moeilijkste plekken en hoeken ook bereikt kunnen worden.
+								
+								<li><strong>Ecologisch</strong></li>
+								Doordat het gebruik van chemicalien wordt vermede zal er geen sprake zijn van milieuverontreiniging zoals bij 
+								het conventioneel reinigen van auto's. Alle producten die gebruikt worden bij de detailling zijn 100% biologisch afbreekbaar.
+								
+								<li><strong>Duurzaam</strong></li>
+								Uit een onderzoek van de Bovag, 'Wassen in cijfers 2009-2010', blijkt dat er gemiddeld 353 liter drinkwater
+								 nodig is om een auto te wassen. Met behulp vn onze reinigingsmethode met stoom kan het aantal liters 
+								 worden gereduceerd tot slechts drie liter. Dit is een significante vermindering van maarliefst 99%!
 
-									while( $aanbiedingen->have_posts() ) {
-										$aanbiedingen->the_post();
-										?>
-											<tr>
-												<td class="merk-lijst-titel">
-													<h4><?php the_title(); ?></h4>
-													<p><?php echo get_field('programma_beschrijving');  ?></p>
-												</td>
-
-												<td class="merk-lijst-titel ta-center">
-													<p><?php echo get_field('programma_arbeidsduur');  ?> minuten </p>
-												</td>
-
-												<td class="merk-lijst-titel ta-center">
-													<p>&euro;<?php echo get_field('programma_prijs');  ?>,-</p>
-												</td>
-									
-											</tr>
-										<?php
-									}
-								}
-								else {
-									echo '<p>Er zijn momenteel geen programmas</p>';
-								}
-							?>
-						</table>
+								 <li><strong>Veilig</strong></li>
+								Onze methode is ook erg geschikt voor unieke oldtimers. omdat 
+								de lak niet in aanraking komt met chemicalien voor het verwijderen
+								van vuil, wordt de lak ook niet aangetast. De stoomreiniging 
+								voeren wij uitsluitend handmatig uit, dus geen wasstraatproblemen
+								meer zoals krassen op de lak. Verder wordt het interieur niet ‘nat’ 
+								zoals bij een conventionele poetsbeurt. Doordat er droge stoom 
+								gebruikt wordt kan uw auto-elektronica niet aangetast worden
+						</ul>
 					</div>
-			  </div>
-			</div> <!-- /row-->			
-			
 
+				</div>
+				<div class="grid-30">
+					<div class="sidebar">
+						<div class="box">
+							<div class="title">Onze klanten aan het woord.</div></br>
+							<img align="right" src="/files/2014/09/png.png" />
+							Service en kwaliteit vormen onze basis.<br/><br/>
 
+							<a href="#">Bekijk beoordeling >></a>
+						</div>
+						<div class="box">
+							<div class="title">Gratis stoombeurt</div>
+							Spaar punten bij elke euro die u uitgeeft. Bij 100 punten wordt uw auto gratis gereinigd van buiten en van binnen.</br></br>
+							<a href="#">Lees meer >></a>a
+
+						</div>
+						<div class="box">
+							<div class="title">Hulp nodig?</div>
+							Onze medewerkers staan u graag telefonisch te woord tijdens on ze openingstijden:<br/><br/>
+							
+						<div class="u-gridRow">
+							<div class="u-gridCol6">ma t/m vr
+							zaterdag
+							</div>
+							<div class="u-gridCol6">08:00 - 17:30</br>
+								08:00 - 17:00
+							</div>
+						</div>
+						<p class="telefoon">0165 - 32 00 02
+						</div>
+					</div>
+				</div>
+
+				<div class="u-gridRow servicelist">
+					<div class="banner">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/carwashbanner.png" />
+					</div>
+
+				</div>
+
+				<div class="u-gridRow">
+					<div class="u-gridCol4">
+						<div class="boxcarwash">
+							<ul>
+								<li>Showroomstaat</li>
+								All Inclusive
+							</ul>
+							<div class="carwash-price">
+								240 min<br/>
+								€189.99
+							</div>
+							<div class="boxtitle">Premium Car Care</div>
+						</div>
+					</div>
+					<div class="u-gridCol4">
+						<div class="boxcarwash">
+							<ul>
+								<li>Wassen (stoom)</li>
+								<li>Velgen intensief</li>
+								<li>Insecten intensief</li>
+								<li>Drogen</li>
+								<li>Bodemreiniging</li>
+								<li>Glas binnen + buiten</li>
+								<li>Interieur stofzuigen</li>
+								<li>Geurtje naar keuze</li>
+								<li>Wax</li>
+							</ul>
+							<div class="carwash-price">
+								240 min<br/>
+								€189.99
+							</div>
+							<div class="boxtitle">Top Wash +</div>
+						</div>
+					</div>
+					<div class="u-gridCol4">
+						<div class="boxcarwash">
+							<ul>
+								<li>Wassen (stoom)</li>
+								<li>Velgen intensief</li>
+								<li>Insecten intensief</li>
+								<li>Drogen</li>
+								<li>Bodemreiniging</li>
+								<li>Glas binnen + buiten</li>
+								<li>Interieur stofzuigen</li>
+								<li>Geurtje naar keuze</li>
+							</ul>
+							<div class="carwash-price">
+								45 min<br/>
+								€189.99
+							</div>
+							<div class="boxtitle">Top Wash</div>
+						</div>
+					</div>
+				</div>
+				<div class="u-gridRow">
+					<div class="u-gridCol4">
+						<div class="boxcarwash">
+							<ul>
+								<li>Wassen (stoom)</li>
+								<li>Velgen intensief</li>
+								<li>Insecten intensief</li>
+								<li>Drogen</li>
+								<li>Bodemreiniging</li>
+								<li>Glas binnen + buiten</li>
+								<li>Interieur stofzuigen</li>
+							</ul>
+							<div class="carwash-price">
+								60 min<br/>
+								€24.99
+							</div>
+							<div class="boxtitle">Super Wash</div>
+						</div>
+					</div>
+					<div class="u-gridCol4">
+						<div class="boxcarwash">
+							<ul>
+								<li>Wassen (stoom)</li>
+								<li>Velgen</li>
+								<li>Insecten intensief</li>
+								<li>Drogen</li>
+								<li>Bodemreiniging</li>
+								<li>Glas buitenkant</li>
+							</ul>
+							<div class="carwash-price">
+								30 min<br/>
+								€14.99
+							</div>
+							<div class="boxtitle">Basic Wash</div>
+						</div>
+					</div>
+					<div class="u-gridCol4">
+						<div class="boxcarwash">
+							<ul>
+								<li>Wassen (stoom)</li>
+								<li>Velgen</li>
+								<li>Insecten intensief</li>
+								<li>Drogen</li>
+								<li>Bodemreiniging</li>
+								<li>Glas buitenkant</li>
+								<li>Interieur stofzuigen</li>
+							</ul>
+							<div class="carwash-price">
+								45 min<br/>
+								Gratis t.w.v. 19.99
+							</div>
+							<div class="boxtitle">Free wash</div>
+						</div>
+					</div>
+				</div>
 
 		</section>
+
 
 	<?php get_footer(); ?>

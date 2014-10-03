@@ -1,7 +1,7 @@
 .sidebar {
 	@include span-columns(12);
 	margin-left: 4%;
-	margin-top: 55px;
+	margin-top: 20px;
 
 	.box {
 	border-radius: 5px;
@@ -16,9 +16,9 @@
 	padding: 20px;
 	margin-bottom: 10px;
 	font-size: 14px;
-	-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.46);
+	/*-webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.46);
 -moz-box-shadow:    0px 3px 5px 0px rgba(0, 0, 0, 0.46);
-box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);
+box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 	}
 
 	.title {
@@ -198,58 +198,121 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);
  
 /* Services */
 
-.page-template-template-service-php, .single-service	{
+.service {
+	font-size: 15px;
+}
 
-	h4 {
-		font-size: 19px;
-		margin: 0px;
-	}
+.service strong {
+	font-size: 18px;
+}
 
-	.band {
-		margin-bottom: 60px;
-		background-image: url('../img/header.svg');
-		background-size: 100% 45px;
-		background-repeat: no-repeat;
-		background-position: center top;
-		border: 1px solid #AAA;
-		box-shadow: 3px 3px 5px #CCC;
-	}
+.service ul {
+	list-style-image: url('../img/vink.png');
+}
 
-	.band:hover {
-		opacity: 0.95;
-	}
+.service ul li {
+	margin-bottom: 10px;
+}
 
-	.info {
-		background-color: transparent;
-		background-image: url('../img/footer.svg');
-		background-size: 100% 45px;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-		margin-top: -25px;
+ol {
+	list-style-image: none;
+}
+.boxservice {
+	border: 4px solid #abaaaa;
+	border-radius: 4px;
+	width: 100%;
+	background: url('/wp-content/themes/slate-0.1.0_tyrex/img/boxbg.png');
+	background-size: contain;
+	margin-top: 20px;
+	height: 298px;
+
+	.boxtitle {
+		text-align: center;
+		border-top: 5px solid #d8d7d7;
+		width: 100%;
+		padding: 10px;
+		font-size: 18px;
+		font-weight: bold;
 		position: relative;
-	}
+		top: -5px;
+		background: white;
 
-	h3 {
-		background-color: white;
-		padding: 7px 15px;
-		border-radius: 6px;
-		color: #020202;
-		display: inline-block;
-		margin-top: 13px;
 	}
 
 	img {
-		border-radius: 5px;
-		max-width: 100%;
-		max-height: 215px;
+		width: 100%;
 	}
 
-	.u-gridRow {
-		max-width: 850px;
+	&:hover {
+		opacity: 0.5;
 	}
 
+	ul {
+		margin: 0 auto;
+		font-size: 14px;
+		font-weight: bold;
+		color: red;
+		
+		li {
+			font-size:16px;
+		}	
+	}
 }
- 
+
+.boxcarwash {
+	border: 4px solid #abaaaa;
+	border-radius: 4px;
+	width: 100%;
+	background: url('/wp-content/themes/slate-0.1.0_tyrex/img/boxbg.png');
+	background-size: contain;
+	margin-top: 20px;
+	height: 298px;
+	position: relative;
+
+	.boxtitle {
+		text-align: center;
+		border-top: 5px solid #d8d7d7;
+		width: 100%;
+		padding: 10px;
+		font-size: 18px;
+		font-weight: bold;
+		position: absolute;
+		bottom: 0;
+		background: white;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	ul {
+		margin-left: 30px;
+		font-size: 14px;
+		font-weight: bold;
+		color: red;
+		list-style-image: url('../img/vink.png');
+		line-height: 15px;
+		
+		li {
+			font-size:16px;
+		}	
+	}
+}
+
+.carwash-price {
+	width: 100%;
+	text-align: right;
+	font-size: 15px;
+	color: red;
+	font-weight:bold;
+	position: absolute;
+	bottom: 60px;
+	right: 10px;
+}
 
 .single-service {
 	.band {
@@ -326,6 +389,18 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);
 	font-size: 24px;
 }
 
+fieldset {
+	border:0;
+	border-top: 1px solid black;
+}
+
+legend {
+	padding: 5px;
+	font-size: 24px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
 
 .red-title-bar {
 	border-top: 3px solid $c-red;
@@ -339,6 +414,35 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);
 	margin:0;
 	height: 80px;
 }
+
+.autobanden {
+	width: 100%;
+	overflow: auto;
+}
+
+.banden-link {
+	padding: 10px 40px;
+	background: $c-red;
+	font-size: 18px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.auto_content {
+	margin-bottom: 5px;
+}
+
+.servicelist {
+	width: 100%;
+	overflow:auto;
+}
+
+.servicelist > .banner > img {
+	width: 100%;
+}
+
 
 
 //---- /new style ---

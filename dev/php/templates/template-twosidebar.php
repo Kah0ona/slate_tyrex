@@ -3,9 +3,9 @@
 Template Name: Page with two sidebars on either side
 */
 ?>
-
-<div class="container">
 	<?php get_header(); ?>
+<div class="container">
+
 
 		<div>
 			<?php get_sidebar('Left'); ?>

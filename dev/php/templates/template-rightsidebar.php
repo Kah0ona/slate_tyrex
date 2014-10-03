@@ -3,8 +3,9 @@
 Template Name: Page w/ sidebar on right
 */
 ?>
+<?php get_header(); ?>
 <div class="container">
-	<?php get_header(); ?>
+	
 
 	<section id="content">
 		<div class="content-sidebar"

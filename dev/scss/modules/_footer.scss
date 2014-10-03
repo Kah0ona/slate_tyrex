@@ -55,7 +55,7 @@ footer {
     margin: 0 auto;
     display: inline-block;
     background-color: $c-red;
-    padding: 15px;
+    padding: 3px;
     margin-top: 2px;
 
     a {
@@ -63,7 +63,7 @@ footer {
     }
 
     p {
-      margin: 10px 0px;
+      margin:5px 0px;
       font-size: 14px;
       background-color: $c-red;
     }
@@ -73,9 +73,6 @@ footer {
 section .sub-footer {
   width: 100%;
     margin: 0 auto;
-    display: inline-block;
-    background-color: $c-red;
-    padding: 15px;
     margin-top: 2px;
 }
 
@@ -84,8 +81,6 @@ section .sub-footer {
 .widgettitle {
   text-transform: uppercase;
   font-size: 15px;
-  position: relative;
-  left: 5px;
   margin-bottom: 20px;
 }
 
@@ -102,7 +97,7 @@ section .sub-footer {
     margin: 0 auto;
     display: inline-block;
     @include linear-gradient(#d61d23, #ab171c);
-    padding: 5px 15px;
+    padding: 0 15px;
     margin-top: 2px;
     color: white;
 

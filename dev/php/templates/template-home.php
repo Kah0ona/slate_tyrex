@@ -14,7 +14,7 @@ Template Name: Home
 		  			<p class="red-content">Altijd de juist banden voor uw voertuig!</br>
 		  				Wat voor banden u ook nodig hebt, wij staan u graag te woord.</p>
 		  			<div class="col-foot">
-		  					<img src="/files/2014/09/content_1.png" />
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_1.png" />
 		  			</div>
 		  		</div>
 		  		<div class="u-gridCol3">
@@ -22,7 +22,7 @@ Template Name: Home
 		  			<p class="red-content">Van uitlijnen tot bandenhotel!</br>
 		  				Alle know-how paraat, Tyrex Banden is uw bandenspecialist.</p>
 		  			<div class="col-foot">
-		  					<img src="/files/2014/09/content_2.png" />
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_2.png" />
 		  			</div>
 		  		</div>
 		  		<div class="u-gridCol3">
@@ -30,7 +30,7 @@ Template Name: Home
 		  			<p class="red-content">Zeer breed assortiment aan velgen!</br>
 		  				De meeste exclusieve velgen koopt u bij Tyrex Banden.</p>
 		  			<div class="col-foot">
-		  					<img src="/files/2014/09/content_3.png" />
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_3.png" />
 		  			</div>
 		  		</div>
 		  		<div class="u-gridCol3">
@@ -38,14 +38,18 @@ Template Name: Home
 		  			<p class="red-content">Unieke stoomreiniging voor uw bolide!</br>
 		  				Onze methode is duurzaam, ecologisch, hygienisch en betaalbaar.</p>
 		  			<div class="col-foot">
-		  					<img src="/files/2014/09/content_4.png" />
+		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_4.png" />
 		  			</div>
 		  		</div>
 		  	</div>
 				<div class="grid-70">
 					<div class="u-gridRow">
 					<div class="title-wrap">
-						<h2 class="line-title">Meest verkochte banden</h2>
+						<!---<h2 class="line-title">Meest verkochte banden</h2> -->
+						<fieldset>
+						     <legend align="center">Populaire Banden</legend>
+						</fieldset>
+
 					</div>
 					
 			
@@ -53,7 +57,9 @@ Template Name: Home
 					</div>
 					<div class="u-gridRow">
 					<div class="title-wrap">
-								<h2 class="line-title">Populaire Velgen</h2>
+						<fieldset>
+						     <legend align="center">Populaire Velgen</legend>
+						</fieldset>
 					</div>
 						<?php
 					$args = array(
@@ -117,6 +123,9 @@ Template Name: Home
 				</div>
 				<div class="grid-30">
 					<div class="sidebar">
+						<fieldset>
+						     <legend align="center">Sidebar</legend>
+						</fieldset>
 						<div class="box">
 							<div class="title">Onze klanten aan het woord.</div></br>
 							<img align="right" src="/files/2014/09/png.png" />
@@ -163,7 +172,9 @@ Template Name: Home
 			<div class="u-gridRow">
 				<div class="grid-70">
 					<div class="title-wrap">
-						<h2 class="line-title">Exlusive Car Detailing</h2>
+						<fieldset>
+						     <legend align="center">Exclusive Car Detailing</legend>
+						</fieldset>
 					</div>
 
 					<div class="editor-content bigsize">
@@ -182,9 +193,11 @@ Template Name: Home
 				</div>
 				<div class="grid-30">
 					<div class="title-wrap">
-						<h2 class="line-title">sidebar</h2>
+						<fieldset>
+						     <legend style=align="center">Sidebar</legend>
+						</fieldset>
 					</div>
-					<div class="sidebar">
+					<div class="sidebar red-bg">
 						<img src="/files/2014/09/sidebar_example1.png" />
 						<div class="bottom">
 									

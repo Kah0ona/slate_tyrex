@@ -3,9 +3,9 @@
 Template Name: autoband merken w/ sidebar on right
 */
 ?>
-
+<?php get_header(); ?>
 <div class="container">
-	<?php get_header(); ?>
+	
 
 	<section id="content">
 	  	<h2 class="line"> Autobanden </h2>

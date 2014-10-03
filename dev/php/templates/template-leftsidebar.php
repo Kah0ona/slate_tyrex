@@ -3,8 +3,8 @@
 Template Name: Page w/ sidebar on left
 */
 ?>
-<div class="container">
-	<?php get_header(); ?>
+<?php get_header(); ?>
+<div class="container">>
 		<div>
 			<?php get_sidebar(); ?>
 			<div>
