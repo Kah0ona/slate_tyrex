@@ -5,6 +5,7 @@ Template Name: Page w/o sidebar
 ?>
 
 <?php get_header(); ?>
+<div class="container">
 
 	<div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

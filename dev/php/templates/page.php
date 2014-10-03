@@ -1,5 +1,6 @@
-<div class="container">
+
 	<?php get_header(); ?>
+	<div class="container">
 		<section id="content"> 	
 			<div class="editor-content">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

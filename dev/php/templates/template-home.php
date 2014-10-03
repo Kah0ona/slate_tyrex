@@ -126,9 +126,13 @@ Template Name: Home
 						<fieldset>
 						     <legend align="center">Sidebar</legend>
 						</fieldset>
-						<div class="box">
+						<div class="box box-relative">
 							<div class="title">Onze klanten aan het woord.</div></br>
-							<img align="right" src="/files/2014/09/png.png" />
+							<div>
+								<div class="view-snippet"><?php echo do_shortcode("[RICH_REVIEWS_SNIPPET]"); ?></div> 
+								<img align="right" src="/files/2014/10/duim.png" />
+							</div>
+
 							Service en kwaliteit vormen onze basis.<br/><br/>
 
 							<a href="#">Bekijk beoordeling >></a>
@@ -142,6 +146,7 @@ Template Name: Home
 									<li>Laagste prijsgarantie</li>
 									<li>Comfortabele wachtruimte</li>
 							<img src="/files/2014/09/wifi.png" align="center" />
+							
 							</ul>
 
 						</div>

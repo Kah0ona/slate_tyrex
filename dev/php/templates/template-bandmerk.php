@@ -124,7 +124,7 @@ Template Name: autoband merken
 						bandengegevens natuurlijk ook aan ons doorgeven via ons contactformulier.
 						</p>
 
-						<a href="#" class="banden-link">Offerte aanvragen</a>
+						<a href="/contact/" class="banden-link">Offerte aanvragen</a>
 
 						<p class="inhoud">
 						Zijn uw banden onregelmatig versleten? Dankzij onze modernste 3D uitlijnapparatuur

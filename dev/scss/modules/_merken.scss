@@ -29,11 +29,10 @@
 
 .bandensoorten {
 	.merk {
-		background-image: url('../img/footer.svg');
 		background-position: 0px 269px;
 		background-size: 100% auto;
 		position: relative;
-		min-height: 333px;
+		min-height: 133px;
 
 		img {
 			max-height: 255px;
@@ -45,7 +44,14 @@
 	}
 
 	.merk-afbeelding {
-		min-height: 270px;
+			min-height: 155px;
+			position: relative;
+
+			img {
+				position: absolute;
+				bottom: 0;
+				left:0;
+			}
 	}
 
 	
@@ -151,6 +157,7 @@ background-size: 100% 100%, auto;
 		border-radius: 6px;
 		background-color: white;
 		padding: 0px 10px;
+		font-weight: bold;
 	}
 
 
@@ -188,14 +195,19 @@ table {
 .page-id-16 {
 	.merk-lijst-titel {
 		border-right: none;
+		font-weight:bold;
 	}
 }
 
 thead tr, tfoot td {
 	background: #ff6850;
+	-webkit-box-shadow: inset 0px 0px 45px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 45px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 45px 0px rgba(0,0,0,0.75);
 	background-repeat: no-repeat;
 	background-size: 141% 91px;
 	background-position: 0px -36px;
+	font-weight: bold;
 
 	h3 {
 		border-radius: 6px;

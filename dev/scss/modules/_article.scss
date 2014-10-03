@@ -99,6 +99,19 @@
  
 }
 
+
+.view-snippet {
+  position: absolute;
+  bottom: 37px;
+  right: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box-relative {
+  position: relative;
+}
+
 .grid-70 {
   width: 70%;
   float: left;

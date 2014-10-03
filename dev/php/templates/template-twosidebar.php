@@ -4,7 +4,7 @@ Template Name: Page with two sidebars on either side
 */
 ?>
 	<?php get_header(); ?>
-<div class="container">
+		<div class="container">
 
 
 		<div>

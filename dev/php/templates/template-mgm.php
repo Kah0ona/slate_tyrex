@@ -98,7 +98,7 @@ Template Name: MGM
 							werking van het systeem? Onze medewerkers staan u graag te 
 							woord. Kom gerust een keer langs en verken de kansen die voor
 							u klaar liggen.</p>
-								<a href="#" class="banden-link">Neem contact op</a>
+								<a href="/contact/" class="banden-link">Neem contact op</a>
 					</div>
 
 					</div>
