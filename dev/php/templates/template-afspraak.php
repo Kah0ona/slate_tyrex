@@ -8,41 +8,7 @@ Template Name: Afspraak maken
 <div class="container">
 	
 		<section id="content"> 	
-
-			<div class="u-gridRow ups">
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Topkwaliteit</h4>
-		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
-		  				Onze tevredenheidsgarantie laat u nooit steken.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups41.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Grote voorraad</h4>
-		  			<p class="red-content">Meeste maten direct leverbaar uit voorraad.</br>
-		  				Uw maat niet voorradig? Binnen een werkdag weer wel!</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups2.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Beste koop</h4>
-		  			<p class="red-content">Betaal nooit teveel.</br>
-		  				De prijzen van onze concurrenten worden dagelijks gemonitord.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups3.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Verdien geld</h4>
-		  			<p class="red-content">Verdien tot 20,- euro oer klant!</br>
-		  				Ontdek ons Member Gets Member systeem en start met verdienen.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups4.png" />
-		  			</div>
-		  		</div>
-		  	</div>
+				<?php include_once('top-usps.php'); ?>
 				<div class="grid-70">
 					<div class="u-gridRow">
 							<h4 class="auto_content">Afspraak</h4>
@@ -58,7 +24,7 @@ Template Name: Afspraak maken
 							experts van Tyrex Banden u graag mee verder helpen.
 							</p>
 
-							<a href="#" class="banden-link">Plan uw afspraak</a>
+							<a href="/plan-uw-afspraak/" class="banden-link">Plan uw afspraak</a>
 
 							<h4 class="auto_content">Veilig voorop</h4>
 							<p class="inhoud">Brood koopt u bij de bakker. Uw banden koopt u bij de bandenspecialist! 

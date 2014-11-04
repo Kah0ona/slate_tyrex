@@ -200,10 +200,7 @@ table {
 }
 
 thead tr, tfoot td {
-	background: #ff6850;
-	-webkit-box-shadow: inset 0px 0px 45px 0px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0px 0px 45px 0px rgba(0,0,0,0.75);
-box-shadow: inset 0px 0px 45px 0px rgba(0,0,0,0.75);
+	background: #d61d23;
 	background-repeat: no-repeat;
 	background-size: 141% 91px;
 	background-position: 0px -36px;
@@ -211,12 +208,12 @@ box-shadow: inset 0px 0px 45px 0px rgba(0,0,0,0.75);
 
 	h3 {
 		border-radius: 6px;
-		background-color: #FFF;
 		padding: 6px 10px;
 		display: inline-block;
-		font-size: 16px;
-		color: #020202;
+		font-size: 20px;
+		color: white;
 		margin: 10px 0px 9px;
+		text-align: left;
 	}
 }
 

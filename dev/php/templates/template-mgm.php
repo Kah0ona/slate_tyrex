@@ -9,40 +9,7 @@ Template Name: MGM
 	
 		<section id="content"> 	
 
-			<div class="u-gridRow usp">
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Topkwaliteit</h4>
-		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
-		  				Onze tevredenheidsgarantie laat u nooit steken.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups41.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Grote voorraad</h4>
-		  			<p class="red-content">Meeste maten direct leverbaar uit voorraad.</br>
-		  				Uw maat niet voorradig? Binnen een werkdag weer wel!</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups2.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Beste koop</h4>
-		  			<p class="red-content">Betaal nooit teveel.</br>
-		  				De prijzen van onze concurrenten worden dagelijks gemonitord.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups3.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Verdien geld</h4>
-		  			<p class="red-content">Verdien tot 20,- euro oer klant!</br>
-		  				Ontdek ons Member Gets Member systeem en start met verdienen.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups4.png" />
-		  			</div>
-		  		</div>
-		  	</div>
+				<?php include_once('top-usps.php'); ?>
 				<div class="grid-70">
 					<div class="u-gridRow">
 							<h4 class="auto_content">Member Gets Member</h4>
@@ -97,7 +64,8 @@ Template Name: MGM
 							werking van het systeem? Onze medewerkers staan u graag te 
 							woord. Kom gerust een keer langs en verken de kansen die voor
 							u klaar liggen.</p>
-								<a href="/contact/" class="banden-link">Neem contact op</a>
+							<a href="/contact/" class="banden-link">Neem contact op</a>
+							</p>
 					</div>
 
 					</div>

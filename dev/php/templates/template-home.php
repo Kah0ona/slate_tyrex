@@ -19,7 +19,7 @@ Template Name: Home
 		  		</div>
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Bandenservice</h4>
-		  			<p class="red-content">Van uitlijnen tot bandenhotel!</br>
+		  			<p class="red-content">Van uitlijnen tot bandenhotel!</br></br>
 		  				Alle know-how paraat, Tyrex Banden is uw bandenspecialist.</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_2.png" />
@@ -27,7 +27,7 @@ Template Name: Home
 		  		</div>
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Velgen</h4>
-		  			<p class="red-content">Zeer breed assortiment aan velgen!</br>
+		  			<p class="red-content">Zeer breed assortiment aan velgen!</br></br>
 		  				De meeste exclusieve velgen koopt u bij Tyrex Banden.</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_3.png" />
@@ -126,9 +126,6 @@ Template Name: Home
 				</div>
 				<div class="grid-30">
 					<div class="sidebar">
-						<fieldset>
-						     <legend align="center">Sidebar</legend>
-						</fieldset>
 						<div class="box box-relative">
 							<div class="title">Onze klanten aan het woord.</div></br>
 							<div>
@@ -201,9 +198,6 @@ Template Name: Home
 				</div>
 				<div class="grid-30">
 					<div class="title-wrap">
-						<fieldset>
-						     <legend style=align="center">Sidebar</legend>
-						</fieldset>
 					</div>
 					<div class="sidebar red-bg">
 						<img src="/files/2014/09/sidebar_example1.png" />

@@ -6,7 +6,7 @@ FWDS3DCovUtils.onReady(function(){
 		displayType:"fluidwidth",
 		autoScale:"yes",
 		coverflowWidth:940,
-		coverflowHeight:353,
+		coverflowHeight:453,
 		skinPath:"/wp-content/themes/slate-0.1.0_tyrex/load/skin_black",
 		
 		//main settings
@@ -18,8 +18,8 @@ FWDS3DCovUtils.onReady(function(){
 		coverflowTopology:"dualsided",
 		coverflowXRotation:0,
 		coverflowYRotation:0,
-		numberOfThumbnailsToDisplayLeftAndRight:"all",
-		infiniteLoop:"no",
+		numberOfThumbnailsToDisplayLeftAndRight:1,
+		infiniteLoop:"yes",
 		rightClickContextMenu:"developer",
 		fluidWidthZIndex:1000,
 									

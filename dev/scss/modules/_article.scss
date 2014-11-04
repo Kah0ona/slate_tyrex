@@ -44,7 +44,6 @@
   -webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.22);
 -moz-box-shadow:    0px 7px 5px 0px rgba(0, 0, 0, 0.22);
 box-shadow:         0px 7px 5px 0px rgba(0, 0, 0, 0.22);
-  
 
 
 }
@@ -52,6 +51,21 @@ box-shadow:         0px 7px 5px 0px rgba(0, 0, 0, 0.22);
     margin-right: 0;
 }
 
+.testimonial_group {
+    display: none;
+}
+.testimonial_group:nth-of-type(1){
+    display: block;
+}
+
+.testimonial_group:last-of-type{
+display:block;
+}
+
+
+.form_table .starts,.form_table .rr_star {
+  font-size: 45px;
+}
 .rr_review_form table {
   margin-top: 35px;
   border:0;
@@ -160,7 +174,7 @@ box-shadow:         0px 7px 5px 0px rgba(0, 0, 0, 0.22);
 
 .view-snippet {
   position: absolute;
-  bottom: 37px;
+  bottom: 47px;
   right: 35px;
   font-size: 24px;
   font-weight: bold;
@@ -222,3 +236,33 @@ select {
 .inhoud {
   font-size: 16px;
 }
+
+
+
+
+// Afspraak
+
+#calarea_1{
+  float:left;
+  margin-right:14px;
+}
+#abccost{
+  margin-top: -16px;
+}
+.cpp_form input[name="phone"]{
+  margin-bottom: 10px;
+  width: 50%;
+}
+.cpp_form input[name="name"]{
+  margin-bottom: 5px;
+  width: 50%;
+}
+.cpp_form input[name="email"]{
+  margin-bottom: 11px;
+  width: 50%;
+}
+
+.cpp_form textarea {
+  height: 140px;
+}
+// geef de h2 een clas

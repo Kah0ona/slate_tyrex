@@ -27,7 +27,8 @@
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/production.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/google-maps.js"></script>
-
+  <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/reviewShow.js"></script>
   <!-- Check if javascript for threaded comments should be loaded -->
   <?php include 'includes/comment-check.php'; ?>
 

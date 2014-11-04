@@ -73,3 +73,5 @@ $('.icon-twitter, .icon-facebook, .icon-mail').mouseenter(function(){
 $('.icon-twitter, .icon-facebook, .icon-mail').mouseleave(function(){
     $(this).animate({ opacity: "1.0" }, 200); 
 });
+
+
