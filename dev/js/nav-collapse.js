@@ -6,7 +6,7 @@
 // *************************************
 
 $(function() {
-  var menu = $('.Navigation-list--parent');
+  var menu = $('.Navigation-submenu');
   var menuToggle = $('#js-navToggle');
 
   $(menuToggle).on('click', function(e) {

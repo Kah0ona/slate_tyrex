@@ -41,4 +41,5 @@ Template Name: Page w/ sidebar on right
 			<?php get_sidebar(); ?>
 		</section>
 	</section>
+	</div>
 	<?php get_footer(); ?>

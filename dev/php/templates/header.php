@@ -23,8 +23,6 @@
     <!-- Apple touch icons should be accessible from the root of the site, and do not have to be linked here -->
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 
-    <!-- Include only one concatenated stylesheet here, minified -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
 
     <!-- Head scripts, avoid including scripts here -->
     <!-- Don't forget to compile and minify the used modernizr features, or to remove it when unused -->
@@ -43,6 +41,9 @@
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
 
+    <!-- Include only one concatenated stylesheet here, minified -->
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
+
   </head>
   <body <?php body_class(); ?> >
     <header id="logo-header">
@@ -52,11 +53,9 @@
         </div>
         <div class="sub-menu">
             <ul>
-                <li><a href="/index.php">Home</a></li>
                 <li><a href="/werken-bij-tyrex-banden/">Werken bij Tyrex banden</a></li>
                 <li><a href="/klantenservice/">Klantenservice</a></li>
-                <li><a href="/mijn-tyrex-banden/">Mijn Tyrex banden</a></li>
-                <li><a href="over-ons/">Over ons</a></li>
+                <li><a href="/over-ons/">Over ons</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
         <div class="menu-phone">
@@ -153,6 +152,7 @@
 
 
             <nav id="sub-menu"> 
+                <div id="js-navToggle">Menu</div>
                 <?php wp_nav_menu(array(
                     'container'=> 'nav',
                     'menu' => 'submenu',

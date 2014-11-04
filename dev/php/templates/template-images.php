@@ -102,4 +102,5 @@ Template Name: Afbeeldingen
 				}
 			?>
 		</section>
+		</div>
 <?php get_footer(); ?>

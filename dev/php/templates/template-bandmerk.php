@@ -9,7 +9,7 @@ Template Name: autoband merken
 	
 		<section id="content"> 	
 
-			<div class="u-gridRow">
+			<div class="u-gridRow usp">
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Topkwaliteit</h4>
 		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
@@ -139,13 +139,17 @@ Template Name: autoband merken
 			</div>
 			<div class="grid-30">
 				<div class="sidebar">
-					<div class="box">
-						<div class="title">Onze klanten aan het woord.</div></br>
-						<img align="right" src="/files/2014/09/png.png" />
-						Service en kwaliteit vormen onze basis.<br/><br/>
+					<div class="box box-relative">
+							<div class="title">Onze klanten aan het woord.</div></br>
+							<div>
+								<div class="view-snippet"><?php echo do_shortcode("[RICH_REVIEWS_SNIPPET]"); ?></div> 
+								<img align="right" src="/files/2014/10/duim.png" />
+							</div>
 
-						<a href="#">Bekijk beoordeling >></a>
-					</div>
+							Service en kwaliteit vormen onze basis.<br/><br/>
+
+							<a href="/beoordelingen/">Bekijk beoordeling >></a>
+						</div>
 					<div class="box">
 						<div class="title">Wist u dat..</div>
 						<ul>
@@ -164,14 +168,14 @@ Template Name: autoband merken
 						Maak een vriend of vriendin klant bij Tyrex Banden en verdien tot 20,- per klant!
 						<img src="/files/2014/09/community.png" align="right" />
 						</br></br>
-						<a href="#">Lees meer >></a>
+						<a href="/member-get-a-member/">Lees meer >></a>
 					</div>
 					<div class="box">
 						<div class="title">Hulp nodig?</div>
 						Onze medewerkers staan u graag telefonisch te woord tijdens on ze openingstijden:<br/><br/>
 						
 					<div class="u-gridRow">
-						<div class="u-gridCol6">ma t/m vr
+						<div class="u-gridCol6">ma t/m vr<br/>
 						zaterdag
 						</div>
 						<div class="u-gridCol6">08:00 - 17:30</br>
@@ -404,5 +408,5 @@ Template Name: autoband merken
 			</div>	
 
 		</section>
-
+		</div>
 	<?php get_footer(); ?>

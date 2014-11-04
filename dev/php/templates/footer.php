@@ -1,22 +1,22 @@
+	<div class="container">
+		<footer>
+			<section class="footer-container">
+				<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
+				<div class="widgets">
+					<?php dynamic_sidebar( 'footer-widgets' ); ?>
+				</div>
+				<?php endif; ?>
 
-	<footer>
-		<section class="footer-container">
-			<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>
-			<div class="widgets">
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-			</div>
-			<?php endif; ?>
-
-	        <div class="logo">
-	            <a href="/"> <img src="/files/2014/05/logo-black.png" alt="logo tyrex banden"> </a>
-	        </div>
+		        <div class="logo">
+		            <a href="/"> <img src="/files/2014/05/logo-black.png" alt="logo tyrex banden"> </a>
+		        </div>
+			</section>
+		</footer>
+		<section class="sub-footer">		
+				<!-- Copyright info -->
+				<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website door <a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a> </p>
 		</section>
-	</footer>
-	<section class="sub-footer">		
-			<!-- Copyright info -->
-			<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website door <a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a> </p>
-	</section>
-</div>
+	</div>
 
 	
   <!-- Load jquery from google CDN if possible, with fallback to local version -->
@@ -26,6 +26,7 @@
 	<!-- Footer javascript below here -->
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/production.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/google-maps.js"></script>
 
   <!-- Check if javascript for threaded comments should be loaded -->
   <?php include 'includes/comment-check.php'; ?>

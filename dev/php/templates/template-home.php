@@ -8,7 +8,7 @@ Template Name: Home
 	<?php get_header(); ?>
 	<div class="container">
 		<section id="content"> 	
-		  	<div class="u-gridRow">
+		  	<div class="u-gridRow usp">
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Autobanden</h4>
 		  			<p class="red-content">Altijd de juist banden voor uw voertuig!</br>
@@ -79,7 +79,7 @@ Template Name: Home
 										<?php 
 										 
 										$image = get_field('afbeelding_velg');
-										 
+										 //print_r($image);
 										if( !empty($image) ): ?>
 										 
 											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
@@ -92,13 +92,16 @@ Template Name: Home
 
 									<div class="bg-container velg">
 										<div>
-											<img src="/files/2014/09/merken_example.png" />
+											<?php 
+												$img = get_field('past_onder_afbeelding'); 
+												$url = $img['url'];
+												?>
+											<img src="<?php echo $img['url']; ?>" />
 										</div>
 										<div class="nieuwe-prijs">
 											<p> Uw prijs </p>
 											<p class="prijs">€
-												<!---<?php the_field('nieuwe_prijs'); ?>-->
-												80
+												<?php the_field('nieuwe_prijs_velg'); ?>
 											</p>
 										</div>		
 									</div>
@@ -135,7 +138,7 @@ Template Name: Home
 
 							Service en kwaliteit vormen onze basis.<br/><br/>
 
-							<a href="#">Bekijk beoordeling >></a>
+							<a href="/beoordelingen/">Bekijk beoordeling >></a>
 						</div>
 						<div class="box">
 							<div class="title">Waarom Tyrex Banden?</div>
@@ -155,14 +158,14 @@ Template Name: Home
 							Maak een vriend of vriendin klant bij Tyrex Banden en verdien tot 20,- per klant!
 							<img src="/files/2014/09/community.png" align="right" />
 </br></br>
-							<a href="#">Lees meer >></a>
+							<a href="/member-get-a-member/">Lees meer >></a>
 						</div>
 						<div class="box">
 							<div class="title">Hulp nodig?</div>
 							Onze medewerkers staan u graag telefonisch te woord tijdens on ze openingstijden:<br/><br/>
 							
 						<div class="u-gridRow">
-							<div class="u-gridCol6">ma t/m vr
+							<div class="u-gridCol6">ma t/m vr<br/>
 							zaterdag
 							</div>
 							<div class="u-gridCol6">08:00 - 17:30</br>
@@ -213,5 +216,5 @@ Template Name: Home
 
 	</section>
 
-
+	</div>
 	<?php get_footer(); ?>

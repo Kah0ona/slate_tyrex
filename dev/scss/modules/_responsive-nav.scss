@@ -1,0 +1,240 @@
+@media all and (max-width: 1040px) {
+	.Nav-tel {
+		display: none;
+	 }
+	 #js-navCollapseTarget {
+		display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        margin: 0;
+        width: 100% !important;
+        z-index: 9999;
+	 }
+
+	 .Bot-Nav {
+		height: auto;
+		min-height: 58px;
+	 }
+	 #js-navCollapse {
+		display: block;
+	 }
+
+	//  This is the wrapper for the navigation
+	.Nav-wrap {
+		height: auto;
+		min-height: 60px; // <-- adjust to height of div
+	}
+
+	.Navigation-menuToggle  {
+	  display: block;
+	}
+	//  Adjust the sizes and colors for erverything to your choice
+	.Navigation {	
+		position: relative;
+	}
+
+	.Navigation-list {
+		position: static;
+
+	}
+
+
+	.Navigation-listItem {
+		display: block;
+		float: none;
+		line-height: 30px;
+		border-left: 0 solid;
+
+		&:last-of-type {
+			margin-right: 25px;
+		}
+
+		&:hover {
+			//background-color: $c-blue;
+
+			-webkit-transition:all 0.2s ease;
+			-moz-transition:all 0.2s ease;
+			-o-transition:all 0.2s ease;
+			a.Navigation-link {
+			//	color: $c-blue;
+				text-decoration: none;
+
+			}
+		}
+
+        &:first-of-type a {       
+          padding-top: 10px;  
+        }
+
+        &:last-of-type a {              
+
+        }
+
+	}
+
+	.Navigation-link {
+        line-height: 58px;
+		color: white;
+		display: block;
+        font-size: 20px;
+		padding: 5px;
+		margin: 0;
+		font-weight: 400;
+		letter-spacing: 1.7px;
+	    &:hover {
+            background-color: #1e719a;
+            color: white;
+        }
+
+
+	}
+
+	.Navigation-listItem--hasDropdown {
+  position: relative;
+  text-decoration: none;
+}
+
+ul.Navigation-list--dropdown {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 100%; 
+  line-height: 40px;
+  z-index: 110;
+  margin-top: 17px;
+  margin-left: 1px;
+  background: #B92935;
+  color: white;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  ul.Navigation-list--dropdown {
+    top: 43px;
+  }
+}
+ul.Navigation-list--dropdown li.Navigation-listItem {
+  display: block;
+  padding: 0 2px;
+  font-size: 18px;
+  margin: 0 auto;
+  border: 0;
+  font-weight: bold;
+  font-weight: bold;
+  color: white;
+}
+ul.Navigation-list--dropdown li.Navigation-listItem a {
+  background-color: transparent;
+  border: 0px solid;
+  font-size: 13px;
+}
+	//	This is for those 3 contact icons on the left of the navbar
+	.Mob-contact-ico {
+		display: block;
+		z-index: 5000;
+		float: right;
+
+
+		a { 
+			border: 2px solid white;
+			display: block;
+			width: 35px;
+			height: 35px;
+			border-radius: 7px;
+
+			top: 8px;
+			background-color: transparent;
+			&:hover {
+				background-color: rgba(255,255,255,0.2);
+			}
+
+			.Icon--inline {
+				fill: white;
+				width: 2em;
+				height: 2em;
+				padding-bottom: 1em;				
+			}
+		}
+
+		.telsvg {
+			position: relative;
+			top: -43px;	
+			left: -13px;	
+			border: 3px solid white;	
+			width: 36px;
+			height: 36px;	
+			.Icon--inline {
+
+			}
+
+			svg {
+				height: 30px;
+				width: 100%;
+				position: relative;
+				top: -3px;
+			}
+		}
+
+		.tel2svg {		
+			.Icon--inline {
+				margin: -5px;
+				margin-top: 5px;
+			}
+		}
+
+		.mailsvg {
+			position: relative;
+			top: -79px;	
+			left: -53px;	
+			border: 3px solid white;	
+			width: 36px;
+			height: 36px;				
+
+			svg {
+				height: 30px;
+				width: 100%;
+				position: relative;
+				top: -3px;
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 800px) {
+	#sub-menu .menu-item {
+		display: block;
+		margin: 0;
+	}
+
+	#sub-menu .menu-item svg {
+		display: inline;
+		margin-bottom: -13px;
+		
+	}
+	#js-navToggle {
+		padding: 20px;
+		color: white;
+		font-weight: bold;
+		text-decoration: capitalize;
+	}
+
+	.Navigation-submenu {
+		display: none;
+	}
+}
+
+@media all and (min-width: 1040px) {  
+  #js-navCollapse {
+    display: none;
+  }
+}
+
+.Navigation-menuToggle {
+	width: 36px;
+	height: 36px;
+	border-radius: 7px;
+	margin: 7px 0;
+	background-color: transparent;
+	border: 3px solid #7A6E6E;
+	cursor: pointer;
+}

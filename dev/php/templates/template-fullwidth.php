@@ -18,5 +18,5 @@ Template Name: Page w/o sidebar
 		</article>
 	<?php endwhile; endif; ?>
 	</div>
-
+</div>
 <?php get_footer(); ?>

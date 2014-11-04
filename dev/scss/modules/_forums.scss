@@ -1,0 +1,72 @@
+#bbpress-forums li.bbp-header {
+	background:#C71B21;
+	color: white;
+}
+
+#bbpress-forums li {
+	list-style: none;
+}
+
+#bbpress-forums ul {
+	margin:0;
+	padding:0;
+}
+
+
+
+#bbpress-forums button {
+	padding: 10px;
+	background: red;
+	color: white;
+	border:0;
+	border-radius: 5px;
+}
+
+#bbpress-forums .bbp-breadcrumb {
+	background: #C71B21;
+	border-radius: 3px;
+	padding: 0px 40px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#bbpress-forums .bbp-breadcrumb a{
+	color: white;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+#subscription-toggle {
+	display: none;
+}
+
+.bbp-topic-voice-count, .bbp-topic-reply-count {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+#bbp_search {
+	padding: 10px;
+	border-radius: 5px;
+	border:0;
+	color: gray;
+}
+
+#bbp_search_submit {
+	padding: 10px;
+	border-radius: 5px;
+	border:0;
+	color: gray;
+}
+
+.bbp-forum-title {
+position: relative;
+top: 15px;
+left: 10px;
+}
+
+.forum-icon {
+	width: 50px;
+	height: 50px;
+}

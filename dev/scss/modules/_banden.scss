@@ -1,5 +1,4 @@
 .sidebar {
-	@include span-columns(12);
 	margin-left: 4%;
 	margin-top: 20px;
 
@@ -118,7 +117,7 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 			background: url("../img/circle.png");
 			background-position: center center;
 			background-repeat: no-repeat;
-			background-size: 45%;
+			background-size: 43%;
 			padding: 22px 0px 26px;
 
 			p {
@@ -443,8 +442,42 @@ legend {
 	width: 100%;
 }
 
+.velg-beschrijving {
+	background: white;
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #AAA;
+}
+
+.velg-beschrijvingalbum {
+	background: white;
+	border-radius: 5px;
+	border: 1px solid #AAA;
+	padding: 10px;
+	background: url('/wp-content/themes/slate-0.1.0_tyrex/img/boxbg.png');
+	background-size: contain;
+}
+
+.velg-albumtitle {
+	width: 100%;
+	background: $c-red;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+.automerk-afbeelding {
+		background: url('/wp-content/themes/slate-0.1.0_tyrex/img/boxbg.png');
+	background-size: contain;
+}
 
 
+.single-band .band {
+
+	width: auto !important;
+}
 //---- /new style ---
 /*.line {
 	line-height: 0.8;

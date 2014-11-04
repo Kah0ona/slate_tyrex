@@ -9,7 +9,7 @@ Template Name: Service
 	
 		<section id="content"> 	
 
-			<div class="u-gridRow">
+			<div class="u-gridRow usp">
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Topkwaliteit</h4>
 		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
@@ -78,12 +78,16 @@ Template Name: Service
 				</div>
 				<div class="grid-30">
 					<div class="sidebar">
-						<div class="box">
+						<div class="box box-relative">
 							<div class="title">Onze klanten aan het woord.</div></br>
-							<img align="right" src="/files/2014/09/png.png" />
+							<div>
+								<div class="view-snippet"><?php echo do_shortcode("[RICH_REVIEWS_SNIPPET]"); ?></div> 
+								<img align="right" src="/files/2014/10/duim.png" />
+							</div>
+
 							Service en kwaliteit vormen onze basis.<br/><br/>
 
-							<a href="#">Bekijk beoordeling >></a>
+							<a href="/beoordelingen/">Bekijk beoordeling >></a>
 						</div>
 						<div class="box">
 							<div class="title">Gratis stoombeurt</div>
@@ -96,7 +100,7 @@ Template Name: Service
 							Onze medewerkers staan u graag telefonisch te woord tijdens on ze openingstijden:<br/><br/>
 							
 						<div class="u-gridRow">
-							<div class="u-gridCol6">ma t/m vr
+							<div class="u-gridCol6">ma t/m vr<br/>
 							zaterdag
 							</div>
 							<div class="u-gridCol6">08:00 - 17:30</br>
@@ -226,6 +230,6 @@ Template Name: Service
 				</div>
 
 		</section>
-
+		</div>
 
 	<?php get_footer(); ?>

@@ -7,7 +7,7 @@ Template Name: Velgen
 <div class="container">
 	
 		<section id="content"> 	
-			<div class="u-gridRow">
+			<div class="u-gridRow usp">
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Topkwaliteit</h4>
 		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
@@ -22,7 +22,7 @@ Template Name: Velgen
 		  				Uw maat niet voorradig? Binnen een werkdag weer wel!</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups2.png" />
-		  			</div>
+		  			</div>                       
 		  		</div>
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Beste koop</h4>
@@ -56,59 +56,63 @@ Template Name: Velgen
 
 				<?php endif; ?>
 			</div>			
-		  	<h2 class="line"><span>Meest verkochte velgen</span></h2>
-			<div class="u-gridRow">
-				<?php
-					$args = array(
-						'post_type' => 'velg', 
-						'posts_per_page'=>4
-					);
-					$aanbiedingen = new WP_Query( $args );
-					if( $aanbiedingen->have_posts() ) {
-						while( $aanbiedingen->have_posts() ) {
-							$aanbiedingen->the_post();
-							?>
+		  	
+			
+			<div class="banden_featured_placeholder"></div>
 
+			<div clasddfcfds="merk-lijst-beschrijvingen2 bandenmerken">
+				<div class="merk-container">
+					<?php
+						$args = array(
+							'post_type' => 'automerk',
+							'orderby'=>'title',
+							'order'=>'ASC',
+							'nopaging' => true
+						);
+						$aanbiedingen = new WP_Query( $args );
+						if( $aanbiedingen->have_posts() ) {
+							$counter = 1;
+							while( $aanbiedingen->have_posts() ) {
 
-							<div class="band">
-								<div class="band-container">
-									<div class="afbeelding-band">
-										<?php 
-										 
-										$image = get_field('afbeelding_velg');
-										 
-										if( !empty($image) ): ?>
-										 
-											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-										 
-										<?php endif; ?>	
-									</div>	
-									<div class="naam-band">
-										<h3><?php the_field('naam_velg'); ?></h3>
-									</div>
+								$aanbiedingen->the_post();
+								$numColumns = 6;
+								if($counter % $numColumns == 1) {
+									echo '<div class="u-gridRow">';
+								}	?>
+										<div class="merk u-gridCol2 merk_<?php the_ID(); ?>" >
+											<div class="merk-afbeelding">
+												
+												<?php 
+												 
+												$image = get_field('automerk_afbeelding');
+												 
+												if( !empty($image) ): ?>
+												 
+													<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+												 
+												<?php endif; ?>	
+											</div>
+											<div class="merk-title">
+												<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+											</div>
+										</div>
 
-									<div class="bg-container">
-										<div class="oude-prijs">
-											<p>Prijs</p<>
-											<p>€<?php the_field('oude_prijs_velg'); ?></p>
-										</div>			
-									</div>
-								</div>
+								<?php
+									if($counter % $numColumns == 0) {
+										echo '</div>';
+									}
 
-								<div class="info">
-									<a href="<?php echo get_permalink(); ?>">Meer info</a>
-								</div>
-							</div>
-
-							<?php
+									$counter++;
+							}
 						}
-					}
-					else {
-						echo '<p>Er zijn momenteel geen aanbiedingen</p>';
-					}
-				?>
-			</div>
+						else {
+							echo '<p>Er zijn momenteel geen bandmerken</p>';
+						}
+					?>
+				</div>
+			</div>	
+			
 	</section>
 
-
+	</div>
 	<?php get_footer(); ?>

@@ -19,5 +19,5 @@ Template Name: Page w/ sidebar on left
 			<?php endwhile; endif; ?>
 			</div>
 		</div>
-
+		</div>
 	<?php get_footer(); ?>

@@ -9,7 +9,7 @@ Template Name: MGM
 	
 		<section id="content"> 	
 
-			<div class="u-gridRow">
+			<div class="u-gridRow usp">
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Topkwaliteit</h4>
 		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
@@ -67,10 +67,9 @@ Template Name: MGM
 								<li><strong>U bent klant bij Tyrex Banden</strong></li>
 								U wordt klant bij Tyrex Banden door minimaal één product (bv. band)
 								aan te schaffen of gebruik te maken van één van onze diensten. 
-								Hierna kunt u met uw factuurnummer een persoonlijk account aanmaken. 
-								Alleen met een account kunt u deelnemen omdat u daarmee onder 
-								andere inzicht hebt in de via u verkochte banden. </br></br>
-								<a href="#" class="banden-link">Account aanmaken</a></br></br>
+								Hierna kunt u uw code aanvragen met dezelfde gegevens van uw aankoop.
+								</br></br>
+								<a href="/member-get-a-member-2/" class="banden-link">Code aanvragen</a></br></br>
 								
 								<li><strong>Persoonlijke code</strong></li>
 								Iedere klant die zich aanmeldt voor het Member Gets Member-
@@ -105,12 +104,16 @@ Template Name: MGM
 				</div>
 				<div class="grid-30">
 					<div class="sidebar">
-						<div class="box">
+						<div class="box box-relative">
 							<div class="title">Onze klanten aan het woord.</div></br>
-							<img align="right" src="/files/2014/09/png.png" />
+							<div>
+								<div class="view-snippet"><?php echo do_shortcode("[RICH_REVIEWS_SNIPPET]"); ?></div> 
+								<img align="right" src="/files/2014/10/duim.png" />
+							</div>
+
 							Service en kwaliteit vormen onze basis.<br/><br/>
 
-							<a href="#">Bekijk beoordeling >></a>
+							<a href="/beoordelingen/">Bekijk beoordeling >></a>
 						</div>
 					
 						<div class="box">
@@ -118,7 +121,7 @@ Template Name: MGM
 							Onze medewerkers staan u graag telefonisch te woord tijdens on ze openingstijden:<br/><br/>
 							
 						<div class="u-gridRow">
-							<div class="u-gridCol6">ma t/m vr
+							<div class="u-gridCol6">ma t/m vr<br/>
 							zaterdag
 							</div>
 							<div class="u-gridCol6">08:00 - 17:30</br>
@@ -132,5 +135,5 @@ Template Name: MGM
 		
 
 		</section>
-
+	</div>
 	<?php get_footer(); ?>
