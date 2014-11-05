@@ -37,7 +37,7 @@
         type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     </script>
     <!--End of Zopim Live Chat Script-->
-    
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.fancybox.js"></script>
     <!-- Wordpress head function -->
     <?php wp_head(); ?>
 
@@ -156,6 +156,7 @@
 
             </div>
 
+            <div id="navSticky"></div>
 
             <nav id="sub-menu"> 
                 <div id="js-navToggle">Menu</div>
@@ -171,7 +172,7 @@
 
             </nav>
         </section>
-
+        
     </header>
 
     <div id="social-media">

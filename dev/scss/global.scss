@@ -47,7 +47,7 @@
 
 @import "modules/article";
 
-
+@import "modules/fancybox";
 
 @import "modules/topbar";
  
@@ -83,7 +83,74 @@
 
 @import "modules/ups";
 
+@import "modules/bxslider";
 
 // -------------------------------------
 // Inbox
 // -------------------------------------
+
+.zopim {
+	left: none;
+   right: 10px !important;
+}
+
+.yui-calendar .calweekdaycell {
+	color: #ffffff !important;
+}
+
+.stick {
+    position: fixed;
+    padding: 0;
+    top: 0px;
+    height: 70px;
+}
+
+.stick .submenu {
+	margin-top: 0px;
+}
+
+.yui-calcontainer {
+
+background-color: #FFFFFF !important;
+border-radius: 5px !important;
+border: 1px solid #DF0000 !important;
+
+}
+
+#content ul{
+	list-style-image: url('../img/vink.png')
+}
+
+.meshim_widget_components_chatButton_Button{
+        color: rgb(232, 0, 0) !important;
+
+}
+
+
+.meshim_widget_Widget {
+        font-size: 12px !important;
+}
+
+.cardetailing-wrap {
+	@include clearfix;
+	border: 6px solid #C01A20;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-top: 40px;
+}
+.car-detailing {
+	
+	
+}
+
+.cardetailing-slide {
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+
+
+

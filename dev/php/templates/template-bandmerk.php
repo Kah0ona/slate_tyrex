@@ -64,15 +64,6 @@ Template Name: autoband merken
 					<?php include_once('widget-openingstijden.php'); ?>
 				</div>
 			</div>
-			<div class="u-gridRow autobanden">
-				 <h2> Autobanden </h2>
-				<div class="editor-content">
-					<p>Tyrex Banden biedt u een compleet assortiment banden voor bijna elk type voertuig. U bent bij ons op het juiste adres voor vakkundige en vrijblijvende adviezen voor uw banden. Wij leveren alle topmerken die daarnaast aangevuld worden door ons huismerk die u verzekert van een optimale prijs-kwaliteitverhouding.</p>
-					<p>De experts van Tyrex Banden beschikken over alle knowhow omtrent uw banden. Spijtig genoeg worden de banden nog wel eens onderschat. Tyrex Banden werkt dan ook uitsluitend met hoge kwaliteitsbanden.</p>
-					<p>Zijn uw banden onregelmatig versleten? Dankzij onze modernste 3D uitlijnapparatuur wordt uw auto-onderstel weer op de juiste fabriekswaardes afgesteld.</p>
-					<p>Voor een prijsopgave van een bepaalde bandenmaat, kunt u het snelst telefonisch contact opnemen met één van onze experts. U kunt buiten onze openingstijden uw bandengegevens natuurlijk ook aan ons doorgeven via ons contactformulier.</p>
-				</div>
-			</div>
 			<div class="u-gridRow">
 				<div class="merk-lijst u-gridCol6">
 					<div class="merk-lijst-container">
