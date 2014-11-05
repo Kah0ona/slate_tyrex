@@ -111,9 +111,14 @@
 			<!-- category  -->
 			<ul data-cat=" ">
 			<?php
+				//global $post;
+				//$slug = get_post( $post )->post_name; //UNTESTED, get current slug
+				//print_r($_SERVER);
 				$args = array(
 					'post_type' => 'slides', 
-					'posts_per_page'=>999
+					'posts_per_page'=>999,
+					'meta_key' => 'pagina',
+					'meta_value' => $_SERVER['SCRIPT_NAME']
 				);
 				$slides = new WP_Query( $args );
 				$num = count($slides);
