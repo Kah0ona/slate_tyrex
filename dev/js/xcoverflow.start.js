@@ -18,9 +18,9 @@ FWDS3DCovUtils.onReady(function(){
 		coverflowTopology:"dualsided",
 		coverflowXRotation:0,
 		coverflowYRotation:0,
-		numberOfThumbnailsToDisplayLeftAndRight:"all",
-		infiniteLoop:"no",
-		rightClickContextMenu:"developer",
+		numberOfThumbnailsToDisplayLeftAndRight:3,
+		infiniteLoop:"yes",
+		rightClickContextMenu:"default",
 		fluidWidthZIndex:1000,
 									
 		//thumbnail settings
