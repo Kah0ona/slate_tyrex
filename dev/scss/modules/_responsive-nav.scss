@@ -223,8 +223,8 @@ ul.Navigation-list--dropdown li.Navigation-listItem a {
 	}
 }
 
-@media all and (min-width: 1040px) {  
-  #js-navCollapse {
+@media all and (min-width: 800px) {  
+  #js-navToggle {
     display: none;
   }
 }

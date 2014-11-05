@@ -63,9 +63,14 @@
 			<?php endwhile; endif; ?>
 		</div>
 	</div> <!-- grid 70 -->
-
-	<div class="grid-30 ">
-		<?php include_once('hardcoded-sidebar.php'); ?>
+	<div class="grid-30">
+		<div class="sidebar">
+			<?php 
+				include_once('widget-reviews.php'); 
+				include_once('widget-stoombeurt.php'); 
+				include_once('widget-openingstijden.php'); 
+			?>
+		</div>
 	</div> <!-- grid-30 -->
 </div> <!-- container -->
 <?php get_footer(); ?>

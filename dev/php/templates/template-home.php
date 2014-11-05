@@ -19,7 +19,7 @@ Template Name: Home
 		  		</div>
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Bandenservice</h4>
-		  			<p class="red-content">Van uitlijnen tot bandenhotel!</br>
+		  			<p class="red-content">Van uitlijnen tot bandenhotel!</br></br>
 		  				Alle know-how paraat, Tyrex Banden is uw bandenspecialist.</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_2.png" />
@@ -27,7 +27,7 @@ Template Name: Home
 		  		</div>
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Velgen</h4>
-		  			<p class="red-content">Zeer breed assortiment aan velgen!</br>
+		  			<p class="red-content">Zeer breed assortiment aan velgen!</br></br>
 		  				De meeste exclusieve velgen koopt u bij Tyrex Banden.</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_3.png" />
@@ -126,52 +126,10 @@ Template Name: Home
 				</div>
 				<div class="grid-30">
 					<div class="sidebar">
-						<fieldset>
-						     <legend align="center">Sidebar</legend>
-						</fieldset>
-						<div class="box box-relative">
-							<div class="title">Onze klanten aan het woord.</div></br>
-							<div>
-								<div class="view-snippet"><?php echo do_shortcode("[RICH_REVIEWS_SNIPPET]"); ?></div> 
-								<img align="right" src="/files/2014/10/duim.png" />
-							</div>
-
-							Service en kwaliteit vormen onze basis.<br/><br/>
-
-							<a href="/beoordelingen/">Bekijk beoordeling >></a>
-						</div>
-						<div class="box">
-							<div class="title">Waarom Tyrex Banden?</div>
-							<ul>
-									<li>Topkwaliteit en snelle service</li>
-									<li>Gecertificeerde bandenspecialist</li>
-									<img src="/files/2014/09/erkend.png" />
-									<li>Laagste prijsgarantie</li>
-									<li>Comfortabele wachtruimte</li>
-									<img src="/files/2014/09/wifi.png" align="center" />
-							</ul>
-						</div>
-						<div class="box">
-							<div class="title">Member Gets Member</div>
-							Maak een vriend of vriendin klant bij Tyrex Banden en verdien tot 20,- per klant!
-							<img src="/files/2014/09/community.png" align="right" />
-</br></br>
-							<a href="/member-get-a-member/">Lees meer >></a>
-						</div>
-						<div class="box">
-							<div class="title">Hulp nodig?</div>
-							Onze medewerkers staan u graag telefonisch te woord tijdens onze openingstijden:<br/><br/>
-							
-							<div class="u-gridRow">
-								<div class="u-gridCol6">ma t/m vr<br/>
-								zaterdag
-								</div>
-								<div class="u-gridCol6">08:00 - 17:30<br/>
-									08:00 - 17:00
-								</div>
-							</div>
-							<p class="telefoon">0165 - 32 00 02</p>
-						</div>
+						<?php include_once('widget-reviews.php'); ?>
+						<?php include_once('widget-waaromtyrex.php'); ?>
+						<?php include_once('widget-mgm.php'); ?>
+						<?php include_once('widget-openingstijden.php'); ?>
 					</div>
 				</div>
 
@@ -199,9 +157,6 @@ Template Name: Home
 				</div>
 				<div class="grid-30">
 					<div class="title-wrap">
-						<fieldset>
-						     <legend style=align="center">Sidebar</legend>
-						</fieldset>
 					</div>
 					<div class="sidebar red-bg">
 						<img src="/files/2014/09/sidebar_example1.png" />

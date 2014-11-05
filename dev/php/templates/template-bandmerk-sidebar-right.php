@@ -5,7 +5,6 @@ Template Name: autoband merken w/ sidebar on right
 ?>
 <?php get_header(); ?>
 <div class="container">
-	
 
 	<section id="content">
 	  	<h2 class="line"> Autobanden </h2>

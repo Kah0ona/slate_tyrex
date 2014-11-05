@@ -46,10 +46,22 @@
 
   </head>
   <body <?php body_class(); ?> >
+    
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
     <header id="logo-header">
         <div class="container">
-            <div class="logo">
-                <img width="200" src="/files/2014/05/logo.png" />
+			<div class="logo">
+				<a href="/">
+				<img width="200" src="/files/2014/05/logo.png" />
+				</a>
         </div>
         <div class="sub-menu">
             <ul>
@@ -98,45 +110,39 @@
 			
 			<!-- category  -->
 			<ul data-cat=" ">
-
-				<?php //for($i = 0; $i < 6; $i++){ ?>
-				<ul>
-					<li data-type="link" data-url="#"></li>
-					<li data-thumbnail-path="/files/2014/09/coverflow_3.png"></li>
-					<li data-thumbnail-text="">
-						<p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-						<p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
-					</li>
-					<li data-info="">
-						<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
-						<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
-					</li>
-				</ul>
-                <ul>
-                    <li data-type="link" data-url="#"></li>
-                    <li data-thumbnail-path="/files/2014/09/coverflow_2.png"></li>
-                    <li data-thumbnail-text="">
-                        <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-                        <p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
-                    </li>
-                    <li data-info="">
-                        <p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
-                        <p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
-                    </li>
-                </ul>   
-                <ul>
-                    <li data-type="link" data-url="#"></li>
-                    <li data-thumbnail-path="/files/2014/09/coverflow_1.png"></li>
-                    <li data-thumbnail-text="">
-                        <p class="largeLabel">CUSTOM PRESS THUMBNAIL ACTION</p>
-                        <p class="smallLabel">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
-                    </li>
-                    <li data-info="">
-                        <p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
-                        <p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
-                    </li>
-                </ul>                  
-				<?php //} ?>
+			<?php
+				$args = array(
+					'post_type' => 'slides', 
+					'posts_per_page'=>999
+				);
+				$slides = new WP_Query( $args );
+				$num = count($slides);
+				if( $slides->have_posts() ) {
+					while( $slides->have_posts() ) {
+						$slides->the_post(); ?>
+						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+							  $image_url = $image[0];
+						?>
+						<ul>
+							<?php if(get_field('link') != '' && get_field('link') != null) { ?>
+							<li data-type="link" data-url="<?php echo the_field('link'); ?>"></li> 
+							<?php } else { ?>
+							<li data-type="link" data-url="/"></li> 
+							<?php } ?>
+							<li data-thumbnail-path="<?php echo $image_url; ?>"></li>
+							<li data-thumbnail-text="">
+								<p class="largeLabel"><?php the_title(); ?></p>
+								<p class="smallLabel"><?php the_field('onderschrift'); ?></p>
+							</li>
+							<li data-info="">
+								<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>
+								<p class="mediaDescriptionText">When a thumbnail is pressed the coverflow can open a browser window or the lightbox.</p>
+							</li>
+						</ul>
+						<?php
+					}
+				}
+			?>
 			
 			</ul>
 			<!-- end  -->
@@ -172,6 +178,6 @@
         <ul>
             <a href="https://www.facebook.com/pages/Tyrex-Banden/124648897727405?fref=ts" target="_blank"> <li> <svg class="icon icon-facebook" viewBox="0 0 32 32"><use xlink:href="#icon-facebook"></use></svg></li></a>
             <a href="https://twitter.com/Tyrexbanden" target="_blank"><li><svg class="icon icon-twitter" viewBox="0 0 32 32"><use xlink:href="#icon-twitter"></use></svg></li></a>
-            <a href="https://twitter.com/Tyrexbanden" target="_blank"><li><svg class="icon icon-mail" viewBox="0 0 32 32"><use xlink:href="#icon-mail"></use></svg></li></a>
+            <a href="/contact/"><li><svg class="icon icon-mail" viewBox="0 0 32 32"><use xlink:href="#icon-mail"></use></svg></li></a>
         </ul>
     </div>

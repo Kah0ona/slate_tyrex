@@ -6,7 +6,8 @@ FWDS3DCovUtils.onReady(function(){
 		displayType:"fluidwidth",
 		autoScale:"yes",
 		coverflowWidth:940,
-		coverflowHeight:353,
+		coverflowHeight:453,
+		//coverflowHeight:580,
 		skinPath:"/wp-content/themes/slate-0.1.0_tyrex/load/skin_black",
 		
 		//main settings
@@ -18,7 +19,7 @@ FWDS3DCovUtils.onReady(function(){
 		coverflowTopology:"dualsided",
 		coverflowXRotation:0,
 		coverflowYRotation:0,
-		numberOfThumbnailsToDisplayLeftAndRight:3,
+		numberOfThumbnailsToDisplayLeftAndRight:1,
 		infiniteLoop:"yes",
 		rightClickContextMenu:"default",
 		fluidWidthZIndex:1000,
@@ -45,15 +46,15 @@ FWDS3DCovUtils.onReady(function(){
 		thumbnailGradientColor1:"rgba(0, 0, 0, 0)",
 		thumbnailGradientColor2:"rgba(0, 0, 0, 1)",
 		showText:"yes",
-		textOffset:10,
+		textOffset:-300,
 		showThumbnailBoxShadow:"yes",
 		thumbnailBoxShadowCss:"0px 2px 2px #111111",
 		showTooltip:"no",
 		dynamicTooltip:"yes",
 		showReflection:"yes",
-		reflectionHeight:60,
+		reflectionHeight:60, 
 		reflectionDistance:0,
-		reflectionOpacity:.4,
+		reflectionOpacity:.4, 
 									
 		//controls settings
 		slideshowDelay:5000,

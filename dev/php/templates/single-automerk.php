@@ -53,47 +53,47 @@
 	<div class="container">	
 		<div class="u-gridRow">
 				<div class="u-gridCol6">
-		<section id="content">
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<section id="content">
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-			<div class="merk" id="<?php the_ID(); ?>">
-				<div class="automerk-afbeelding">
-					<?php 
-					 
-					$image = get_field('automerk_afbeelding');
-					 
-					if( !empty($image) ): ?>
-					 
-						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-					 
-					<?php endif; ?>	
-				</div>			
-			</div>
-					<div class="velg-beschrijving">
-						<h3> <?php the_title() ?> </h3>
+						<div class="merk" id="<?php the_ID(); ?>">
+							<div class="automerk-afbeelding">
+								<?php 
+								 
+								$image = get_field('automerk_afbeelding');
+								 
+								if( !empty($image) ): ?>
+								 
+									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+								 
+								<?php endif; ?>	
+							</div>			
+						</div>
+								<div class="velg-beschrijving">
+									<h3> <?php the_title() ?> </h3>
 
-						<p> <?php the_field('automerk_beschrijving'); ?> </p>
-					</div>
-				</div>
+									<p> <?php the_field('automerk_beschrijving'); ?> </p>
+								</div>
+							</div>
 
-				<div class="u-gridCol6 velg-beschrijvingalbum">
-					<div class="velg-albumtitle">Voorbeeld van velgen</div>
-					<?php 
-						$title = get_the_title();
-						$galleryId = $arr[$title];
+							<div class="u-gridCol6 velg-beschrijvingalbum">
+								<div class="velg-albumtitle">Voorbeeld van velgen</div>
+								<?php 
+									$title = get_the_title();
+									$galleryId = $arr[$title];
 
-						echo do_shortcode('[nggallery id='.$galleryId.']'); ?>
-				</div>
+									echo do_shortcode('[nggallery id='.$galleryId.']'); ?>
+							</div>
 
 
-				<?php endwhile; else: ?>
+							<?php endwhile; else: ?>
 
-					<p><?php _('Sorry, no posts matched your criteria.'); ?></p>
+								<p><?php _('Sorry, no posts matched your criteria.'); ?></p>
 
-				<?php endif; ?>
-			
-			
-			</div>
-		
-		</section>
+							<?php endif; ?>
+						
+						
+						</div>
+					
+					</section>
 	<?php get_footer(); ?>

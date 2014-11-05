@@ -154,6 +154,11 @@ body {
   }
 }
 
+.home .sidebar {
+  margin-top: 80px;
+}
+
+
 #logo-menu-container {
   background-color: $c-black;
   background: url("../img/header2.svg");
@@ -203,7 +208,31 @@ body {
   margin-bottom: 66px;
 }
 
-.home #slider-container {
+
+.largeLabel {
+	position: absolute !important;
+	top: 0px !important;
+	right: 20px !important;
+	background-color: rgba(0,0,0,0.7) !important;	
+	color: white !important;
+	font-size: 24px;
+//	margin-left: 40% !important;
+	display: block !important;
+	font-weight: bold;
+	padding: 20px;
+}
+.smallLabel {
+	color: white;
+	font-size: 20px;
+	margin-left: 40% !important;
+	display: block !important;
+
+}
+
+
+
+//.home #slider-container {
+  #slider-container {
   margin: 0 auto;
   width: 100%;
 
@@ -245,7 +274,7 @@ body {
 #social-media {
   position: fixed;
   right: -10px;
-  top: 110px;
+  top: 250px;
   border: 3px solid $c-white;
   border-radius: 8px;
   background-color: $c-black;
@@ -270,6 +299,10 @@ body {
   }
 }
 
+
+#coverflow {
+  overflow: hidden;
+}
 
 /* Zopim plugin */
 /*

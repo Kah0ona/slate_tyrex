@@ -3,7 +3,7 @@ footer {
   //background-size: 101% 200px;
   background-size: 100%;
   background-width: 1024px;
-  height: 297px;
+  height: 337px;
 
   padding: 100px 0;
   color: $c-white;
@@ -38,7 +38,7 @@ footer {
     }
 
     .widget {
-      @include span-columns(3);
+      @include span-columns(2);
 
       h4 {
         margin: 0px;
@@ -109,4 +109,9 @@ section .sub-footer {
       margin: 10px 30px;
       font-size: 14px;
     }
+}
+
+.fb-like {
+  position: relative;
+  left: -3px; top: 30px;
 }
