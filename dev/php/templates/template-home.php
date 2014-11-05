@@ -156,14 +156,39 @@ Template Name: Home
 					</div>
 				</div>
 				<div class="grid-30">
-					<div class="title-wrap">
+					<div class="cardetailing-wrap">
+					<div class="car-detailing">
+						<?php
+
+							$args = array(
+								'post_type' => 'cardetailing', 
+								'posts_per_page'=>3
+							);
+							$aanbiedingen = new WP_Query( $args );
+							if( $aanbiedingen->have_posts() ) {
+								while( $aanbiedingen->have_posts() ) {
+									$aanbiedingen->the_post();
+
+									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 
+										'single-post-thumbnail' ); 
+							  		$image_url = $image[0];
+									?>
+										<div class="cardetailing-slide">
+											<img src="<?php echo $image_url; ?>" />
+										</div>
+									<?php
+								}
+							}
+							else {
+								echo '<p>Er zijn momenteel geen aanbiedingen</p>';
+							}
+
+						?>
 					</div>
-					<div class="sidebar red-bg">
-						<img src="/files/2014/09/sidebar_example1.png" />
-						<div class="bottom">
-									
-						</div>
 					</div>
+
+
+					
 				</div>
 			</div>
 

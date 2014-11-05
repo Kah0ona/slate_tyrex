@@ -244,6 +244,21 @@ ol {
 
 	}
 
+	.boxtitle_special {
+		text-align: center;
+		border-top: 5px solid #d8d7d7;
+		width: 100%;
+		padding: 10px;
+		padding-top: 16px;
+		font-size: 18px;
+		font-weight: bold;
+		color: white;
+		position: relative;
+		top: -5px;
+		background: #BE1A20;
+
+	}
+
 	img {
 		width: 100%;
 		background: url('/wp-content/themes/slate-0.1.0_tyrex/img/boxbg.png');
@@ -253,7 +268,8 @@ ol {
 	}
 
 	&:hover {
-		opacity: 0.5;
+		opacity: 0.8;
+		border: 3px solid #BE1A20 !important;
 	}
 
 	ul {
@@ -295,7 +311,8 @@ ol {
 	}
 
 	&:hover {
-		opacity: 0.5;
+		opacity: 0.8;
+		border: 3px solid #BE1A20 !important;
 	}
 
 	ul {

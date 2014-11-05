@@ -13,7 +13,7 @@ $("header #menu-item-115 a").prepend('<svg class="icon icon-mail" viewBox="0 0 3
 $("header #menu-item-505 a").prepend('<svg class="icon icon-mail" viewBox="0 0 31 32"><use xlink:href="#icon-mail"></use></svg>');
 
 $(".merk-beschrijving-long").hide();
-
+/*
 $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
@@ -42,7 +42,7 @@ $('a[href*=#]:not([href=#])').click(function() {
         }
     }	
 }); 
-
+*/
 
 $('.home .band').mouseenter(function(){
     $(this).animate({ opacity: "0.7" }, 200);
@@ -72,6 +72,23 @@ $('.icon-twitter, .icon-facebook, .icon-mail').mouseenter(function(){
 
 $('.icon-twitter, .icon-facebook, .icon-mail').mouseleave(function(){
     $(this).animate({ opacity: "1.0" }, 200); 
+});
+
+function sticky_relocate() {
+  var window_top = $(window).scrollTop();
+  var div_top = $('#navSticky').offset().top;
+  if (window_top > div_top) {
+    $('#sub-menu').addClass('stick');
+    $('#navSticky').css('height', '97px');
+  } else {
+    $('#sub-menu').removeClass('stick');
+    $('#navSticky').css('height', '0px');
+  }
+}
+
+$(function() {
+  $(window).scroll(sticky_relocate);
+  sticky_relocate();
 });
 
 

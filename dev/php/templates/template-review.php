@@ -16,16 +16,24 @@ Template Name: Review
 								<?php if (have_posts()) : ?>
 									<?php while (have_posts()) : the_post(); ?>
 
-										<fieldset>
-										     <legend align="center">Beoordelingen</legend>
-										</fieldset>
+										<h4 class="auto_content">Beoordelingen</h4>
+										<p>
+											Uw mening is voor ons erg belangrijk. Wij streven ernaar om al onze
+											 klanten de service te verlenen die ze verdienen. Met behulp van ons 
+											 beoordelingssysteem kunt u uw ervaringen delen met de rest. Kwaliteit 
+											 is onze reclame! 
+										</p>
+										<hr>
 										<?php echo do_shortcode("[RICH_REVIEWS_SHOW]"); ?>
 										
 
 										<a id="show-meer" style="display:inline-block; text-align: center" class="tyrex-button">Laat alle beoordelingen zien</a>
 										<fieldset>
-										     <legend align="center">Schrijf zelf een beoordeling!</legend>
+										     <legend align="center">Persoonlijke ervaring toevoegen</legend>
 										</fieldset>
+										<p>
+											Je beoordeling helpt het bedrijf om de service te verfijnen, Vrienden en andere bezoekers die overwegen een bezoekje te brengen of een aankoop te doen bij Tyrex Banden, kunnen jouw ervaring lezen ter ondersteuning van hun beslising.
+										</p>
 										<?php echo do_shortcode("[RICH_REVIEWS_FORM]"); ?>
 									<?php endwhile; ?>
 								<?php endif; ?>				

@@ -7,5 +7,5 @@
 
 	Service en kwaliteit vormen onze basis.<br/><br/>
 
-	<a href="/beoordelingen/">Bekijk beoordeling >></a>
+	<a href="/beoordelingen/">Bekijk beoordelingen >></a>
 </div>

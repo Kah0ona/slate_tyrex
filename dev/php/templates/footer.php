@@ -16,6 +16,10 @@
 				<!-- Copyright info -->
 				<p>&copy; <?php bloginfo('name'); ?> <?php echo date("Y"); ?> - Website door <a href="http://www.lokaalgevonden.nl" target="_blank">LokaalGevonden</a> </p>
 		</section>
+
+		<div class="contactFormulier-fancybox" id="inline">
+	      <p><?php echo do_shortcode('[gravityform id="1" name="Contact(2)" title="false" description="false" ajax="true"]'); ?></p>
+	    </div>
 	</div>
 
 	
@@ -24,11 +28,12 @@
   <script>window.jQuery || document.write('<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/standalone/jquery.min.js"><\/script>')</script>
 
 	<!-- Footer javascript below here -->
+	    
+
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/production.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/google-maps.js"></script>
   <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
-
   <!-- Check if javascript for threaded comments should be loaded -->
   <?php include 'includes/comment-check.php'; ?>
 
