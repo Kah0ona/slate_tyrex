@@ -8,8 +8,9 @@
 	if( $aanbiedingen->have_posts() ) {
 		while( $aanbiedingen->have_posts() ) {
 			$aanbiedingen->the_post();
+			$button = '<a href="'.get_permalink().'">Meer info</a>';
 			?>
-				<?php the_band();// zie 1band.php ?>
+				<?php the_band(true, 4, $button);// zie 1band.php ?>
 			<?php
 		}
 	}

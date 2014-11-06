@@ -9,40 +9,7 @@ Template Name: autoband merken
 	
 		<section id="content"> 	
 
-			<div class="u-gridRow usp">
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Topkwaliteit</h4>
-		  			<p class="red-content">Service en kwaliteit vormen onze basis.</br>
-		  				Onze tevredenheidsgarantie laat u nooit steken.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups41.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Grote voorraad</h4>
-		  			<p class="red-content">Meeste maten direct leverbaar uit voorraad.</br>
-		  				Uw maat niet voorradig? Binnen een werkdag weer wel!</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups2.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Beste koop</h4>
-		  			<p class="red-content">Betaal nooit teveel.</br>
-		  				De prijzen van onze concurrenten worden dagelijks gemonitord.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups3.png" />
-		  			</div>
-		  		</div>
-		  		<div class="u-gridCol3">
-		  			<h4 class="red-title-bar">Verdien geld</h4>
-		  			<p class="red-content">Verdien tot 20,- euro oer klant!</br>
-		  				Ontdek ons Member Gets Member systeem en start met verdienen.</p>
-		  			<div class="col-foot">
-		  					<img src="/files/2014/09/ups4.png" />
-		  			</div>
-		  		</div>
-		  	</div>
+			<?php include_once('top-usps.php') ?>
 			<div class="grid-70">
 				<div class="u-gridRow banden-content inhoud">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -115,7 +82,7 @@ Template Name: autoband merken
 					<table class="merken-tabel">
 						<thead>
 							<tr>
-								<th colspan="2"><h3>Autobanden merken</h3></th>
+								<th colspan="3"><h3>Autobanden merken</h3></th>
 							</tr>
 						</thead>
 						<?php
@@ -128,7 +95,7 @@ Template Name: autoband merken
 								$counter = 1;
 
 								while( $aanbiedingen->have_posts() ) {
-									$numColumns = 2;
+									$numColumns = 3;
 									if($counter % $numColumns == 1) {
 										echo '<tr>';
 									}	

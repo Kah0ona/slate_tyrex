@@ -39,7 +39,7 @@ Template Name: Carwash
 
 				<div class="u-gridRow">
 					<div class="u-gridCol4">
-						<div class="boxcarwash">
+						<div class="boxcarwash premiumcarcare">
 							<ul>
 								<li>Showroomstaat</li>
 								All Inclusive
@@ -52,7 +52,7 @@ Template Name: Carwash
 						</div>
 					</div>
 					<div class="u-gridCol4">
-						<div class="boxcarwash">
+						<div class="boxcarwash topwashplus">
 							<ul>
 								<li>Wassen (stoom)</li>
 								<li>Velgen intensief</li>
@@ -72,7 +72,7 @@ Template Name: Carwash
 						</div>
 					</div>
 					<div class="u-gridCol4">
-						<div class="boxcarwash">
+						<div class="boxcarwash topwash">
 							<ul>
 								<li>Wassen (stoom)</li>
 								<li>Velgen intensief</li>
@@ -93,7 +93,7 @@ Template Name: Carwash
 				</div>
 				<div class="u-gridRow">
 					<div class="u-gridCol4">
-						<div class="boxcarwash">
+						<div class="boxcarwash superwash">
 							<ul>
 								<li>Wassen (stoom)</li>
 								<li>Velgen intensief</li>
@@ -111,7 +111,7 @@ Template Name: Carwash
 						</div>
 					</div>
 					<div class="u-gridCol4">
-						<div class="boxcarwash">
+						<div class="boxcarwash basicwash">
 							<ul>
 								<li>Wassen (stoom)</li>
 								<li>Velgen</li>
@@ -128,7 +128,7 @@ Template Name: Carwash
 						</div>
 					</div>
 					<div class="u-gridCol4">
-						<div class="boxcarwash">
+						<div class="boxcarwash freewash">
 							<ul>
 								<li>Wassen (stoom)</li>
 								<li>Velgen</li>

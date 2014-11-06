@@ -18,8 +18,14 @@
 		</section>
 
 		<div class="contactFormulier-fancybox" id="inline">
-	      <p><?php echo do_shortcode('[gravityform id="1" name="Contact(2)" title="false" description="false" ajax="true"]'); ?></p>
+
+	      <p>
+	      	<?php echo do_shortcode('[gravityform id="1" name="Contact(2)" title="false" description="false" ajax="true"]'); ?></p>
 	    </div>
+	    <div class="contactFormulier-fancybox" id="actie-formulier">
+	    	<h3>Bestellen</h3>
+	      <p><?php echo do_shortcode('[gravityform id="4"  title="false" description="false" ajax="true"]'); ?></p>
+    	</div>
 	</div>
 
 	

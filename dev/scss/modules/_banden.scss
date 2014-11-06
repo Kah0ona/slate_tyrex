@@ -45,7 +45,6 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 }
 
 .band {
-	@include span-columns(4);
 	border: 5px solid $c-red;
 	border-radius: 5px;
 	text-align: center;
@@ -73,17 +72,17 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 	}
 
 	.velg-container {
-		height: 600px;
+	//	height: 600px;
 	}
 
 	.band-container {
 		margin: 0 auto;
-		height: 410px;
+		//height: 410px;
 
-		.afbeelding-merk {
+		.afbeelding-merk,.afbeelding-band {
 			img {
-				border-radius: 5px 5px 0 0;
-				height: 50px;
+				display: block;
+				width: 100%;
 				margin: 0;
 				padding: 0;
 			}
@@ -91,13 +90,13 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 		}
 
 		.afbeelding-band {
-			position: relative;
-			top: -5px;
+		//	position: relative;
+		//	top: -5px;
 		}
 
 		.naam-band {
 			position: relative;
-			top: -15px;
+		//	top: -15px;
 		}
 
 		.type-band {
@@ -137,7 +136,7 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 			@include outer-container;
 			background-color: $c-white;
 			position: relative;
-			top:-17px;
+			//top:-17px;
 
 			.velg {
 				height: 400px;
@@ -327,6 +326,12 @@ ol {
 			font-size:16px;
 		}	
 	}
+
+
+}
+
+.wistudat {
+		list-style-image: none;
 }
 
 .carwash-price {

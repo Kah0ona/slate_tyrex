@@ -1,6 +1,6 @@
 <div class="box">
 	<div class="title">Wist u dat..</div>
-	<ul>
+	<ul class="wistudat">
 		<li>De wettelijke minimale profieldiepte 1,6mm is?</li>
 		<li>In veel Europese landen winterbanden verplicht zijn?</li>
 		<li>Een banden zijn goede eigenschappen verleist onder een profieldiepte van 2mm?</li>

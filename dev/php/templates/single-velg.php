@@ -9,49 +9,10 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="u-gridRow">
 			<div class="u-gridCol4">
-				<div class="band">
-					<div class="band-container">
-						<div class="afbeelding-merk">
-							<?php 
-							 
-							$image = get_field('afbeelding_merk');
-							 
-							if( !empty($image) ): ?>
-							 
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-							 
-							<?php endif; ?>	
-						</div>
-						<div class="afbeelding-band">
-							<?php 
-							 
-							$image = get_field('afbeelding_velg');
-							 
-							if( !empty($image) ): ?>
-							 
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-							 
-							<?php endif; ?>	
-						</div>	
-						<div class="naam-band">
-							<h3><?php the_field('naam_velg'); ?></h3>
-						</div>
-
-						<div class="bg-container">
-							<div class="type-band">
-								<h4><?php the_field('type_velg'); ?></h4>
-							</div>
-							<div class="oude-prijs">
-								<p>Normale prijs</p>
-								<p>€<?php the_field('oude_prijs'); ?></p>
-							</div>
-							<div class="nieuwe-prijs">
-								<p> Uw prijs </p>
-								<p class="prijs">€<?php the_field('nieuwe_prijs'); ?></p>
-							</div>
-						</div>
-					</div><!-- band-container -->
-				</div><!-- band -->
+				<?php include_once('1velg.php'); ?>
+				<?php 
+					$button = '<a class="banden-link actieformulier-button-band" href="#actie-formulier">Bestellen</a>';
+					the_velg(4, $button,true); ?>
 			</div> <!-- gridcol4 -->
 			<div class="u-gridCol8">
 				<div class="beschrijving">

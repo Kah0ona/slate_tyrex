@@ -7,10 +7,11 @@
 	<div class="grid-70 " style="margin-top: 20px">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); 
 			include_once('1band.php');
+			$button = '<a class="banden-link actieformulier-button-band" href="#actie-formulier">Bestellen</a>';
 		?>
 		<div class="u-gridRow">
 			<div class="u-gridCol4">
-				<?php the_band(false); ?>
+				<?php the_band(true, 4, $button); ?>
 			</div> <!-- gridcol4 -->
 			<div class="u-gridCol8">
 				<div class="beschrijving inhoud">

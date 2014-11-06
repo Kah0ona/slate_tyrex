@@ -47,6 +47,8 @@
 
 @import "modules/article";
 
+@import "modules/acties";
+
 @import "modules/fancybox";
 
 @import "modules/topbar";
@@ -151,6 +153,31 @@ border: 1px solid #DF0000 !important;
 	}
 }
 
+.beschrijving.inhoud{
+	ul{
+		list-style-image: url("../img/vink.png");
+	}
+}
 
+.actie-menu{
+	width:100%;
+	padding: 10px 0px;
+	background: #d61d23;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+}
 
-
+.actie-menu-color {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	margin: 0px 10px;
+	
+}
+.actien-menu-active{
+	background: white;
+	color: black;
+	padding: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+}

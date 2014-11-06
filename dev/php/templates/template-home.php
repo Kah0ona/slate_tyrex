@@ -35,7 +35,7 @@ Template Name: Home
 		  		</div>
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Carwash</h4>
-		  			<p class="red-content">Unieke stoomreiniging voor uw bolide!</br>
+		  			<p class="red-content">Unieke stoomreiniging voor uw bolide!
 		  				Onze methode is duurzaam, ecologisch, hygienisch en betaalbaar.</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_4.png" />
@@ -67,52 +67,12 @@ Template Name: Home
 						'posts_per_page'=>4
 					);
 					$aanbiedingen = new WP_Query( $args );
+					include_once('1velg.php');
 					if( $aanbiedingen->have_posts() ) {
 						while( $aanbiedingen->have_posts() ) {
 							$aanbiedingen->the_post();
-							?>
-
-
-							<div class="band">
-								<div class="band-container velg-container">
-									<div class="afbeelding-band">
-										<?php 
-										 
-										$image = get_field('afbeelding_velg');
-										 //print_r($image);
-										if( !empty($image) ): ?>
-										 
-											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-										 
-										<?php endif; ?>	
-									</div>	
-									<div class="naam-band">
-										<h3><?php the_field('naam_velg'); ?></h3>
-									</div>
-
-									<div class="bg-container velg">
-										<div>
-											<?php 
-												$img = get_field('past_onder_afbeelding'); 
-												$url = $img['url'];
-												?>
-											<img src="<?php echo $img['url']; ?>" />
-										</div>
-										<div class="nieuwe-prijs">
-											<p> Uw prijs </p>
-											<p class="prijs">€
-												<?php the_field('nieuwe_prijs_velg'); ?>
-											</p>
-										</div>		
-									</div>
-								</div>
-
-								<div class="info">
-									<a href="<?php echo get_permalink(); ?>">Meer info</a>
-								</div>
-							</div>
-
-							<?php
+							$button = '<a href="'.get_permalink().'">Meer info</a>';
+							the_velg(4, $button);
 						}
 					}
 					else {

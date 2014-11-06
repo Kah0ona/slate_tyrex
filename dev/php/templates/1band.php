@@ -1,7 +1,7 @@
 <?php 
 //toont 1 band, op basis van globale variabelen., dus moet in de loop gebruikt worden
-function the_band($showMoreInfo = true) { ?>
-	<div class="band">
+function the_band($showMoreInfo = true, $colsize = 4, $button) { ?>
+	<div class="band u-gridCol<?php echo $colsize; ?>">
 		<div class="band-container">
 			<div class="afbeelding-merk">
 				<?php 
@@ -73,7 +73,7 @@ function the_band($showMoreInfo = true) { ?>
 		</div>
 		<?php if($showMoreInfo) { ?>
 		<div class="info">
-			<a href="<?php echo get_permalink(); ?>">Meer info</a>
+			<?php echo $button; ?>
 		</div>
 		<?php } ?>
 	</div><!-- band -->
