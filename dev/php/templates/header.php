@@ -111,20 +111,39 @@
 			<!-- category  -->
 			<ul data-cat=" ">
 			<?php
-				//global $post;
-				//$slug = get_post( $post )->post_name; //UNTESTED, get current slug
-				//print_r($_SERVER);
+				global $post;
+				$slug = get_post( $post )->post_name;
+			//	$slug = is_home() ? 'home' : $_SERVER['SCRIPT_NAME'];
+
 				$args = array(
 					'post_type' => 'slides', 
-					'posts_per_page'=>999,
-					'meta_key' => 'pagina',
-					'meta_value' => $_SERVER['SCRIPT_NAME']
+					'posts_per_page'=>999
 				);
 				$slides = new WP_Query( $args );
 				$num = count($slides);
 				if( $slides->have_posts() ) {
 					while( $slides->have_posts() ) {
-						$slides->the_post(); ?>
+						$slides->the_post(); 
+						$pages = get_field('pagina');
+
+						$found = false;
+						if(trim($pages) == '') {
+							$found = true;
+						} else {
+							$pieces = explode(',', $pages);
+
+							for($i = 0; $i < count($pieces); $i++){
+								if($slug == trim($pieces[$i])){
+									$found = true;
+									break;
+								}
+							}
+						}
+
+						if(!$found){
+							continue;
+						}
+						?>
 						<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
 							  $image_url = $image[0];
 						?>
@@ -136,8 +155,12 @@
 							<?php } ?>
 							<li data-thumbnail-path="<?php echo $image_url; ?>"></li>
 							<li data-thumbnail-text="">
-								<p class="largeLabel"><?php the_title(); ?></p>
-								<p class="smallLabel"><?php the_field('onderschrift'); ?></p>
+								<div class="largeLabel"><?php //the_title(); ?></div>
+								<div class="smallLabel"><?php //the_field('onderschrift'); ?></div>
+<?php $overlays = get_field('overlays');
+
+									  $divs = parseDelayedOverlay($overlays);
+									  echo $divs; ?>
 							</li>
 							<li data-info="">
 								<p class="mediaDescriptionHeader">CUSTOM PRESS THUMBNAIL ACTION.</p>

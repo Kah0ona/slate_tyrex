@@ -66,6 +66,60 @@ function generateRandomString($length = 10) {
 }
 
 
+//parses a string in format
+// <img>,<millisecs>,<top>,<left>;<img>...
+// http://google.com/img.jpg,1,
+// and returns a series of placeholder divs to which imgs will be loaded by the slider
+function parseDelayedOverlay($str){
+	if(trim($str) == ''){ return ""; }
+	$str = str_replace('<br />','',$str);
+	$str = str_replace('<br/>','',$str);
+	$str = str_replace('<br>','',$str);
+
+	
+	$pieces = explode(';', $str);
+	$ret = "";
+
+
+	for($i = 0; $i < count($pieces); $i++){
+		$piece = $pieces[$i];
+		$piece = trim($piece);
+		$pieces2 = explode(',', $piece);
+
+		if(count($pieces2) < 4){
+			continue;
+		}
+		$url   = trim($pieces2[0]);
+		$delay = trim($pieces2[1]);
+		$top   = trim($pieces2[2]);
+		$left  = trim($pieces2[3]);
+
+		$ret .= '<div class="arrived" 
+					  data-src="'.$url.'"
+					  data-delay="'.$delay.'"
+					  data-top="'.$top.'"
+					  data-left="'.$left.'" ></div>';
+	}
+
+	return $ret;
+
+    /* testdata
+	return '
+		<div class="arrived" data-src="http://lorempixel.com/200/200/transport/1"
+			                     data-left="40%" data-top="50px"
+								 data-delay="500" ></div>
+								 
+		<div class="arrived" data-src="http://lorempixel.com/200/200/transport/2"
+			                     data-left="70px" data-top="50px"
+								 data-delay="1000" ></div>
+		<div class="arrived" data-src="http://lorempixel.com/200/200/transport/3"
+			                     data-left="20px" data-top="50px"
+								 data-delay="1500" ></div>
+		';
+	*/
+
+
+}
 
 
 ?>
