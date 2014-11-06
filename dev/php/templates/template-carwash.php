@@ -31,14 +31,33 @@ Template Name: Carwash
 				</div>
 
 				<div class="u-gridRow servicelist">
-					<div class="banner">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/carwashbanner.png" />
-					</div>
+				  <div class="banner banner-carwash premiumcarcare-img">
+			          	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-1.gif" />
+			      </div>
 
-				</div>
+			      <div class="banner banner-carwash topwashplus-img">
+			          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-2.gif" />
+			      </div>
 
+			      <div class="banner banner-carwash topwash-img">
+			           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-3.gif" />
+			      </div>
+
+			      <div class="banner banner-carwash superwash-img">
+			          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-4.gif" />
+			      </div>
+
+			      <div class="banner banner-carwash basicwash-img">
+			        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-5.gif" />
+			      </div>
+
+			     <div class="banner banner-carwash freewash-img">
+			        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-6.gif" />
+			      </div>
+
+			     </div>
 				<div class="u-gridRow">
-					<div class="u-gridCol4">
+					<div class="u-gridCol4"> 
 						<div class="boxcarwash premiumcarcare">
 							<ul>
 								<li>Showroomstaat</li>
@@ -146,6 +165,7 @@ Template Name: Carwash
 						</div>
 					</div>
 				</div>
+
 
 		</section>
 		</div>

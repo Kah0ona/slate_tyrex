@@ -89,9 +89,9 @@ Template Name: Acties
 							<?php
 								$args = array(
 									'post_type' => 'acties', 
-									'posts_per_page'=>1,
+									'posts_per_page'=> 1,
 									'meta_key'=>'categorie',
-									'meta_value'=>$cat
+									'meta_value'=> $cat
 								);
 								$aanbiedingen = new WP_Query( $args );
 								if( $aanbiedingen->have_posts() ) {
