@@ -93,41 +93,21 @@ $(function() {
 
 
 $(document).ready(function() {
-  $(".banner-carwash").fadeOut(0, function() {});
-  $(".premiumcarcare-img").fadeIn("slow", function(){});
-  $(".premiumcarcare").addClass("boxcarwash-active");
+  
+  $(".boxcarwash").click(
+      function(event) {
+        event.preventDefault();
 
+        // pak eigen image
+        var clicked = $(event.currentTarget);
+        var img = clicked.find('.carwash-img').first().clone();
+        
+        // kopieer deze image naar de placeholder div boven de wasprogramma's
+        $('.banner-carwash').empty();
+        $('.banner-carwash').append(img);
 
- $(".boxcarwash").click(function(event){
-    event.preventDefault();
-    $(".boxcarwash").removeClass("boxcarwash-active");
-    $(this).addClass("boxcarwash-active");
-
-
-    if($(this).hasClass("premiumcarcare") ){
-      $(".banner-carwash").fadeOut(0, function() {});
-      $(".premiumcarcare-img").fadeIn("slow", function(){});
-    }
-    else if($(this).hasClass("topwashplus") ){
-      $(".banner-carwash").fadeOut(0, function() {});
-      $(".topwashplus-img").fadeIn("slow", function(){});
-    }
-    else if($(this).hasClass("topwash") ){
-      $(".banner-carwash").fadeOut(0, function() {});
-      $(".topwash-img").fadeIn("slow", function(){});
-    }
-    else if($(this).hasClass("superwash") ){
-      $(".banner-carwash").fadeOut(0, function() {});
-      $(".superwash-img").fadeIn("slow", function(){});
-    }
-     else if($(this).hasClass("basicwash") ){
-      $(".banner-carwash").fadeOut(0, function() {});
-      $(".basicwash-img").fadeIn("slow", function(){});
-    }
-     else if($(this).hasClass("freewash") ){
-      $(".banner-carwash").fadeOut(0, function() {});
-      $(".freewash-img").fadeIn("slow", function(){});
-    }
- });
+        // show  / fade-in
+        img.fadeIn();
+      }
+  );
 });
-

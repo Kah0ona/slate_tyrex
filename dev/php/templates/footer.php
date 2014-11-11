@@ -1,4 +1,4 @@
-	<div class="container">
+	<div class="container footerRep">
 		<footer>
 			<section class="footer-container">
 				<?php if ( is_active_sidebar( 'footer-widgets' ) ) : ?>

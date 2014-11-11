@@ -200,9 +200,9 @@ table {
 }
 
 thead tr, tfoot td {
-	background: #d61d23;
+	@include linear-gradient(#d61d23, #ab171c);
 	background-repeat: no-repeat;
-	background-size: 141% 91px;
+	background-size: 141% 101px;
 	background-position: 0px -36px;
 	font-weight: bold;
 

@@ -1,7 +1,9 @@
 <?php
 	$args = array(
 		'post_type' => 'band', 
-		'posts_per_page'=>3
+		'posts_per_page'=>3,
+		'meta_key' => 'is_home',
+		'meta_value' => 'ja'
 	);
 	$aanbiedingen = new WP_Query( $args );
 	include_once('1band.php');

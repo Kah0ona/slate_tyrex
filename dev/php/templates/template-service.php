@@ -62,12 +62,12 @@ Template Name: Service
 							<div class="boxtitle">Sleepdienst</div>
 						</div></a>
 					</div>
-					<!--<div class="u-gridCol4">
-						<div class="boxservice">
+					<div class="u-gridCol4">
+						<a href="/carwash/"><div class="boxservice">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cardetailing.png" />
 							<div class="boxtitle">Car detailing</div>
-						</div>
-					</div>-->
+						</div></a>
+					</div>
 					<div class="u-gridCol4">
 						<a href="/spot-repair/"><div class="boxservice">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/spotschade.png" />

@@ -61,10 +61,19 @@ Template Name: Home
 						     <legend align="center">Populaire Velgen</legend>
 						</fieldset>
 					</div>
-						<?php
+				
+
+
+
+
+
+<!-- velgen CPT -->
+				<?php
 					$args = array(
 						'post_type' => 'velg', 
-						'posts_per_page'=>4
+						'posts_per_page'=>4,
+						'meta_key' => 'is_home',
+						'meta_value' => 'ja'
 					);
 					$aanbiedingen = new WP_Query( $args );
 					include_once('1velg.php');
@@ -79,6 +88,7 @@ Template Name: Home
 						echo '<p>Er zijn momenteel geen aanbiedingen</p>';
 					}
 				?>
+<!-- /velgen CPT -->				
 			</div>
 
 

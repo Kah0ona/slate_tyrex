@@ -1,4 +1,4 @@
-@media all and (max-width: 1040px) {
+@media all and (max-width: 800px) {
 	.Nav-tel {
 		display: none;
 	 }
@@ -74,7 +74,7 @@
 	}
 
 	.Navigation-link {
-        line-height: 58px;
+        line-height: 18px;
 		color: white;
 		display: block;
         font-size: 20px;
@@ -123,7 +123,6 @@ ul.Navigation-list--dropdown li.Navigation-listItem {
   color: white;
 }
 ul.Navigation-list--dropdown li.Navigation-listItem a {
-  background-color: transparent;
   border: 0px solid;
   font-size: 13px;
 }

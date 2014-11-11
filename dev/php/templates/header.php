@@ -21,7 +21,8 @@
 
     <!-- Favicon, generate the favicons with: http://realfavicongenerator.net -->
     <!-- Apple touch icons should be accessible from the root of the site, and do not have to be linked here -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/img/tb_apple_mobile.png">
 
 
     <!-- Head scripts, avoid including scripts here -->
@@ -65,8 +66,7 @@
         </div>
         <div class="sub-menu">
             <ul>
-                <li><a href="/werken-bij-tyrex-banden/">Werken bij Tyrex banden</a></li>
-                <li><a href="/klantenservice/">Klantenservice</a></li>
+                <li><a href="/mijn-tyrex/">Mijn Tyrex Banden</a></li>
                 <li><a href="/over-ons/">Over ons</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
@@ -102,7 +102,8 @@
                <?php include 'includes/navigation.php'; ?>
             </div>
         </section>-->
-		<section id="coverflow">
+		<div id="coverflowRep">
+        <section id="coverflow" class="coverflowMobile">
 			<div id="myDiv"></div>
 
 		<!-- coverflow data -->
@@ -183,6 +184,7 @@
             <div id="slider-stripe">
 
             </div>
+        </div>
 
             <div id="navSticky"></div>
 

@@ -29,141 +29,35 @@ Template Name: Carwash
 						?>
 					</div>
 				</div>
-
+				<div style="clear:both"></div>
 				<div class="u-gridRow servicelist">
-				  <div class="banner banner-carwash premiumcarcare-img">
-			          	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-1.gif" />
-			      </div>
+			      <!-- placeholder for the banner script -->
+			      <div class="banner banner-carwash"></div>
+			    </div>
+				<div class="u-gridRow carwashRep">
 
-			      <div class="banner banner-carwash topwashplus-img">
-			          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-2.gif" />
-			      </div>
+					<!-- velgen CPT -->
+					<?php
+						$args = array(
+							'post_type' => 'carwash', 
+							'posts_per_page'=>6
+						);
+						$aanbiedingen = new WP_Query( $args );
+						include_once('1carwash.php');
+						if( $aanbiedingen->have_posts() ) {
+							while( $aanbiedingen->have_posts() ) {
+								$aanbiedingen->the_post();
 
-			      <div class="banner banner-carwash topwash-img">
-			           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-3.gif" />
-			      </div>
+								the_carwash();
+							}
+						}
+						else {
+							echo '<p>Er zijn momenteel geen aanbiedingen</p>';
+						}
+					?>
+					<!-- /velgen CPT -->				
 
-			      <div class="banner banner-carwash superwash-img">
-			          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-4.gif" />
-			      </div>
 
-			      <div class="banner banner-carwash basicwash-img">
-			        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-5.gif" />
-			      </div>
-
-			     <div class="banner banner-carwash freewash-img">
-			        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/slider/carwashbanner-6.gif" />
-			      </div>
-
-			     </div>
-				<div class="u-gridRow">
-					<div class="u-gridCol4"> 
-						<div class="boxcarwash premiumcarcare">
-							<ul>
-								<li>Showroomstaat</li>
-								All Inclusive
-							</ul>
-							<div class="carwash-price">
-								240 min<br/>
-								€189.99
-							</div>
-							<div class="boxtitle">Premium Car Care</div>
-						</div>
-					</div>
-					<div class="u-gridCol4">
-						<div class="boxcarwash topwashplus">
-							<ul>
-								<li>Wassen (stoom)</li>
-								<li>Velgen intensief</li>
-								<li>Insecten intensief</li>
-								<li>Drogen</li>
-								<li>Bodemreiniging</li>
-								<li>Glas binnen + buiten</li>
-								<li>Interieur stofzuigen</li>
-								<li>Geurtje naar keuze</li>
-								<li>Wax</li>
-							</ul>
-							<div class="carwash-price">
-								240 min<br/>
-								€189.99
-							</div>
-							<div class="boxtitle">Top Wash +</div>
-						</div>
-					</div>
-					<div class="u-gridCol4">
-						<div class="boxcarwash topwash">
-							<ul>
-								<li>Wassen (stoom)</li>
-								<li>Velgen intensief</li>
-								<li>Insecten intensief</li>
-								<li>Drogen</li>
-								<li>Bodemreiniging</li>
-								<li>Glas binnen + buiten</li>
-								<li>Interieur stofzuigen</li>
-								<li>Geurtje naar keuze</li>
-							</ul>
-							<div class="carwash-price">
-								45 min<br/>
-								€189.99
-							</div>
-							<div class="boxtitle">Top Wash</div>
-						</div>
-					</div>
-				</div>
-				<div class="u-gridRow">
-					<div class="u-gridCol4">
-						<div class="boxcarwash superwash">
-							<ul>
-								<li>Wassen (stoom)</li>
-								<li>Velgen intensief</li>
-								<li>Insecten intensief</li>
-								<li>Drogen</li>
-								<li>Bodemreiniging</li>
-								<li>Glas binnen + buiten</li>
-								<li>Interieur stofzuigen</li>
-							</ul>
-							<div class="carwash-price">
-								60 min<br/>
-								€24.99
-							</div>
-							<div class="boxtitle">Super Wash</div>
-						</div>
-					</div>
-					<div class="u-gridCol4">
-						<div class="boxcarwash basicwash">
-							<ul>
-								<li>Wassen (stoom)</li>
-								<li>Velgen</li>
-								<li>Insecten intensief</li>
-								<li>Drogen</li>
-								<li>Bodemreiniging</li>
-								<li>Glas buitenkant</li>
-							</ul>
-							<div class="carwash-price">
-								30 min<br/>
-								€14.99
-							</div>
-							<div class="boxtitle">Basic Wash</div>
-						</div>
-					</div>
-					<div class="u-gridCol4">
-						<div class="boxcarwash freewash">
-							<ul>
-								<li>Wassen (stoom)</li>
-								<li>Velgen</li>
-								<li>Insecten intensief</li>
-								<li>Drogen</li>
-								<li>Bodemreiniging</li>
-								<li>Glas buitenkant</li>
-								<li>Interieur stofzuigen</li>
-							</ul>
-							<div class="carwash-price">
-								45 min<br/>
-								Gratis t.w.v. 19.99
-							</div>
-							<div class="boxtitle">Free wash</div>
-						</div>
-					</div>
 				</div>
 
 

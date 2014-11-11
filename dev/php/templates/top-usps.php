@@ -1,7 +1,7 @@
 <div class="u-gridRow usp">
   <div class="u-gridCol3">
     <h4 class="red-title-bar">Topkwaliteit</h4>
-    <p class="red-content">Service en kwaliteit vormen onze basis.</br></br>
+    <p class="red-content">Service en kwaliteit in één.</br></br>
       Onze tevredenheidsgarantie laat u nooit steken.</p>
     <div class="col-foot">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups4.png" />
@@ -9,7 +9,7 @@
   </div>
   <div class="u-gridCol3">
     <h4 class="red-title-bar">Grote voorraad</h4>
-    <p class="red-content">Meeste maten direct leverbaar uit voorraad.</br></br>
+    <p class="red-content">Direct leverbaar uit voorraad.</br></br>
       Uw maat niet voorradig? Binnen een werkdag weer wel!</p>
     <div class="col-foot">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups2.png" />

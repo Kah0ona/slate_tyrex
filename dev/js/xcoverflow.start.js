@@ -6,7 +6,7 @@ FWDS3DCovUtils.onReady(function(){
 		displayType:"fluidwidth",
 		autoScale:"yes",
 		coverflowWidth:940,
-		coverflowHeight:453,
+		coverflowHeight:550,
 		//coverflowHeight:580,
 		skinPath:"/wp-content/themes/slate-0.1.0_tyrex/load/skin_black",
 		
@@ -26,7 +26,7 @@ FWDS3DCovUtils.onReady(function(){
 									
 		//thumbnail settings
 		thumbnailWidth:1024,
-		thumbnailHeight:553,
+		thumbnailHeight:550,
 		thumbnailXOffset3D:20,
 		thumbnailXSpace3D:165,
 		thumbnailZOffset3D:300,
@@ -57,7 +57,7 @@ FWDS3DCovUtils.onReady(function(){
 		reflectionOpacity:.4, 
 									
 		//controls settings
-		slideshowDelay:5000,
+		slideshowDelay:8000,
 		autoplay:"yes",
 		disableNextAndPrevButtonsOnMobile:"no",
 		controlsMaxWidth:700,

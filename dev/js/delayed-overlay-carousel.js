@@ -21,7 +21,7 @@ jQuery(document).arrive(".arrived", function() {
 		img.fadeIn(300);
 		setTimeout(function(){
 			img.fadeOut(300);
-		}, 5000-(delay+600));
+		}, 7000-(delay+600));
 	}, delay);
 
 

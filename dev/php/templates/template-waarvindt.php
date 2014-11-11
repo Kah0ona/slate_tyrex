@@ -12,6 +12,7 @@ Template Name: Waar vindt u ons
 				<?php include_once('top-usps.php'); ?>
 				<div class="grid-70">
 					<div class="u-gridRow service">
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 							<h2><?php the_title(); ?></h2>
 
 							<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
@@ -24,6 +25,8 @@ Template Name: Waar vindt u ons
 							
 							<div><?php the_content(); ?></div>
 							</article>
+							<?php endwhile; else: ?>
+						<?php endif; ?>
 									
 					</div>
 

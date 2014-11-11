@@ -7,24 +7,26 @@ Template Name: Velgen
 <div class="container">
 	
 		<section id="content"> 	
-			<?php include_once('top-usps.php'); ?>
-			<h2> <?php the_title(); ?> </h2>
-			<div class="editor-content">
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-						<div>
+				<?php include_once('top-usps.php'); ?>
+				<div class="grid-70">
+					<div class="u-gridRow inhoud">
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+							<h4 class="auto_content"><?php the_title(); ?></h4>
 							<?php the_content(); ?>
-						</div>
-					</article>
-
-				<?php endwhile; else: ?>
-
-				<?php endif; ?>
-			</div>			
+						<?php endwhile; else: ?>
+						<?php endif; ?>
+					</div>
+				</div>
+				<div class="grid-30">
+					<div class="sidebar">
+						<?php include_once('widget-reviews.php'); ?>
+						<?php include_once('widget-openingstijden.php'); ?>
+					</div>
+				</div>
 		  	
-			
-			<div class="banden_featured_placeholder"></div>
+			<
+			<div class="banden_featured_placeholder" style="clear:both"></div>
 
 			<div clasddfcfds="merk-lijst-beschrijvingen2 bandenmerken">
 				<div class="merk-container">
@@ -46,7 +48,7 @@ Template Name: Velgen
 									echo '<div class="u-gridRow">';
 								}	?>
 										<div class="merk u-gridCol2 merk_<?php the_ID(); ?>" >
-											<div class="merk-afbeelding">
+											<a href="<?php the_permalink(); ?>"><div class="merk-afbeelding">
 												
 												<?php 
 												 
@@ -59,9 +61,9 @@ Template Name: Velgen
 												<?php endif; ?>	
 											</div>
 											<div class="merk-title">
-												<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+												<h3><?php the_title(); ?></h3>
 											</div>
-										</div>
+										</div></a>
 
 								<?php
 									if($counter % $numColumns == 0) {

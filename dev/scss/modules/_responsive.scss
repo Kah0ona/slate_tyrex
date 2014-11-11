@@ -1,17 +1,187 @@
-@media all and (max-width: 1040px) {  
+@media all and (max-width: 900px) {  
   .usp {
-  	display: none;
+    display: none;
   }
 
-  .band {
-  	width: 100%;
+  .grid-30 .sidebar .box {
+    font-size: 12px;
   }
 
+  .grid-30 .sidebar {
+    margin-left: 0;
+  }
+
+  #social-media {
+    display:none;
+  }
+
+  .Navigation-link {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  footer .logo {
+      display:none;
+    }
+
+    .widget {
+      width: 100% !important;
+      margin-left: 10px;
+    
+      &:last-of-type {
+        margin-top: 40px;
+      }
+    }
+
+        .container footer {
+      background: #222 !important;
+      //background-size: 101% 200px;
+      background-size: 100%;
+      margin:0;
+      margin-top: 10px;
+      font-size: 12px !important;
+      padding: 0;
+    }
+
+    .footerRep {
+      background: #222;
+    }
+
+    #gmap_canvas {
+      display:none;
+    }
+
+    .sub-footer p {
+      margin:10px 0px !important;
+      font-size: inherit; 
+    }
+}
+
+@media all and (max-width: 800px) {  
   .grid-70 {
   	width: 100%;
   }
 
   .grid-30 {
   	width: 100%;
+  }
+
+  .grid-30 .box {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .stick {
+    position: fixed;
+    padding: 0;
+    top: 0px;
+    height: auto !important;
+  }
+
+  .carwashRep .u-gridCol4 {
+    width: 100% !important;
+  }
+
+  .servicelist .u-gridCol4 {
+    width: 100% !important;
+  }
+
+  .merk-lijst {
+    float: left;
+    width: 100%;
+  }
+
+  .bandensoorten .merk-afbeelding {
+    min-height: 80px !important;
+  }
+
+  .banden-link, .tyrex-button, .cp_subbtn {
+    font-size: 12px !important;
+  }
+
+  .actie_box {
+    padding: 10px !important;
+  }
+
+  footer {
+    margin-top:100px;
+  }
+}
+
+@media all and (max-width: 750px) {
+    .grid-30 .box .reviewsnippet {
+      display: none;
+    }
+
+    .boxcarwash {
+      width: 100%;
+    }
+
+    .service p {
+      font-size: 12px;
+    }
+
+    .sub-menu {
+      width: 100%;
+      font-size: 12px !important;
+      text-align: center;
+
+    }
+
+    #logo-header {
+      height: 250px;
+
+      .logo {
+        float: none;
+        margin: 0 auto;
+      }
+    }
+
+    #myDiv-fluidwidth {
+      display:none !important;
+    }
+
+    #logo-header .menu-phone {
+      float: none !important;
+    }
+
+    #logo-header .sub-menu ul li {
+      font-size: 10px;
+      border:0;
+      display:block;
+      margin: 0 auto;
+    }
+
+    
+
+
+
+
+}
+
+
+
+@media all and (max-width: 400px) {
+
+
+  .band {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nieuwe-prijs {
+    background-size: 24% !important;
+  }
+  .soorten-tabel {
+    @include span-columns(12);
+    line-height: 1.0 !important;
+  }
+
+  .merk-title h3 {
+    font-size: 9px !important;
+    background: none !important;
+  }
+  #coverflowRep {
+      display:none !important;
   }
 }

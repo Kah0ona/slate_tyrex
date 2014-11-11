@@ -69,6 +69,7 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 	h4 {
 		margin: 10px 0 6px;
 		font-size: 1.1rem;
+		margin-bottom: 0px !important;
 	}
 
 	.velg-container {
@@ -145,11 +146,11 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 		}
 
 		.klasse-container {
-			@include outer-container;
+			max-width: 185px;
 			margin: 14px auto 14px auto;
 			padding-left: $l-insideGutter;
 			padding-right: $l-insideGutter;
-			width: 185px;
+			min-width: 125px;
 
 			div {
 				width: 31.232%;
@@ -201,8 +202,14 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
   font-size: 16px;
 }
 
+p.inhoud {
+	margin-top: 1px;
+}
+
 .inhoud img.alignleft {
 	margin-right: 20px;
+	width: 357px;
+	height: 136px;
 }
 
 .service strong {
@@ -215,6 +222,10 @@ box-shadow:         0px 3px 5px 0px rgba(0, 0, 0, 0.46);*/
 
 .service ul li {
 	margin-bottom: 10px;
+}
+
+.service .lijstinhoud {
+	margin-left: 40px;
 }
 
 ol {
@@ -375,7 +386,7 @@ ol {
 	p {
 		position: absolute;
 		top: 40px;
-		right: 16px;
+		right: 12px;
 		font-weight: bold;
 		color: $c-white;
 	}
@@ -471,6 +482,7 @@ legend {
 .tyrex-button:hover, .banden-link:hover {
   text-decoration: none;
   background: #a6191e;
+  cursor:pointer;
 }
 
 .auto_content {
@@ -504,7 +516,7 @@ legend {
 
 .velg-albumtitle {
 	width: 100%;
-	background: $c-red;
+	@include linear-gradient(#d61d23, #ab171c);
 	color: white;
 	font-weight: bold;
 	padding: 10px;
