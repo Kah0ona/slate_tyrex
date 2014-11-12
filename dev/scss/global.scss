@@ -203,3 +203,56 @@ border: 1px solid #DF0000 !important;
 a:hover {
 	text-decoration: none !important;
 }
+
+.alert-error {
+	color: #b2181d;
+	font-weight: bold;
+}
+
+.mgmform {
+	label {
+		display: inline-block;
+		width: 100px;
+	}
+	input[type="submit"] {
+		border: none !important;
+	}
+	.controls {
+		margin-bottom: 5px;
+	}
+}
+
+.mgmresults {
+	table {
+		width: 100%;
+		th {
+			background-color: #b2181d;
+			color: white;
+		}
+		th {
+			text-align: left;
+		}
+		td,th {
+			padding: 5px;
+		}
+		td:last-of-type {
+			text-align: right;
+		}
+		th:last-of-type {
+			text-align: right;
+		}
+		tbody tr:nth-of-type(even) td{
+			background-color: rgba(255,255,255,0.5);
+		}
+	}
+
+
+	.saldo {
+		font-size: 24px;
+		margin-top: 10px;
+		font-weight: bold;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+}

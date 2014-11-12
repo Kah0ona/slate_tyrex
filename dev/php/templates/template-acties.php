@@ -6,7 +6,9 @@ Template Name: Acties
 
 <?php get_header(); ?>
 <div class="container">
-	
+<?php
+//print_r(GFFormsModel::get_lead(2));
+?>
 		<section id="content"> 	
 
 				<?php include_once('top-usps.php'); ?>

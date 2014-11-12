@@ -57,10 +57,20 @@ function generate_mgm_code($form){
 
 
 function generateRandomString($length = 10) {
-    $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	$nums = '0123456789';
+
     $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    for ($i = 0; $i < 2; $i++) {
+        $randomString .= $letters[rand(0, strlen($letters) - 1)];
+	}
+	$randomString .= '-';
+    for ($i = 0; $i < 2; $i++) {
+        $randomString .= $letters[rand(0, strlen($letters) - 1)];
+    }
+	$randomString .= '-';
+    for ($i = 0; $i < 2; $i++) {
+        $randomString .= $nums[rand(0, strlen($nums) - 1)];
     }
     return $randomString;
 }
