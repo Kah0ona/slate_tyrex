@@ -43,7 +43,9 @@ Template Name: autoband merken
 							<?php
 								$args = array(
 									'post_type' => 'bandensoort',
-									'nopaging' => true
+									'nopaging' => true,
+									'order' => 'ASC',
+									'orderby' => 'title'
 								);
 								$aanbiedingen = new WP_Query( $args );
 								if( $aanbiedingen->have_posts() ) {
@@ -88,7 +90,9 @@ Template Name: autoband merken
 						<?php
 							$args = array(
 								'post_type' => 'merk',
-								'nopaging' => true
+								'nopaging' => true,
+								'order' => 'ASC',
+								'orderby' => 'title'
 							);
 							$aanbiedingen = new WP_Query( $args );
 							if( $aanbiedingen->have_posts() ) {
@@ -131,7 +135,9 @@ Template Name: autoband merken
 					<?php
 						$args = array(
 							'post_type' => 'merk',
-							'nopaging' => true
+							'nopaging' => true,
+							'order' => 'ASC',
+							'orderby' => 'title'
 						);
 						$aanbiedingen = new WP_Query( $args );
 						if( $aanbiedingen->have_posts() ) {

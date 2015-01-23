@@ -28,7 +28,7 @@ Template Name: Home
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Velgen</h4>
 		  			<p class="red-content">Zeer breed assortiment aan velgen!</br></br>
-		  				De meeste exclusieve velgen koopt u bij Tyrex Banden.</p>
+		  				De meest exclusieve velgen koopt u bij Tyrex Banden.</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_3.png" />
 		  			</div>
@@ -36,7 +36,7 @@ Template Name: Home
 		  		<div class="u-gridCol3">
 		  			<h4 class="red-title-bar">Carwash</h4>
 		  			<p class="red-content">Unieke stoomreiniging voor uw bolide!
-		  				Onze methode is duurzaam, ecologisch, hygienisch en betaalbaar.</p>
+		  				Duurzaam, ecologisch, hygiënisch en betaalbaar.</p>
 		  			<div class="col-foot">
 		  					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/content_4.png" />
 		  			</div>

@@ -25,7 +25,7 @@ Template Name: Velgen
 					</div>
 				</div>
 		  	
-			<
+			
 			<div class="banden_featured_placeholder" style="clear:both"></div>
 
 			<div clasddfcfds="merk-lijst-beschrijvingen2 bandenmerken">
