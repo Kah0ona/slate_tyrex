@@ -122,6 +122,7 @@
 				);
 				$slides = new WP_Query( $args );
 				$num = count($slides);
+				$counter = 0;
 				if( $slides->have_posts() ) {
 					while( $slides->have_posts() ) {
 						$slides->the_post(); 
@@ -141,6 +142,8 @@
 							}
 						}
 
+						$counter++;
+
 						if(!$found){
 							continue;
 						}
@@ -154,13 +157,13 @@
 							<?php } else { ?>
 							<li data-type="link" data-url="/"></li> 
 							<?php } ?>
-							<li data-thumbnail-path="<?php echo $image_url; ?>"></li>
+							<li data-thumbnail-path="<?php echo $image_url; ?>?counter=<?php echo $counter; ?>"></li>
 							<li data-thumbnail-text="">
 								<div class="largeLabel"><?php //the_title(); ?></div>
 								<div class="smallLabel"><?php //the_field('onderschrift'); ?></div>
 <?php $overlays = get_field('overlays');
 
-									  $divs = parseDelayedOverlay($overlays);
+									  $divs = parseDelayedOverlay($overlays, $image_url, $counter);
 									  echo $divs; ?>
 							</li>
 							<li data-info="">

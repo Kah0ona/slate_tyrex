@@ -80,7 +80,7 @@ function generateRandomString($length = 10) {
 // <img>,<millisecs>,<top>,<left>;<img>...
 // http://google.com/img.jpg,1,
 // and returns a series of placeholder divs to which imgs will be loaded by the slider
-function parseDelayedOverlay($str){
+function parseDelayedOverlay($str, $image_url, $counter){
 	if(trim($str) == ''){ return ""; }
 	$str = str_replace('<br />','',$str);
 	$str = str_replace('<br/>','',$str);
@@ -96,19 +96,23 @@ function parseDelayedOverlay($str){
 		$piece = trim($piece);
 		$pieces2 = explode(',', $piece);
 
-		if(count($pieces2) < 4){
+		if(count($pieces2) < 5){
 			continue;
 		}
 		$url   = trim($pieces2[0]);
 		$delay = trim($pieces2[1]);
 		$top   = trim($pieces2[2]);
 		$left  = trim($pieces2[3]);
+		$height  = trim($pieces2[4]);
 
-		$ret .= '<div class="arrived" 
+		$ret .= '<div class="arrived"
+			  		  data-basesrc="'.$image_url.'"	
+					  data-counter="'.$counter.'"
 					  data-src="'.$url.'"
 					  data-delay="'.$delay.'"
 					  data-top="'.$top.'"
-					  data-left="'.$left.'" ></div>';
+					  data-left="'.$left.'"
+					  data-height="'.$height.'" ></div>';
 	}
 
 	return $ret;
