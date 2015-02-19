@@ -28,9 +28,14 @@ FWDS3DCovUtils.onReady(function(){
 		thumbnailWidth:1024,
 		thumbnailHeight:550,
 		thumbnailXOffset3D:20,
+
 //		thumbnailXSpace3D:165,
-		thumbnailXSpace3D:145,
-		thumbnailZOffset3D:300,
+//		thumbnailXSpace3D:145,
+//		thumbnailZOffset3D:300,
+
+		thumbnailXSpace3D:165,
+		thumbnailZOffset3D:100,
+
 		thumbnailZSpace3D:130,
 		thumbnailYAngle3D:-40,
 		thumbnailXOffset2D:20,

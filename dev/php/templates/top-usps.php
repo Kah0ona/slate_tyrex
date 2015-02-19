@@ -2,7 +2,7 @@
   <div class="u-gridCol3">
     <h4 class="red-title-bar">Topkwaliteit</h4>
     <p class="red-content">Service en kwaliteit in één.</br></br>
-      Onze tevredenheidsgarantie laat u nooit steken.</p>
+      Wij streven naar 100% tevreden klanten.</p>
     <div class="col-foot">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ups4.png" />
     </div>

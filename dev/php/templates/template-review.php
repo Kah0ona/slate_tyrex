@@ -32,7 +32,7 @@ Template Name: Review
 										     <legend align="center">Persoonlijke ervaring toevoegen</legend>
 										</fieldset>
 										<p>
-											Je beoordeling helpt het bedrijf om de service te verfijnen, Vrienden en andere bezoekers die overwegen een bezoekje te brengen of een aankoop te doen bij Tyrex Banden, kunnen jouw ervaring lezen ter ondersteuning van hun beslising.
+											Uw beoordeling helpt ons bedrijf om de service te verfijnen. Vrienden en andere bezoekers die overwegen een bezoekje te brengen of een aankoop te doen bij Tyrex Banden, kunnen uw ervaring lezen ter ondersteuning van hun beslissing.
 										</p>
 										<?php echo do_shortcode("[RICH_REVIEWS_FORM]"); ?>
 									<?php endwhile; ?>
